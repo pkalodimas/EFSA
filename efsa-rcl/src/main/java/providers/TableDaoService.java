@@ -54,6 +54,13 @@ public class TableDaoService implements ITableDaoService {
 	public boolean delete(TableRowList list) {
 		return dao.delete(list);
 	}
+
+	@Override
+	public boolean delete(TableRow row) {
+		TableRowList list = new TableRowList();
+		list.add(row);
+		return this.delete(list);
+	}
 	
 	@Override
 	public boolean delete(TableSchema schema, int rowId) {

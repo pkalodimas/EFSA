@@ -111,6 +111,9 @@ public abstract class Report extends TableRow implements EFSAReport {
 		this.put(AppPaths.REPORT_STATUS, status);
 	}
 
+	public boolean isVisible(){
+		return Boolean.FALSE.equals(this.getIsAggregated());
+	}
 	/**
 	 * Get the previous status of the dataset
 	 * 

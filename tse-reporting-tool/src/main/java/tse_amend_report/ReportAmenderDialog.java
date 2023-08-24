@@ -1,24 +1,20 @@
 package tse_amend_report;
 
-import app_config.AppPaths;
 import app_config.PropertiesReader;
 import data_collection.*;
-import dataset.RCLDatasetStatus;
 import global_utils.Warnings;
 import i18n_messages.Messages;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Shell;
 import progress_bar.IndeterminateProgressDialog;
-import providers.IReportService;
 import providers.TseReportService;
-import report.GetAmendedReportsThread;
+import tse_report.GetAmendedReportsThread;
 import report.IMassAmendReportDialog;
 import report.ThreadFinishedListener;
 import soap.DetailedSOAPException;
 import table_skeleton.TableRow;
 import table_skeleton.TableRowList;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;

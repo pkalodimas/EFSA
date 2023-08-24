@@ -1,11 +1,11 @@
 ----------------------------------------------------------------
-Thu Aug 24 16:32:23 EEST 2023:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-018a-27bf-0144-0000151fadc8 
-on database directory C:\Users\thanos\Desktop\tse-efsa\tse-app\database with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
-Loaded from file:/C:/Users/thanos/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
-java.vendor=Amazon.com Inc.
-java.runtime.version=1.8.0_382-b05
-user.dir=C:\Users\thanos\Desktop\tse-efsa\tse-app
+Thu Aug 24 20:16:08 EEST 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-018a-288b-da47-00000cda5588 
+on database directory C:\Users\panos\Documents\Git\CRI\EFSA\tse-app\database with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/C:/Users/panos/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_202-b08
+user.dir=C:\Users\panos\Documents\Git\CRI\EFSA\tse-app
 os.name=Windows 10
 os.arch=amd64
 os.version=10.0

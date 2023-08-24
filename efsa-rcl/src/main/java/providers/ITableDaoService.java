@@ -79,7 +79,9 @@ public interface ITableDaoService {
 	 * @return
 	 */
 	public boolean delete(TableRowList list);
-	
+
+	public boolean delete(TableRow list);
+
 	/**
 	 * delete a row
 	 * @param schema

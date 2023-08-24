@@ -1,16 +1,9 @@
-package report;
+package tse_report;
 
-import app_config.AppPaths;
-import config.Config;
-import dataset.DatasetList;
-import dataset.IDataset;
 import dataset.RCLDatasetStatus;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import providers.IReportService;
-import providers.ReportService;
-import soap.DetailedSOAPException;
-import soap.GetDatasetsList;
+import report.Report;
+import report.ThreadFinishedListener;
 import table_skeleton.TableRowList;
 
 import java.util.stream.Collectors;
@@ -54,15 +47,12 @@ public class GetAmendedReportsThread extends Thread {
 	}
 
 	private TableRowList filterReports(TableRowList unfiltered, String dcCode) {
-		// ean exw aggregated -> des gia poious mines einai, kai fere ta antistoixa
-
-		// alliws fere ta amended (simainei oti den exw aggregated)
-
-
 		return unfiltered.stream()
-				.filter(r -> r.getCode(AppPaths.REPORT_DC_CODE).equals(dcCode))
-				.filter(r -> RCLDatasetStatus.fromString(r.getCode(AppPaths.REPORT_STATUS)).equals(RCLDatasetStatus.LOCALLY_VALIDATED))
-				.filter(r -> Integer.parseInt(r.getCode(AppPaths.REPORT_VERSION)) > 0)
+				.map(TseReport::new)
+				.filter(Report::isVisible)
+				.filter(r -> r.getDcCode().equals(dcCode))
+				.filter(r -> r.getRCLStatus().equals(RCLDatasetStatus.LOCALLY_VALIDATED))
+				.filter(r -> Integer.parseInt(r.getVersion()) > 0)
 				.collect(Collectors.toCollection(TableRowList::new));
 	}
 }
