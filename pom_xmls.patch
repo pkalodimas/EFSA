@@ -1,0 +1,928 @@
+Subject: [PATCH] pom.xmls
+---
+Index: internal-installer/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/internal-installer/pom.xml b/internal-installer/pom.xml
+--- a/internal-installer/pom.xml	(revision 8dbd7793ce0c4d877c8f1b62d511c411cb0b0eaa)
++++ b/internal-installer/pom.xml	(date 1690207285885)
+@@ -13,6 +13,23 @@
+ 	</properties>
+ 
+ 	<dependencies>
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>http-manager</artifactId>
++			<version>1.1.0</version>
++		</dependency>
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>version-manager</artifactId>
++			<version>1.1.0</version>
++		</dependency>
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>zip-manager</artifactId>
++			<version>1.1.0</version>
++		</dependency>
++
++
+ 		<dependency>
+ 			<groupId>org.apache.logging.log4j</groupId>
+ 			<artifactId>log4j-api</artifactId>
+Index: interpreting-and-checking-tool/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/interpreting-and-checking-tool/pom.xml b/interpreting-and-checking-tool/pom.xml
+--- a/interpreting-and-checking-tool/pom.xml	(revision 2a5a408bb9a51a6266b201ef5c0805723fe5269b)
++++ b/interpreting-and-checking-tool/pom.xml	(date 1690207291662)
+@@ -13,6 +13,12 @@
+ 	</properties>
+ 
+ 	<dependencies>
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>catalogue-browser</artifactId>
++			<version>1.2.13</version>
++		</dependency>
++
+ 		<dependency>
+ 			<groupId>org.apache.logging.log4j</groupId>
+ 			<artifactId>log4j-api</artifactId>
+Index: open-xml-reader/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/open-xml-reader/pom.xml b/open-xml-reader/pom.xml
+--- a/open-xml-reader/pom.xml	(revision 652a52b543142118909adb1db424387a51a0f4cf)
++++ b/open-xml-reader/pom.xml	(date 1690207296565)
+@@ -54,4 +54,4 @@
+ 			</testResource>
+ 		</testResources>
+ 	</build>
+-</project>
+\ No newline at end of file
++</project>
+Index: progress-bar/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/progress-bar/pom.xml b/progress-bar/pom.xml
+--- a/progress-bar/pom.xml	(revision f9cc95776a04d0bd22c18edb962141fdbfd2eec5)
++++ b/progress-bar/pom.xml	(date 1690207301494)
+@@ -20,6 +20,17 @@
+ 	</repositories>
+ 
+ 	<dependencies>
++		<dependency>
++		    <groupId>org.eclipse.platform</groupId>
++		    <artifactId>swt.win64</artifactId>
++		    <version>3.655</version>
++		</dependency>
++		<dependency>
++		    <groupId>org.eclipse.platform</groupId>
++		    <artifactId>jface</artifactId>
++		    <version>3.7.0</version>
++		</dependency>
++
+ 		<!-- swt x32 
+ 		<dependency>
+ 			<groupId>org.eclipse.swt</groupId>
+@@ -58,4 +69,4 @@
+ 			</testResource>
+ 		</testResources>
+ 	</build>
+-</project>
+\ No newline at end of file
++</project>
+Index: sql-script-executor/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/sql-script-executor/pom.xml b/sql-script-executor/pom.xml
+--- a/sql-script-executor/pom.xml	(revision 2f89d610283c7407bd4c13b7664fa125405ce262)
++++ b/sql-script-executor/pom.xml	(date 1690207307171)
+@@ -39,4 +39,4 @@
+ 			</testResource>
+ 		</testResources>
+ 	</build>
+-</project>
+\ No newline at end of file
++</project>
+Index: tse-reporting-tool/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tse-reporting-tool/pom.xml b/tse-reporting-tool/pom.xml
+--- a/tse-reporting-tool/pom.xml	(revision 0fa79aa2215b82964cb076e98fbfa6d38b12c470)
++++ b/tse-reporting-tool/pom.xml	(date 1690207311587)
+@@ -13,6 +13,33 @@
+ 	</properties>
+ 
+ 	<dependencies>
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>efsa-rcl</artifactId>
++			<version>1.2.2</version>
++		</dependency>
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>window-size-save-restore</artifactId>
++			<version>1.0.0</version>
++		</dependency>
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>http-manager-gui</artifactId>
++			<version>1.1.0</version>
++		</dependency>
++
++		<dependency>
++		    <groupId>org.eclipse.platform</groupId>
++		    <artifactId>swt.win64</artifactId>
++		    <version>3.655</version>
++		</dependency>
++		<dependency>
++		    <groupId>org.eclipse.platform</groupId>
++		    <artifactId>jface</artifactId>
++		    <version>3.7.0</version>
++		</dependency>
++
+ 		<dependency>
+ 			<groupId>org.apache.poi</groupId>
+ 			<artifactId>poi</artifactId>
+Index: tse-reporting-tool/src/test/java/efsa/db/ServiceTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tse-reporting-tool/src/test/java/efsa/db/ServiceTest.java b/tse-reporting-tool/src/test/java/efsa/db/ServiceTest.java
+new file mode 100644
+--- /dev/null	(date 1690207311588)
++++ b/tse-reporting-tool/src/test/java/efsa/db/ServiceTest.java	(date 1690207311588)
+@@ -0,0 +1,96 @@
++package efsa.db;
++
++import app_config.GlobalManager;
++import config.Config;
++import config.Environment;
++import data_collection.*;
++import dataset.DcfDatasetsList;
++import dataset.IDcfDataset;
++import formula.FormulaException;
++import org.junit.jupiter.api.BeforeAll;
++import org.junit.jupiter.api.Test;
++import report.Report;
++import resource.DcfResourcesList;
++import resource.IDcfResourceReference;
++import soap.*;
++import soap_interface.IGetDatasetsList;
++import user.User;
++
++import java.io.File;
++import java.util.*;
++import java.util.stream.Collectors;
++
++public class ServiceTest {
++    private static User user;
++
++    @BeforeAll
++    public static void before() {
++        user = User.getInstance();
++        user.login("papagst", "Z7bkT@XP2");
++        user.addData("orgCode", "EFSA");
++    }
++
++    @Test
++    public void testAll() throws Exception {
++        Set<String> names = new HashSet<>();
++        IDcfDataCollectionsList<IDcfDataCollection> list = new DcfDataCollectionsList();
++
++        GetDataCollectionsList<IDcfDataCollection> req = new GetDataCollectionsList<>(false);
++        req.getList(Config.getEnvironment(), user, list);
++
++        List<DcfDataCollection> ddcList = list.stream().map(DcfDataCollection.class::cast).collect(Collectors.toList());
++        for (DcfDataCollection ddc :ddcList) {
++            DcfResourcesList resourceList = new DcfResourcesList();
++            GetResourcesList<IDcfResourceReference> request = new GetResourcesList<>();
++            request.getList(Environment.PRODUCTION, user, ddc.getCode(), resourceList);
++
++            for (IDcfResourceReference r: resourceList) {
++                DCTableList output = new DCTableList();
++                output.create();
++
++                GetDataCollectionTables<DCTable> dataCollectionTables = new GetDataCollectionTables<>();
++                dataCollectionTables.getTables(Config.getEnvironment(), user, r.getResourceId(), output);
++
++                output.forEach(o -> names.add(o.getName()));
++            }
++        }
++        System.out.println(String.join("\n", names));
++    }
++
++    @Test
++    public void testOthers() throws Exception {
++        String dcCode = "TSE.TEST";
++
++        IDcfDataCollectionsList<IDcfDataCollection> datasetList = new DcfDataCollectionsList();
++        GetDataCollectionsList<IDcfDataCollection> req = new GetDataCollectionsList<>(false);
++        req.getList(Config.getEnvironment(), user, datasetList);
++        IDcfDataCollection iDataset = datasetList.stream().filter(ds -> ds.getCode().equals(dcCode))
++                .findFirst()
++                .orElseThrow(() -> new Exception("No match found for dc code"));
++
++        // find tableNames
++        DcfDCTablesList tables = new DcfDCTablesList();
++        GetDataCollectionTables<DcfDCTable> dataCollectionTables = new GetDataCollectionTables<>();
++        dataCollectionTables.getTables(Config.getEnvironment(), user, iDataset.getResourceId(), tables);
++
++        // get tableName
++        String tableName = tables.stream()
++                .map(DcfDCTable::getName)
++                .filter(Objects::nonNull)
++                .distinct()
++                .filter(n -> n.startsWith("SSD2"))
++                .max(Comparator.naturalOrder())
++                .orElseThrow(() -> new Exception("No match found for dc code"));
++
++        System.out.printf("Acquired fact table %s for dcCode %s", tableName, dcCode);
++
++    }
++
++
++    @Test
++    public void testResource() throws Exception {
++        GetFile getFile = new GetFile();
++        File file = getFile.getFile(Environment.PRODUCTION, user, "05_293");
++        System.out.println(file.getName());
++    }
++}
+Index: tse-reporting-tool/src/test/java/efsa/db/DBTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tse-reporting-tool/src/test/java/efsa/db/DBTest.java b/tse-reporting-tool/src/test/java/efsa/db/DBTest.java
+new file mode 100644
+--- /dev/null	(date 1690207311588)
++++ b/tse-reporting-tool/src/test/java/efsa/db/DBTest.java	(date 1690207311588)
+@@ -0,0 +1,201 @@
++package efsa.db;
++
++import dataset.IDataset;
++import org.junit.jupiter.api.AfterEach;
++import org.junit.jupiter.api.Assertions;
++import org.junit.jupiter.api.BeforeAll;
++import org.junit.jupiter.api.Test;
++import providers.*;
++import soap.GetAck;
++import soap.GetDataset;
++import soap.GetDatasetsList;
++import soap.SendMessage;
++import soap_interface.IGetAck;
++import soap_interface.IGetDataset;
++import soap_interface.IGetDatasetsList;
++import soap_interface.ISendMessage;
++import table_database.Database;
++import table_database.ITableDao;
++import table_database.TableDao;
++import table_skeleton.TableRow;
++import tse_analytical_result.AnalyticalResult;
++import tse_case_report.CaseReport;
++import tse_config.CustomStrings;
++import tse_report.TseReport;
++import tse_summarized_information.SummarizedInfo;
++import xlsx_reader.TableSchema;
++import xlsx_reader.TableSchemaList;
++
++import java.util.ArrayList;
++import java.util.List;
++import java.util.Objects;
++import java.util.stream.Collectors;
++
++import static java.lang.String.format;
++import static org.junit.jupiter.api.Assertions.*;
++import static tse_config.CustomStrings.PROG_ID_COL;
++import static tse_config.CustomStrings.RES_ID_COL;
++
++public class DBTest {
++
++    private final TableSchema REPORT_SCHEMA = TableSchemaList.getByName(CustomStrings.REPORT_SHEET);
++    private final TableSchema SUMMARY_INFO_SCHEMA = TableSchemaList.getByName(CustomStrings.SUMMARIZED_INFO_SHEET);
++    private final TableSchema CASE_INFO_SCHEMA = TableSchemaList.getByName(CustomStrings.CASE_INFO_SHEET);
++    private final TableSchema ANALYTICAL_RESULTS_SCHEMA = TableSchemaList.getByName(CustomStrings.RESULT_SHEET);
++
++    private static TseReportService reportService;
++    private static ITableDaoService tableDaoService;
++
++    private List<Integer> idsToClear = new ArrayList<>();
++
++    @BeforeAll
++    public static void before() {
++        ITableDao dao = new TableDao();
++        tableDaoService = new TableDaoService(dao);
++        IFormulaService formulaService = new FormulaService(tableDaoService);
++
++        IGetAck getAck = new GetAck();
++        IGetDatasetsList<IDataset> getDatasetsList = new GetDatasetsList<>();
++        ISendMessage sendMessage = new SendMessage();
++        IGetDataset getDataset = new GetDataset();
++
++        reportService = new TseReportService(getAck, getDatasetsList, sendMessage, getDataset,
++                tableDaoService, formulaService);
++    }
++
++
++    @Test
++    public void testCreateDefaultResults() throws Exception {
++        Database db = new Database();
++        db.connect();
++
++        TableRow byId = tableDaoService.getById(REPORT_SCHEMA, 514);
++        assertNotNull(byId, "check id of table");
++        TseReport sourceReport = new TseReport(byId);
++        List<SummarizedInfo> sourceSI = reportService.getRecords(sourceReport, new TableSchema[]{SUMMARY_INFO_SCHEMA}).stream().map(SummarizedInfo::new).collect(Collectors.toList());
++        List<CaseReport> sourceCR = reportService.getRecords(sourceReport, new TableSchema[]{CASE_INFO_SCHEMA}).stream().map(CaseReport::new).collect(Collectors.toList());
++
++        SummarizedInfo summarizedInfo = sourceSI.stream().filter(si -> si.getType().equals(CustomStrings.SUMMARIZED_INFO_BSE_TYPE)).findFirst().orElse(null);
++        CaseReport caseReport = sourceCR.stream().findFirst().orElse(null);
++        assertNotNull(summarizedInfo);
++        assertNotNull(caseReport);
++        reportService.createDefaultResults(sourceReport, summarizedInfo, caseReport);
++
++        List<AnalyticalResult> sourceAR = reportService.getRecords(sourceReport, new TableSchema[]{ANALYTICAL_RESULTS_SCHEMA}).stream().map(AnalyticalResult::new).collect(Collectors.toList());
++        Assertions.assertEquals(3, sourceAR.size());
++    }
++
++    @Test
++    public void testCopyReport() throws Exception {
++        Database db = new Database();
++        db.connect();
++
++        TseReport sourceReport = new TseReport(tableDaoService.getById(REPORT_SCHEMA, 105));
++        List<SummarizedInfo> sourceSI = reportService.getRecords(sourceReport, new TableSchema[] { SUMMARY_INFO_SCHEMA }).stream().map(SummarizedInfo::new).collect(Collectors.toList());
++        List<CaseReport> sourceCR = reportService.getRecords(sourceReport, new TableSchema[] { CASE_INFO_SCHEMA }).stream().map(CaseReport::new).collect(Collectors.toList());
++        List<AnalyticalResult> sourceAR = reportService.getRecords(sourceReport, new TableSchema[] { ANALYTICAL_RESULTS_SCHEMA }).stream().map(AnalyticalResult::new).collect(Collectors.toList());
++
++//        TseReport amendedReport = reportService.amend(sourceReport);
++//        idsToClear.add(amendedReport.getDatabaseId());
++
++        TseReport targetReport = new TseReport(tableDaoService.getById(REPORT_SCHEMA, 514));
++        reportService.copyReport(sourceReport, targetReport);
++
++        List<SummarizedInfo> targetSI = reportService.getRecords(targetReport, new TableSchema[] { SUMMARY_INFO_SCHEMA }).stream().map(SummarizedInfo::new).collect(Collectors.toList());
++        List<CaseReport> targetCR = reportService.getRecords(targetReport, new TableSchema[] { CASE_INFO_SCHEMA }).stream().map(CaseReport::new).collect(Collectors.toList());
++        List<AnalyticalResult> targetAR = reportService.getRecords(targetReport, new TableSchema[] { ANALYTICAL_RESULTS_SCHEMA }).stream().map(AnalyticalResult::new).collect(Collectors.toList());
++
++        Assertions.assertEquals(targetSI.size(), sourceSI.size());
++        Assertions.assertEquals(targetCR.size(), sourceCR.size());
++        Assertions.assertEquals(targetAR.size(), sourceAR.size());
++
++        for (SummarizedInfo si : targetSI) {
++            int id = si.getDatabaseId();
++            String progId = si.get(PROG_ID_COL).getCode();
++            String resId = si.get(RES_ID_COL).getCode().split("\\.")[0];
++            assertTrue(resId.equals(progId), format("si (%s) incorrect resId/progId rel", id));
++            assertNotNull(progId, "Prog id should not be null from source: " + id);
++            assertFalse(progId.isEmpty(), "Prog id should not be empty from source: " + id);
++        }
++
++        for (AnalyticalResult ar: targetAR) {
++            int id = ar.getDatabaseId();
++            String progId = ar.get(PROG_ID_COL).getCode().split("\\.")[0];
++            String resId = ar.get(RES_ID_COL).getCode().split("\\.")[0];
++            assertTrue(resId.equals(progId), format("si (%s) incorrect resId/progId rel", id));
++            assertNotNull(progId, "Prog id should not be null from source: " + id);
++            assertFalse(progId.isEmpty(), "Prog id should not be empty from source: " + id);
++        }
++
++        sourceSI.forEach(source -> assertTrue(assertSI(source, targetSI), format("no SI for id %s", source.getDatabaseId())));
++        sourceCR.forEach(source -> assertTrue(assertCR(source, targetCR), format("no CR for id %s", source.getDatabaseId())));
++        sourceAR.forEach(source -> assertTrue(assertAR(source, targetAR), format("no AR for id %s", source.getDatabaseId())));
++    }
++
++    @AfterEach
++    public void clearDb() {
++        for (Integer id: idsToClear) {
++            if (id == 1) break;
++            System.out.println("Deleting report with id: " + id);
++            tableDaoService.delete(REPORT_SCHEMA, id);
++        }
++    }
++
++    private boolean assertSI(SummarizedInfo source, List<SummarizedInfo> targetList) {
++        boolean foundMatch;
++        for (SummarizedInfo target: targetList) {
++            foundMatch = Objects.equals(source.getType(), target.getType()) &&
++                    Objects.equals(source.getTypeBySpecies(), target.getTypeBySpecies()) &&
++                    Objects.equals(source.getSpecies(), target.getSpecies()) &&
++                    Objects.equals(source.get("animage"), target.get("animage")) &&
++                    Objects.equals(source.get("sex"), target.get("sex"));
++            if (foundMatch) {
++                String targetProgId = target.get(CustomStrings.PROG_ID_COL).getCode();
++                assertNotEquals(source.get(CustomStrings.PROG_ID_COL).getCode(), targetProgId, "SI prog id not equals");
++
++                String targetResId = target.get(RES_ID_COL).getCode();
++                assertNotNull(targetResId, "Res id should not be null from source: " + target.getDatabaseId());
++                assertFalse(targetResId.isEmpty(), "Res id should not be empty from source: " + target.getDatabaseId());
++                assertNotEquals(source.get(RES_ID_COL).getCode(), targetResId, "SI res id not equals");
++
++                System.out.printf("matched SI %s with %s\n", source.getDatabaseId(), target.getDatabaseId());
++                return true;
++            }
++        }
++        return false;
++    }
++
++    private boolean assertCR(CaseReport source, List<CaseReport> targetList) {
++        boolean foundMatch;
++        for (CaseReport target: targetList) {
++            foundMatch = Objects.equals(source.get("sampleEventAsses"), target.get("sampleEventAsses")) &&
++                    Objects.equals(source.get("sampId"), target.get("sampId")) &&
++                    Objects.equals(source.get("part"), target.get("part")) &&
++                    Objects.equals(source.get("sex"), target.get("sex"));
++            if (foundMatch) {
++                System.out.printf("matched CR %s with %s\n", source.getDatabaseId(), target.getDatabaseId());
++                return true;
++            }
++        }
++        return false;
++    }
++
++    private boolean assertAR(AnalyticalResult source, List<AnalyticalResult> targetList) {
++        boolean foundMatch;
++        for (AnalyticalResult target: targetList) {
++            foundMatch = Objects.equals(source.get("anMethType"), target.get("anMethType")) &&
++                    Objects.equals(source.get("testAim"), target.get("testAim")) &&
++                    Objects.equals(source.get("analysisY"), target.get("analysisY"));
++            if (foundMatch) {
++                String targetResId = target.get(RES_ID_COL).getCode();
++                assertNotNull(targetResId, "Res id should not be null from source: " + target.getDatabaseId());
++                assertFalse(targetResId.isEmpty(), "Res id should not be empty from source: " + target.getDatabaseId());
++                assertNotEquals(source.get(RES_ID_COL).getCode(), targetResId, "AR res id not equals");
++                System.out.printf("matched AR %s with %s\n", source.getDatabaseId(), target.getDatabaseId());
++                return true;
++            }
++        }
++        return false;
++
++    }
++}
+Index: window-size-save-restore/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/window-size-save-restore/pom.xml b/window-size-save-restore/pom.xml
+--- a/window-size-save-restore/pom.xml	(revision 19ad6286e3de13b863c7eecadc7801ac583034bb)
++++ b/window-size-save-restore/pom.xml	(date 1690207320756)
+@@ -20,6 +20,12 @@
+ 	</repositories>
+ 
+ 	<dependencies>
++		<dependency>
++		    <groupId>org.eclipse.platform</groupId>
++		    <artifactId>swt.win64</artifactId>
++		    <version>3.655</version>
++		</dependency>
++
+ 		<!-- swt x32 
+ 		<dependency>
+ 			<groupId>org.eclipse.swt</groupId>
+@@ -63,4 +69,4 @@
+ 			</testResource>
+ 		</testResources>
+ 	</build>
+-</project>
+\ No newline at end of file
++</project>
+Index: tse-reporting-tool/src/test/java/efsa/db/TestValidator.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tse-reporting-tool/src/test/java/efsa/db/TestValidator.java b/tse-reporting-tool/src/test/java/efsa/db/TestValidator.java
+new file mode 100644
+--- /dev/null	(date 1690207311588)
++++ b/tse-reporting-tool/src/test/java/efsa/db/TestValidator.java	(date 1690207311588)
+@@ -0,0 +1,71 @@
++package efsa.db;
++
++import dataset.IDataset;
++import org.eclipse.swt.SWT;
++import org.junit.jupiter.api.BeforeAll;
++import org.junit.jupiter.api.Test;
++import providers.*;
++import report_validator.ReportError;
++import soap.GetAck;
++import soap.GetDataset;
++import soap.GetDatasetsList;
++import soap.SendMessage;
++import soap_interface.IGetAck;
++import soap_interface.IGetDataset;
++import soap_interface.IGetDatasetsList;
++import soap_interface.ISendMessage;
++import table_database.Database;
++import table_database.ITableDao;
++import table_database.TableDao;
++import table_skeleton.TableRow;
++import tse_config.CustomStrings;
++import tse_report.TseReport;
++import tse_validator.TseReportValidator;
++import xlsx_reader.TableSchema;
++import xlsx_reader.TableSchemaList;
++
++import java.util.Collection;
++
++import static org.junit.jupiter.api.Assertions.assertNotNull;
++
++public class TestValidator {
++
++    private final TableSchema REPORT_SCHEMA = TableSchemaList.getByName(CustomStrings.REPORT_SHEET);
++    private final TableSchema SUMMARY_INFO_SCHEMA = TableSchemaList.getByName(CustomStrings.SUMMARIZED_INFO_SHEET);
++    private final TableSchema CASE_INFO_SCHEMA = TableSchemaList.getByName(CustomStrings.CASE_INFO_SHEET);
++    private final TableSchema ANALYTICAL_RESULTS_SCHEMA = TableSchemaList.getByName(CustomStrings.RESULT_SHEET);
++
++    private static TseReportService reportService;
++    private static ITableDaoService tableDaoService;
++
++    @BeforeAll
++    public static void before() {
++        ITableDao dao = new TableDao();
++        tableDaoService = new TableDaoService(dao);
++        IFormulaService formulaService = new FormulaService(tableDaoService);
++
++        IGetAck getAck = new GetAck();
++        IGetDatasetsList<IDataset> getDatasetsList = new GetDatasetsList<>();
++        ISendMessage sendMessage = new SendMessage();
++        IGetDataset getDataset = new GetDataset();
++
++        reportService = new TseReportService(getAck, getDatasetsList, sendMessage, getDataset,
++                tableDaoService, formulaService);
++    }
++
++
++    @Test
++    public void validator() throws Exception {
++        Database db = new Database();
++        db.connect();
++
++        TableRow byId = tableDaoService.getById(REPORT_SCHEMA, 823);
++        assertNotNull(byId, "check id of table");
++        TseReport report = new TseReport(byId);
++
++        TseReportValidator validator = new TseReportValidator(report, reportService, tableDaoService);
++
++        // validate the report
++        Collection<ReportError> errors = validator.validate();
++    }
++}
+Index: catalogue-browser/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/catalogue-browser/pom.xml b/catalogue-browser/pom.xml
+--- a/catalogue-browser/pom.xml	(revision ba94e79e8d4ed13f347b91161c63e8ea80f01826)
++++ b/catalogue-browser/pom.xml	(date 1690207247130)
+@@ -24,23 +24,42 @@
+ 	</repositories>
+ 
+ 	<dependencies>
+-		<!-- swt x32 
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>catalogue-xml-to-xlsx</artifactId>
++			<version>1.1.0</version>
++		</dependency>
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>open-xml-reader</artifactId>
++			<version>1.1.0</version>
++		</dependency>
+ 		<dependency>
+-			<groupId>org.eclipse.swt</groupId>
+-			<artifactId>org.eclipse.swt.win32.win32.x86</artifactId>
+-			<version>4.6.1</version>
++			<groupId>openefsa</groupId>
++			<artifactId>window-size-save-restore</artifactId>
++			<version>1.0.0</version>
+ 		</dependency>
+ 		<dependency>
+-			<groupId>org.eclipse.swt</groupId>
+-			<artifactId>org.eclipse.swt.win32.win32.x86_64</artifactId>
+-			<version>4.6.1</version>
++			<groupId>openefsa</groupId>
++			<artifactId>http-manager-gui</artifactId>
++			<version>1.1.0</version>
+ 		</dependency>
+ 		<dependency>
+-			<groupId>org.eclipse.jface</groupId>
+-			<artifactId>org.eclipse.jface</artifactId>
+-			<version>3.11.0</version>
++			<groupId>openefsa</groupId>
++			<artifactId>efsa-rcl</artifactId>
++			<version>1.2.2</version>
+ 		</dependency>
+-		-->
++
++		<dependency>
++			<groupId>org.eclipse.platform</groupId>
++			<artifactId>swt.win64</artifactId>
++			<version>3.655</version>
++		</dependency>
++		<dependency>
++			<groupId>org.eclipse.platform</groupId>
++			<artifactId>jface</artifactId>
++			<version>3.7.0</version>
++		</dependency>
+ 		<dependency>
+ 			<groupId>org.apache.poi</groupId>
+ 			<artifactId>poi</artifactId>
+@@ -91,6 +110,12 @@
+ 			<artifactId>junit-jupiter</artifactId>
+ 			<scope>test</scope>
+ 			<version>5.5.2</version>
++		</dependency>
++		<dependency>
++			<groupId>junit</groupId>
++			<artifactId>junit</artifactId>
++			<version>4.13</version>
++			<scope>test</scope>
+ 		</dependency>
+ 		<dependency>
+ 			<groupId>org.apache.xmlbeans</groupId>
+Index: zip-manager/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/zip-manager/pom.xml b/zip-manager/pom.xml
+--- a/zip-manager/pom.xml	(revision bc156755d8b1d5ff10d9f746e1e7539af1cd1d56)
++++ b/zip-manager/pom.xml	(date 1690207325905)
+@@ -11,9 +11,9 @@
+ 		<maven.compiler.target>1.8</maven.compiler.target>
+ 		<project.build.sourceEncoding>Cp1252</project.build.sourceEncoding>
+ 	</properties>
+-	
++
+ 	<dependencies>
+-	   <dependency>
++		<dependency>
+ 			<groupId>org.apache.logging.log4j</groupId>
+ 			<artifactId>log4j-api</artifactId>
+ 			<version>2.17.1</version>
+@@ -24,20 +24,4 @@
+ 			<version>2.17.1</version>
+ 		</dependency>
+ 	</dependencies>
+-
+-	<build>
+-		<sourceDirectory>src/main/java</sourceDirectory>
+-		<testSourceDirectory>src/test/java</testSourceDirectory>
+-		<resources>
+-			<resource>
+-				<directory>src/main/resources</directory>
+-			</resource>
+-		</resources>
+-		<testResources>
+-			<testResource>
+-				<directory>src/test/resources</directory>
+-			</testResource>
+-		</testResources>
+-	</build>
+-
+-</project>
+\ No newline at end of file
++</project>
+Index: external-installer/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/external-installer/pom.xml b/external-installer/pom.xml
+--- a/external-installer/pom.xml	(revision 67fd50c47f2301f467ec1663ab96333019a433e1)
++++ b/external-installer/pom.xml	(date 1690207273653)
+@@ -13,6 +13,22 @@
+ 	</properties>
+ 
+ 	<dependencies>
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>http-manager</artifactId>
++			<version>1.1.0</version>
++		</dependency>
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>version-manager</artifactId>
++			<version>1.1.0</version>
++		</dependency>
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>zip-manager</artifactId>
++			<version>1.1.0</version>
++		</dependency>
++
+ 		<dependency>
+ 			<groupId>org.apache.logging.log4j</groupId>
+ 			<artifactId>log4j-api</artifactId>
+Index: http-manager/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/http-manager/pom.xml b/http-manager/pom.xml
+--- a/http-manager/pom.xml	(revision 1a0ca5ce79d1cd3fc1bedad384724288685dd991)
++++ b/http-manager/pom.xml	(date 1690207277509)
+@@ -35,19 +35,4 @@
+ 			</exclusions>
+ 		</dependency>
+ 	</dependencies>
+-
+-	<build>
+-		<sourceDirectory>src/main/java</sourceDirectory>
+-		<testSourceDirectory>src/test/java</testSourceDirectory>
+-		<resources>
+-			<resource>
+-				<directory>src/main/resources</directory>
+-			</resource>
+-		</resources>
+-		<testResources>
+-			<testResource>
+-				<directory>src/test/resources</directory>
+-			</testResource>
+-		</testResources>
+-	</build>
+ </project>
+Index: dcf-webservice-framework/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/dcf-webservice-framework/pom.xml b/dcf-webservice-framework/pom.xml
+--- a/dcf-webservice-framework/pom.xml	(revision b0741bff459687027fbb6ef638f33d93f71ab8a6)
++++ b/dcf-webservice-framework/pom.xml	(date 1690207255727)
+@@ -13,6 +13,34 @@
+ 	</properties>
+ 
+ 	<dependencies>
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>http-manager</artifactId>
++			<version>1.1.0</version>
++		</dependency>
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>sql-script-executor</artifactId>
++			<version>1.1.0</version>
++		</dependency>
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>zip-manager</artifactId>
++			<version>1.1.0</version>
++		</dependency>
++
++		<dependency>
++			<groupId>jakarta.xml.ws</groupId>
++			<artifactId>jakarta.xml.ws-api</artifactId>
++			<version>3.0.1</version>
++		</dependency>
++		<dependency>
++			<groupId>com.sun.xml.ws</groupId>
++			<artifactId>jaxws-rt</artifactId>
++			<version>3.0.1</version>
++			<scope>runtime</scope>
++		</dependency>
++
+ 		<dependency>
+ 			<groupId>org.apache.logging.log4j</groupId>
+ 			<artifactId>log4j-api</artifactId>
+Index: efsa-rcl/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/efsa-rcl/pom.xml b/efsa-rcl/pom.xml
+--- a/efsa-rcl/pom.xml	(revision 897ea26a7c20822bc131b4177ad88b81b099a933)
++++ b/efsa-rcl/pom.xml	(date 1690207260609)
+@@ -1,6 +1,6 @@
+ <project xmlns="http://maven.apache.org/POM/4.0.0"
+-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+ 	<modelVersion>4.0.0</modelVersion>
+ 	<groupId>openefsa</groupId>
+ 	<version>1.2.2</version>
+@@ -13,6 +13,42 @@
+ 	</properties>
+ 
+ 	<dependencies>
++		<dependency>
++			<groupId>org.eclipse.platform</groupId>
++			<artifactId>swt.win64</artifactId>
++			<version>3.655</version>
++		</dependency>
++		<dependency>
++			<groupId>org.eclipse.platform</groupId>
++			<artifactId>jface</artifactId>
++			<version>3.7.0</version>
++		</dependency>
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>dcf-webservice-framework</artifactId>
++			<version>1.0.3</version>
++		</dependency>
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>progress-bar</artifactId>
++			<version>1.1.0</version>
++		</dependency>
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>email-generator</artifactId>
++			<version>1.0</version>
++		</dependency>
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>version-manager</artifactId>
++			<version>1.1.0</version>
++		</dependency>
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>exceptions-manager</artifactId>
++			<version>1.1.0</version>
++		</dependency>
++
+ 		<dependency>
+ 			<groupId>org.apache.poi</groupId>
+ 			<artifactId>poi</artifactId>
+@@ -68,6 +104,7 @@
+ 			<artifactId>joost</artifactId>
+ 			<version>0.9.1</version>
+ 		</dependency>
++
+ 		<dependency>
+ 			<groupId>org.junit.jupiter</groupId>
+ 			<artifactId>junit-jupiter</artifactId>
+Index: exceptions-manager/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/exceptions-manager/pom.xml b/exceptions-manager/pom.xml
+--- a/exceptions-manager/pom.xml	(revision 296aff85500d50b65efe18060460041552af8f45)
++++ b/exceptions-manager/pom.xml	(date 1690207268887)
+@@ -39,4 +39,4 @@
+ 			</testResource>
+ 		</testResources>
+ 	</build>
+-</project>
+\ No newline at end of file
++</project>
+Index: http-manager-gui/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/http-manager-gui/pom.xml b/http-manager-gui/pom.xml
+--- a/http-manager-gui/pom.xml	(revision ea3e20017aa514c08857d1b36fa9a8289033054b)
++++ b/http-manager-gui/pom.xml	(date 1690207281989)
+@@ -24,6 +24,23 @@
+ 	</repositories>
+ 
+ 	<dependencies>
++		<dependency>
++		    <groupId>org.eclipse.platform</groupId>
++		    <artifactId>swt.win64</artifactId>
++		    <version>3.655</version>
++		</dependency>
++		<dependency>
++		    <groupId>org.eclipse.platform</groupId>
++		    <artifactId>jface</artifactId>
++		    <version>3.7.0</version>
++		</dependency>
++
++		<dependency>
++			<groupId>openefsa</groupId>
++			<artifactId>http-manager</artifactId>
++			<version>1.1.0</version>
++		</dependency>
++
+ 		<!-- swt x32 
+ 		<dependency>
+ 			<groupId>org.eclipse.swt</groupId>
+@@ -72,4 +89,4 @@
+ 			</testResource>
+ 		</testResources>
+ 	</build>
+-</project>
+\ No newline at end of file
++</project>

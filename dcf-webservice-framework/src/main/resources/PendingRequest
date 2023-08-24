@@ -1,0 +1,8 @@
+create table APP.PENDING_REQUEST (
+	REQ_LOG_CODE varchar(500) primary key not null, -- code of the  log to retrieve
+	REQ_TYPE varchar(100) not null,                 -- the request type (RESERVE/UNRESERVE/PUBLISH/UPLOAD_XML_CHANGES)
+	REQ_PRIORITY varchar(50),                       -- HIGH/LOW or null for non prioritizable requests
+	REQUESTOR varchar(50) not null,                 -- the name of the user which made the reserve
+	REQ_ENVIRONMENT varchar(100) not null,          -- (test or production)
+	REQ_DATA varchar(1000)                          -- additional data, if needed (syntax: property1=value1$property2=value2$...)
+);

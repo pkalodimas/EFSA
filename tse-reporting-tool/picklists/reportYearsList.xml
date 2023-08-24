@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reportYearsList>
+	<selectionList>
+		<selection code="2021">
+			<description>2021</description>
+		</selection>
+		<selection code="2022">
+			<description>2022</description>
+		</selection>
+		<selection code="2023">
+			<description>2023</description>
+		</selection>
+		<selection code="2024">
+			<description>2024</description>
+		</selection>
+		<selection code="2025">
+			<description>2025</description>
+		</selection>
+		<selection code="2026">
+			<description>2026</description>
+		</selection>
+		<selection code="2027">
+			<description>2027</description>
+		</selection>
+		<selection code="2028">
+			<description>2028</description>
+		</selection>
+		<selection code="2029">
+			<description>2029</description>
+		</selection>
+		<selection code="2030">
+			<description>2030</description>
+		</selection>
+	</selectionList>
+</reportYearsList>

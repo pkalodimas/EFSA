@@ -1,0 +1,7 @@
+/database/
+/logs/
+/preferences/
+/target/
+/temp/
+
+derby.log

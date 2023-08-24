@@ -1,0 +1,22 @@
+<transmissionResult xsi:type="updateCatalogueResultType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <action>Web service</action>
+  <transmissionDateTime>2018-01-31T12:37:07.984+01:00</transmissionDateTime>
+  <processingDateTime>2018-01-31T12:37:08.257+01:00</processingDateTime>
+  <uploadedFileName xsi:nil="true"/>
+  <catalogueCode>AMRPROG</catalogueCode>
+  <catalogueVersion>1.3.2</catalogueVersion>
+  <catalogueStatus>DRAFT MINOR UNRESERVED</catalogueStatus>
+  <macroOperationName>updateCatalogue</macroOperationName>
+  <macroOperationResult>OK</macroOperationResult>
+  <macroOperationLogs>
+    <operationLog>The catalogue AMRPROG has been updated</operationLog>
+  </macroOperationLogs>
+  <operations>
+    <operation>
+      <operationName>unreserve</operationName>
+      <operationResult>OK</operationResult>
+      <operationLogs/>
+    </operation>
+  </operations>
+  <validationErrorLogs/>
+</transmissionResult>

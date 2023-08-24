@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Github configuration</comment>
+
+<entry key="Github.RepositoryName">catalogue-browser</entry> <!-- name of the repository you want to connect/download -->
+<entry key="Github.RepositoryOwner">openefsa</entry> <!-- github username of who created the repository -->
+<entry key="Application.JavaPath">.\jre\bin\java.exe</entry> <!-- java path, use simply "java" without quotes to use the java installed in your machine (starts from the app folder!) -->
+
+<entry key="Application.Keyword">onlyapp-win-64bit</entry> <!-- keyword which needs to be contained in the .zip filename for identifying the file to be downloaded from github -->
+
+<entry key="Application.Folder">app</entry> <!-- path of the folder which contains the application to start after updates checking -->
+<entry key="Application.ConfigFile">config\appConfig.xml</entry> <!-- configuration file of the real application (starting from the real application directory) -->
+<entry key="Application.JarPath">app.jar</entry> <!-- path of the jar to execute after having checked the updates -->
+<entry key="Application.IconFolder">icons</entry> <!-- folder of the application icons -->
+
+<!-- List of properties which are entries in the real application configuration file (used to be consistent without having a copy of the information) -->
+<entry key="Application.NameEntry">Application.Name</entry> <!-- entry of the configuration file which contains the application name -->
+<entry key="Application.VersionEntry">Application.Version</entry> <!-- entry of the configuration file which contains the application version (used to check if version is the latest)-->
+<entry key="Application.IconEntry">Application.Icon</entry> <!-- entry of the configuration file of the real app which contains the application icon -->
+
+<!-- List of names used to avoid their removal while updating the new tool version -->
+<entry key="Application.DatabaseFolder">database</entry> <!-- folder in which there is the database of the application -->
+</properties>

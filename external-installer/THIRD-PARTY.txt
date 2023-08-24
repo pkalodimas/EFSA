@@ -1,0 +1,16 @@
+
+Lists of 14 third-party dependencies.
+     (MIT License) minimal-json (com.eclipsesource.minimal-json:minimal-json:0.9.5 - https://github.com/ralfstx/minimal-json)
+     (The Apache Software License, Version 2.0) Proxy Vole (com.github.markusbernhardt:proxy-vole:1.0.5 - https://github.com/MarkusBernhardt/proxy-vole)
+     (Apache License, Version 2.0) Apache Commons IO (commons-io:commons-io:2.6 - http://commons.apache.org/proper/commons-io/)
+     (Apache License v2.0) (LGPL, version 2.1) Java Native Access (net.java.dev.jna:jna:4.5.1 - https://github.com/java-native-access/jna)
+     (Apache License v2.0) (LGPL, version 2.1) Java Native Access Platform (net.java.dev.jna:jna-platform:4.5.1 - https://github.com/java-native-access/jna)
+     (Unknown license) http-manager (openefsa:http-manager:1.0.0 - no url defined)
+     (Unknown license) version-manager (openefsa:version-manager:1.0.0 - no url defined)
+     (Unknown license) zip-manager (openefsa:zip-manager:1.0.0 - no url defined)
+     (Apache License, Version 2.0) Apache Log4j API (org.apache.logging.log4j:log4j-api:2.12.1 - https://logging.apache.org/log4j/2.x/log4j-api/)
+     (Apache License, Version 2.0) Apache Log4j Core (org.apache.logging.log4j:log4j-core:2.12.1 - https://logging.apache.org/log4j/2.x/log4j-core/)
+     (Apache 2) ini4j (org.ini4j:ini4j:0.5.4 - http://www.ini4j.org)
+     (LGPL) (MIT License) (The Apache License, Version 2.0) delight-nashorn-sandbox (org.javadelight:delight-nashorn-sandbox:0.1.14 - https://github.com/javadelight/delight-nashorn-sandbox)
+     (MIT License) SLF4J API Module (org.slf4j:slf4j-api:1.7.25 - http://www.slf4j.org)
+     (MIT) js-beautify (org.webjars.bower:js-beautify:1.6.12 - http://webjars.org)
