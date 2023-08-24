@@ -1,0 +1,151 @@
+2023-08-24 11:56:21,395 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:21,396 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:21,652 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:21,653 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:21,665 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:21,693 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:56:21,710 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:56:21,730 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:21,733 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:21,781 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:21,784 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:21,791 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:21,795 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:22,005 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:22,005 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:22,135 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:22,135 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:22,146 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:22,159 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:56:22,162 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:56:22,171 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:22,175 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:22,180 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:22,184 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:22,190 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:22,193 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:22,268 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:22,268 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:22,348 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:22,348 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:22,361 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:22,377 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:56:22,382 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:56:22,385 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:22,387 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:22,393 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:22,395 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:22,400 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:22,403 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:22,493 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:22,493 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:22,582 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:22,582 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:22,591 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:22,601 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:56:22,604 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:56:22,608 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:22,611 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:22,615 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:22,618 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:22,622 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:22,625 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:22,936 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:22,936 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:23,089 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:23,090 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:23,098 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:23,108 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:56:23,111 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:56:23,118 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:23,122 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:23,128 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:23,130 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:23,134 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:23,137 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:23,207 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:23,207 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:23,296 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:23,296 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:23,311 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:56:23,331 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:56:23,333 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:56:23,338 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:23,340 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:23,345 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:23,347 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:23,351 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:23,353 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:25,320 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:56:25,322 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:56:25,326 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:25,328 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:25,333 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:25,334 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:25,338 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:25,339 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:25,559 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:56:25,563 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:56:25,569 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:25,577 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:25,581 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:25,583 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:25,587 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:25,588 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:25,849 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:56:25,851 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:56:25,855 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:25,857 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:25,877 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:25,879 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:25,884 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:25,887 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:26,062 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:56:26,063 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:56:26,066 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:26,068 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:26,072 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:26,074 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:26,078 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:26,080 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:26,643 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:56:26,645 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:56:26,653 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:26,655 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:26,658 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:26,660 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:26,663 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:26,665 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:26,843 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:56:26,845 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:56:26,849 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:26,851 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:26,855 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:26,857 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:26,861 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:56:26,864 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:56:39,571 ERROR t.Database [main] Error in shutting down the database
+java.sql.SQLNonTransientConnectionException: Database 'database\' shutdown.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_382]
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.AutoloadedDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[?:1.8.0_382]
+	at java.sql.DriverManager.getConnection(DriverManager.java:270) ~[?:1.8.0_382]
+	at table_database.Database.shutdown(Database.java:207) [classes/:?]
+	at tse_main.StartUI.shutdown(StartUI.java:156) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:198) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: Database 'database\' shutdown.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.shutdownDatabaseException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 13 more

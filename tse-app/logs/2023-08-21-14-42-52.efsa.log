@@ -1,0 +1,57 @@
+2023-08-21 14:43:36,793 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-21 14:43:36,798 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-21 14:43:36,814 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:43:36,817 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:43:36,852 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:43:36,855 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:43:36,861 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:43:36,864 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:43:37,080 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-21 14:43:37,083 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-21 14:43:37,088 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:43:37,090 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:43:37,095 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:43:37,097 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:43:37,102 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:43:37,104 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:43:37,265 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-21 14:43:37,267 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-21 14:43:37,271 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:43:37,273 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:43:37,277 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:43:37,280 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:43:37,283 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:43:37,286 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:43:37,505 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-21 14:43:37,508 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-21 14:43:37,514 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:43:37,516 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:43:37,521 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:43:37,525 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:43:37,534 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:43:37,537 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:44:01,544 ERROR t.Database [main] Error in shutting down the database
+java.sql.SQLNonTransientConnectionException: Database 'database\' shutdown.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_382]
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.AutoloadedDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[?:1.8.0_382]
+	at java.sql.DriverManager.getConnection(DriverManager.java:270) ~[?:1.8.0_382]
+	at table_database.Database.shutdown(Database.java:207) [classes/:?]
+	at tse_main.StartUI.shutdown(StartUI.java:156) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:198) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: Database 'database\' shutdown.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.shutdownDatabaseException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 13 more

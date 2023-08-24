@@ -1,13 +1,5 @@
 package providers;
 
-import java.io.File;
-import java.io.IOException;
-
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.stream.XMLStreamException;
-
-import org.xml.sax.SAXException;
-
 import ack.DcfAck;
 import ack.DcfAckDetailedResId;
 import amend_manager.AmendException;
@@ -18,20 +10,25 @@ import global_utils.Message;
 import message.MessageConfigBuilder;
 import message.MessageResponse;
 import message.SendMessageException;
+import org.xml.sax.SAXException;
 import progress_bar.ProgressListener;
-import report.DisplayAckResult;
-import report.EFSAReport;
-import report.Report;
-import report.ReportException;
-import report.ReportSendOperation;
+import report.*;
 import soap.DetailedSOAPException;
+import table_skeleton.TableRow;
 import table_skeleton.TableRowList;
+
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.stream.XMLStreamException;
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 
 public interface IReportService {
 
 	/**
 	 * Check if the report is already present in the db
-	 * 
+	 *
 	 * @param report
 	 * @return
 	 */
@@ -39,7 +36,7 @@ public interface IReportService {
 
 	/**
 	 * Create a new report
-	 * 
+	 *
 	 * @param report
 	 * @return error if something wrong happened
 	 * @throws DetailedSOAPException
@@ -48,7 +45,7 @@ public interface IReportService {
 
 	/**
 	 * Get the ack of a report using its message id
-	 * 
+	 *
 	 * @param messageId
 	 * @return
 	 * @throws DetailedSOAPException
@@ -57,7 +54,7 @@ public interface IReportService {
 
 	/**
 	 * shahaal: Get the detailed res id of the report's ack using its message id
-	 * 
+	 *
 	 * @param detailedResId
 	 * @return
 	 * @throws DetailedSOAPException
@@ -67,7 +64,7 @@ public interface IReportService {
 	/**
 	 * Get all the dataset related to the report using its sender dataset id
 	 * (without version) and its year to target the correct data collection
-	 * 
+	 *
 	 * @param senderDatasetId
 	 * @param dcYear
 	 * @return
@@ -78,7 +75,7 @@ public interface IReportService {
 	/**
 	 * Get a dataset from DCF using the dataset id. The list is prefiltered by the
 	 * sender dataset id pattern.
-	 * 
+	 *
 	 * @param senderDatasetId sender dataset id of the report (without version)
 	 * @param dcYear          data collection year
 	 * @param datasetId
@@ -89,7 +86,7 @@ public interface IReportService {
 
 	/**
 	 * Get the latest dataset of the report by computing the latest version
-	 * 
+	 *
 	 * @param senderDatasetId
 	 * @param dcYear
 	 * @return
@@ -100,7 +97,7 @@ public interface IReportService {
 	/**
 	 * Get the latest dataset of the report using its dataset id if possible,
 	 * otherwise using the versions
-	 * 
+	 *
 	 * @param report
 	 * @return
 	 * @throws DetailedSOAPException
@@ -109,7 +106,7 @@ public interface IReportService {
 
 	/**
 	 * Get which send operation will be used if a send action is performed
-	 * 
+	 *
 	 * @param report
 	 * @return
 	 * @throws DetailedSOAPException
@@ -121,7 +118,7 @@ public interface IReportService {
 	/**
 	 * Send a report to the dcf. This handles by its self the operation required
 	 * (i.e. if it is needed an insert or a replace)
-	 * 
+	 *
 	 * @param report
 	 * @param dcfDataset
 	 * @param messageConfig
@@ -134,12 +131,12 @@ public interface IReportService {
 	 * @throws ReportException
 	 */
 	public void send(Report report, Dataset dcfDataset, MessageConfigBuilder messageConfig,
-			ProgressListener progressListener) throws DetailedSOAPException, IOException, ParserConfigurationException,
+					 ProgressListener progressListener) throws DetailedSOAPException, IOException, ParserConfigurationException,
 			SAXException, SendMessageException, ReportException, AmendException;
 
 	/**
 	 * Export a report in .xml file
-	 * 
+	 *
 	 * @param report
 	 * @param messageConfig
 	 * @return
@@ -153,7 +150,7 @@ public interface IReportService {
 
 	/**
 	 * Export a report into an .xml file tracking the progresses
-	 * 
+	 *
 	 * @param report
 	 * @param messageConfig
 	 * @param progressListener
@@ -169,7 +166,7 @@ public interface IReportService {
 	/**
 	 * Export and send the report with the required operation type. It allows
 	 * tracking progresses.
-	 * 
+	 *
 	 * @param report
 	 * @param opType
 	 * @param progressListener
@@ -181,12 +178,12 @@ public interface IReportService {
 	 * @throws ReportException
 	 */
 	public MessageResponse exportAndSend(Report report, MessageConfigBuilder messageConfig,
-			ProgressListener progressListener) throws IOException, ParserConfigurationException, SAXException,
+										 ProgressListener progressListener) throws IOException, ParserConfigurationException, SAXException,
 			SendMessageException, DetailedSOAPException, ReportException, AmendException;
 
 	/**
 	 * Export and send the report with the required operation type.
-	 * 
+	 *
 	 * @param report
 	 * @param opType
 	 * @throws IOException
@@ -202,7 +199,7 @@ public interface IReportService {
 
 	/**
 	 * Download a dataset using its dataset id
-	 * 
+	 *
 	 * @param datasetId
 	 * @return
 	 * @throws DetailedSOAPException
@@ -213,7 +210,7 @@ public interface IReportService {
 	/**
 	 * Read a dataset file downloaded from dcf and create a {@link Dataset} object
 	 * containing all the retrieved information
-	 * 
+	 *
 	 * @param file
 	 * @return
 	 * @throws XMLStreamException
@@ -223,7 +220,7 @@ public interface IReportService {
 
 	/**
 	 * Get all the versions of the report in the database
-	 * 
+	 *
 	 * @param senderId
 	 * @return
 	 */
@@ -231,7 +228,7 @@ public interface IReportService {
 
 	/**
 	 * Refresh the report status
-	 * 
+	 *
 	 * @param report
 	 * @return
 	 */
@@ -239,10 +236,13 @@ public interface IReportService {
 
 	/**
 	 * Display an ack
-	 * 
+	 *
 	 * @param messageId
 	 * @return
 	 */
 	public DisplayAckResult displayAck(EFSAReport report);
+
+	public TableRowList getAllReports();
+
 
 }

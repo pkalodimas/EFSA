@@ -27,19 +27,18 @@ import i18n_messages.Messages;
  */
 public class DataCollectionsListDialog extends Dialog implements IDataCollectionsDialog {
 
-	private IDcfDataCollectionsList<IDcfDataCollection> list;
+	private final IDcfDataCollectionsList<IDcfDataCollection> list;
 	private IDcfDataCollection selectedDc;
+
+	private final String buttonTextKey;
 	
-	public DataCollectionsListDialog(Shell parent, IDcfDataCollectionsList<IDcfDataCollection> list, int style) {
+	public DataCollectionsListDialog(Shell parent, IDcfDataCollectionsList<IDcfDataCollection> list, int style, String buttonTextKey) {
 		super(parent, style);
 		this.list = list;
-	}
-	
-	public DataCollectionsListDialog(Shell parent, IDcfDataCollectionsList<IDcfDataCollection> list) {
-		this(parent, list, SWT.DIALOG_TRIM | SWT.APPLICATION_MODAL);
+		this.buttonTextKey = buttonTextKey;
 	}
 
-	protected void createContents(Shell shell) {
+	protected void createContents(Shell shell, String buttonTextKey) {
 		
 		TableViewer table = new TableViewer(shell, SWT.BORDER | SWT.SINGLE
 				| SWT.V_SCROLL | SWT.H_SCROLL | SWT.FULL_SELECTION | SWT.NONE);
@@ -73,7 +72,7 @@ public class DataCollectionsListDialog extends Dialog implements IDataCollection
 		table.setInput(list);
 		
 		Button button = new Button(shell, SWT.PUSH);
-		button.setText(Messages.get("dc.dialog.button"));
+		button.setText(Messages.get(buttonTextKey));
 		button.setEnabled(false);
 		button.addSelectionListener(new SelectionAdapter() {
 			@Override
@@ -106,16 +105,16 @@ public class DataCollectionsListDialog extends Dialog implements IDataCollection
 		shell.close();
 	}
 
-	public IDcfDataCollection open() {
+	public IDcfDataCollection open(String titleKey) {
 
 		Shell shell = new Shell(getParent(), SWT.SHELL_TRIM | SWT.APPLICATION_MODAL);
 		shell.setLayout(new GridLayout(1, false));
 		shell.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, true, false));
-		
-		shell.setText(Messages.get("dc.dialog.title"));
+
+		shell.setText(Messages.get(titleKey));
 		shell.setImage(getParent().getImage());
 
-		createContents(shell);
+		createContents(shell, buttonTextKey);
 		
 		shell.open();
 

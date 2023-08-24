@@ -18,6 +18,7 @@ public class CustomStrings {
 	public static final String RESULT_SHEET = "AnalyticalResults";
 	public static final String CASE_INFO_SHEET = "CasesInformation";
 	public static final String SUMMARIZED_INFO_SHEET = "SummarizedInformation";
+	public static final String AMEND_REPORTS_SHEET = "AmendReports";
 	public static final String PREFERENCES_SHEET = "Preferences";
 	public static final String SETTINGS_SHEET = "Settings";
 	public static final String REPORT_SHEET = "Report";
@@ -28,6 +29,8 @@ public class CustomStrings {
 	public static final String SETTINGS_ORG_CODE = "orgCode";
 	
 	public static final String REPORT_COUNTRY = "country";
+	public static final String REPORT_IS_AGGREGATED = "isAggregated";
+	public static final String REPORT_AGGREGATOR_ID = "aggregatorId";
 	public static final String REPORT_MONTH = "reportMonth";
 	public static final String REPORT_YEAR = "reportYear";
 	public static final String CWD_EXTENDED_CONTEXT = "cwdExtCont";
@@ -50,6 +53,8 @@ public class CustomStrings {
 	public static final String PREFERENCES_DISCRIMINATORY_BSE_OS = "defDiscriminatoryBSEOS";
 
 	public static final String SUMMARIZED_INFO_TYPE = "type";
+
+	public static final String SUMMARIZED_INFO_SAMPLING_MONTH = "sampM";
 	public static final String SOURCE_COL = "source";
 	public static final String PART_COL = "part";
 	public static final String PROD_COL = "prod";

@@ -1,0 +1,60 @@
+2023-08-24 14:26:47,936 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-24 14:26:47,937 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-24 14:26:47,937 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-24 14:26:47,938 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-24 14:26:47,938 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2015
+2023-08-24 14:26:47,938 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2015
+2023-08-24 14:26:47,940 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-24 14:26:47,940 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-24 14:26:47,940 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2016
+2023-08-24 14:26:47,940 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2016
+2023-08-24 14:26:47,940 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2016
+2023-08-24 14:26:47,941 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2016
+2023-08-24 14:26:47,941 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2005
+2023-08-24 14:26:47,941 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-24 14:26:47,942 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-24 14:26:47,942 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-24 14:26:47,942 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-24 14:26:47,942 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2013
+2023-08-24 14:26:47,942 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-24 14:26:47,943 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-24 14:26:47,943 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2012
+2023-08-24 14:26:47,943 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2012
+2023-08-24 14:26:47,943 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2016
+2023-08-24 14:26:47,944 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2010
+2023-08-24 14:26:47,944 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2010
+2023-08-24 14:26:47,944 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2096
+2023-08-24 14:26:47,944 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2096
+2023-08-24 14:26:47,945 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-24 14:26:47,945 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2015
+2023-08-24 14:26:47,946 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2011
+2023-08-24 14:26:47,946 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2004
+2023-08-24 14:26:47,946 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-24 14:26:47,946 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2000
+2023-08-24 14:26:47,946 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-24 14:27:06,151 WARN t.TableRow [Thread-4] Cannot pick the value 2010 from list reportYearsList. Either the list or the element do not exist. Empty element returned instead.
+2023-08-24 14:27:09,231 ERROR t.Database [main] Error in shutting down the database
+java.sql.SQLNonTransientConnectionException: Database 'database\' shutdown.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_382]
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.AutoloadedDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[?:1.8.0_382]
+	at java.sql.DriverManager.getConnection(DriverManager.java:270) ~[?:1.8.0_382]
+	at table_database.Database.shutdown(Database.java:207) [classes/:?]
+	at tse_main.StartUI.shutdown(StartUI.java:156) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:198) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: Database 'database\' shutdown.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.shutdownDatabaseException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 13 more

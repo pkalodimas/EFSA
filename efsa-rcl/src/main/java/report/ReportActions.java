@@ -1,26 +1,24 @@
 package report;
 
-import java.io.IOException;
-
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.soap.SOAPException;
-
+import dataset.Dataset;
+import i18n_messages.Messages;
+import message.MessageConfigBuilder;
+import message.SendMessageException;
+import message_creator.OperationType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Shell;
 import org.xml.sax.SAXException;
-
-import dataset.Dataset;
-import i18n_messages.Messages;
-import message.MessageConfigBuilder;
-import message.SendMessageException;
-import message_creator.OperationType;
 import progress_bar.FormProgressBar;
 import progress_bar.ProgressListener;
 import providers.IReportService;
 import soap.DetailedSOAPException;
+
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.soap.SOAPException;
+import java.io.IOException;
 
 /**
  * Bridge between the user interface and the programmatic part. It follows the
@@ -260,6 +258,8 @@ public abstract class ReportActions {
 	 * @return
 	 */
 	public abstract boolean askConfirmation(ReportAction action);
+
+	public abstract boolean askBulkAmendmentConfirmation();
 
 	/**
 	 * Ask confirmation for replacing an existing dataset with a send operation

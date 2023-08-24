@@ -1,13 +1,5 @@
 package tse_summarized_information;
 
-import java.io.IOException;
-
-import javax.xml.parsers.ParserConfigurationException;
-
-import org.eclipse.swt.SWT;
-import org.eclipse.swt.widgets.Shell;
-import org.xml.sax.SAXException;
-
 import amend_manager.AmendException;
 import app_config.AppPaths;
 import app_config.PropertiesReader;
@@ -16,6 +8,9 @@ import global_utils.Message;
 import global_utils.Warnings;
 import i18n_messages.TSEMessages;
 import message.SendMessageException;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Shell;
+import org.xml.sax.SAXException;
 import providers.TseReportService;
 import report.NotOverwritableDcfDatasetException;
 import report.ReportActions;
@@ -24,6 +19,9 @@ import report.ReportSendOperation;
 import soap.DetailedSOAPException;
 import tse_config.TSEWarnings;
 import tse_report.TseReport;
+
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.IOException;
 
 public class TseReportActions extends ReportActions {
 
@@ -43,10 +41,8 @@ public class TseReportActions extends ReportActions {
 	 * Amend a report
 	 */
 	public TseReport amend() {
-		
-		boolean confirm = askConfirmation(ReportAction.AMEND);
-		
-		if (!confirm)
+
+		if (!askConfirmation(ReportAction.AMEND) || !askBulkAmendmentConfirmation())
 			return null;
 		
 		shell.setCursor(shell.getDisplay().getSystemCursor(SWT.CURSOR_WAIT));
@@ -57,7 +53,7 @@ public class TseReportActions extends ReportActions {
 		
 		shell.setCursor(shell.getDisplay().getSystemCursor(SWT.CURSOR_ARROW));
 		
-		// we can returned the modified object
+		// we can return the modified object
 		return amendedReport;
 	}
 
@@ -359,5 +355,16 @@ public class TseReportActions extends ReportActions {
 				SWT.ICON_WARNING | SWT.YES | SWT.NO);
 		
 		return val == SWT.YES;
+	}
+
+	@Override
+	public boolean askBulkAmendmentConfirmation() {
+		String title = TSEMessages.get("info.title");
+		String message = TSEMessages.get("bulk.amend.confirm");
+		int val = Warnings.warnUser(shell, title,
+				message,
+				SWT.ICON_INFORMATION | SWT.OK);
+
+		return val == SWT.OK;
 	}
 }

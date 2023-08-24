@@ -2,8 +2,13 @@ package providers;
 
 import java.io.IOException;
 import java.text.ParseException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
+import java.util.stream.Collectors;
 
+import app_config.AppPaths;
+import org.apache.commons.codec.binary.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,8 +20,10 @@ import formula.FormulaDecomposer;
 import formula.FormulaException;
 import formula.FormulaSolver;
 import message.MessageConfigBuilder;
+import report.EFSAReport;
 import report.Report;
 import report_downloader.TSEFormulaDecomposer;
+import soap.DetailedSOAPException;
 import soap_interface.IGetAck;
 import soap_interface.IGetDataset;
 import soap_interface.IGetDatasetsList;
@@ -26,6 +33,7 @@ import table_skeleton.*;
 import tse_analytical_result.AnalyticalResult;
 import tse_case_report.CaseReport;
 import tse_config.CustomStrings;
+import tse_main.TseSummarizedInfoImporter;
 import tse_report.TseReport;
 import tse_summarized_information.SummarizedInfo;
 import tse_validator.CaseReportValidator;
@@ -273,6 +281,81 @@ public class TseReportService extends ReportService {
 	}
 
 	/**
+	 * Create a report containing an aggregation of modified records.
+	 *
+	 * @param reportList list of the amended reports
+	 * @return the newly created report
+	 */
+	public TseReport createAggregatedReport(ArrayList<TseReport> reportList) {
+		String aggrSenderId = String.format("AGGR_%s_%S", LocalDate.now().format(DateTimeFormatter.ofPattern("yyyyMMdd")),reportList.get(0).getYear());
+
+		TseReport aggrRepV1 = this.createAggregatedReport(
+			aggrSenderId,
+			"00",
+			reportList.stream().map(r ->(TseReport) r.getPreviousVersion(daoService)).collect(Collectors.toList())
+		);
+
+		TseReport aggrRepV2 = this.createAggregatedReport(
+				aggrSenderId,
+				"01",
+				reportList
+		);
+		reportList.forEach(r->{
+			r.setAggregatorId(aggrRepV2.getId());
+
+		});
+//		TseReport aggrRepV2 = new TseReport();
+//		try {
+//			Relation.injectGlobalParent(aggrRepV2, CustomStrings.PREFERENCES_SHEET);
+//		} catch (Exception e) {
+//			LOGGER.error("Cannot inject global parent=" + CustomStrings.PREFERENCES_SHEET, e);
+//			e.printStackTrace();
+//		}
+//		aggrRepV2.setDcCode(aggrRepV1.getDcCode());
+//		aggrRepV2.setStatus(RCLDatasetStatus.LOCALLY_VALIDATED);
+//		aggrRepV2.setIsAggregated(true);
+//		aggrRepV2.setYear(aggrRepV1.getYear());
+//		aggrRepV2.setVersion("01");
+//		aggrRepV2.setSenderId(aggrRepV1.getSenderId());
+//
+//		int aggregatorId = daoService.add(aggrRepV2);
+//
+//		reportList.forEach(r -> {
+//			r.setAggregatorId(String.valueOf(aggregatorId));
+//			daoService.update(r);
+//			copyReportChildren(r, aggrRepV2, false);
+//		});
+//
+//		daoService.update(aggrRepV2);
+
+		return aggrRepV2;
+	}
+
+	private TseReport createAggregatedReport(String senderId, String version, List<TseReport> reports){
+		Report templateReport = reports.get(0);
+		TseReport aggrRep = new TseReport();
+
+		try {
+			Relation.injectGlobalParent(aggrRep, CustomStrings.PREFERENCES_SHEET);
+		} catch (Exception e) {
+			LOGGER.error("Cannot inject global parent=" + CustomStrings.PREFERENCES_SHEET, e);
+			e.printStackTrace();
+		}
+		aggrRep.setDcCode(templateReport.getDcCode());
+		aggrRep.setStatus(RCLDatasetStatus.LOCALLY_VALIDATED);
+		aggrRep.setIsAggregated(true);
+		aggrRep.setYear(templateReport.getYear());
+		aggrRep.setVersion(version);
+		aggrRep.setSenderId(senderId);
+
+		daoService.add(aggrRep);
+
+		reports.forEach(r -> copyReportChildren(r, aggrRep, false));
+
+		daoService.update(aggrRep);
+	}
+
+	/**
 	 * Copy a report and then generate the required fields of the new report
 	 *
 	 * @param source the report being copied
@@ -442,7 +525,7 @@ public class TseReportService extends ReportService {
 	public TseReport reportFromDataset(Dataset dataset) {
 		TseReport report = new TseReport();
 		report.setId(dataset.getId());
-
+		report.setDcCode(dataset.getOperation().getDcCode());
 		String senderDatasetId = dataset.getOperation().getSenderDatasetId();
 		String[] split = Dataset.splitSenderId(senderDatasetId);
 		String senderId = senderDatasetId;
@@ -617,5 +700,30 @@ public class TseReportService extends ReportService {
 		PredefinedResultService r = new PredefinedResultService(daoService, formulaService1);
 		TableRowList results = r.createDefaultResults(report, summInfo, caseInfo);
 		return results;
+	}
+
+	public boolean dcHasAmendedOrAggregatedReports(Map<String, List<TableRow>> groupedReports, String dcCode) {
+		return dcHasAggregatedReport(groupedReports, dcCode) || dcHasAmendedReport(groupedReports, dcCode);
+	}
+
+	public boolean dcHasAggregatedReport(Map<String, List<TableRow>> groupedReports, String dcCode) {
+		return groupedReports.getOrDefault(dcCode, new ArrayList<>()).stream()
+				.filter(r -> Boolean.TRUE.toString().equalsIgnoreCase(r.getCode(AppPaths.REPORT_IS_AGGREGATED)))
+				.filter(r -> !RCLDatasetStatus.fromString(r.getCode(AppPaths.REPORT_STATUS)).equals(RCLDatasetStatus.ACCEPTED_DWH))
+				.filter(r -> !RCLDatasetStatus.fromString(r.getCode(AppPaths.REPORT_STATUS)).equals(RCLDatasetStatus.REJECTED))
+				.anyMatch(r -> !RCLDatasetStatus.fromString(r.getCode(AppPaths.REPORT_STATUS)).equals(RCLDatasetStatus.REJECTED_EDITABLE));
+	}
+
+	public boolean dcHasAmendedReport(Map<String, List<TableRow>> groupedReports, String dcCode) {
+		return groupedReports.getOrDefault(dcCode, new ArrayList<>()).stream()
+				.filter(r -> RCLDatasetStatus.fromString(r.getCode(AppPaths.REPORT_STATUS)).equals(RCLDatasetStatus.LOCALLY_VALIDATED))
+				.anyMatch(r -> Integer.parseInt(r.getCode(AppPaths.REPORT_VERSION)) > 0);
+	}
+
+	public Map<String, List<TableRow>> groupReportsByDataCollection() {
+		TableRowList allReports = getAllReports();
+
+		return allReports.stream()
+				.collect(Collectors.groupingBy(r -> r.getCode(AppPaths.REPORT_DC_CODE)));
 	}
 }

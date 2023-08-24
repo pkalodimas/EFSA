@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.soap.SOAPException;
@@ -18,6 +20,7 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
+import data_collection.DataCollectionsListDialog;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.eclipse.swt.SWT;
@@ -85,6 +88,7 @@ public class ReportService implements IReportService {
 
 	private IGetAck getAck;
 	private IGetDatasetsList<IDataset> getDatasetsList;
+
 	protected ITableDaoService daoService;
 	private ISendMessage sendMessage;
 	private IGetDataset getDataset;
@@ -267,25 +271,25 @@ public class ReportService implements IReportService {
 		if (dcfDataset != null) {
 
 			switch (dcfDataset.getRCLStatus()) {
-			case PROCESSING: // cannot send with these status
-			case ACCEPTED_DWH:
-			case OTHER:
-			case SUBMITTED:
-				return;
+				case PROCESSING: // cannot send with these status
+				case ACCEPTED_DWH:
+				case OTHER:
+				case SUBMITTED:
+					return;
 
-			case VALID: // dataset id needs to be copied to replace
-			case VALID_WITH_WARNING:
-			case REJECTED:
-			case REJECTED_EDITABLE:
+				case VALID: // dataset id needs to be copied to replace
+				case VALID_WITH_WARNING:
+				case REJECTED:
+				case REJECTED_EDITABLE:
 
-				LOGGER.info("Overwriting dataset id: " + report.getId() + " with " + dcfDataset.getId());
+					LOGGER.info("Overwriting dataset id: " + report.getId() + " with " + dcfDataset.getId());
 
-				report.setId(dcfDataset.getId());
-				daoService.update(report);
-				break;
+					report.setId(dcfDataset.getId());
+					daoService.update(report);
+					break;
 
-			default: // for deleted no action required
-				break;
+				default: // for deleted no action required
+					break;
 			}
 		}
 
@@ -625,19 +629,19 @@ public class ReportService implements IReportService {
 		LOGGER.debug("Found dataset in DCF in status " + status);
 
 		switch (status) {
-		case REJECTED_EDITABLE:
-		case VALID:
-		case VALID_WITH_WARNING:
-		case REJECTED:
-			opType = OperationType.REPLACE;
-			break;
-		case DELETED:
-			opType = OperationType.INSERT;
-			break;
-		default:
-			opType = OperationType.NOT_SUPPORTED;
-			// throw new ReportException("No send operation for status "
-			// + status + " is supported");
+			case REJECTED_EDITABLE:
+			case VALID:
+			case VALID_WITH_WARNING:
+			case REJECTED:
+				opType = OperationType.REPLACE;
+				break;
+			case DELETED:
+				opType = OperationType.INSERT;
+				break;
+			default:
+				opType = OperationType.NOT_SUPPORTED;
+				// throw new ReportException("No send operation for status "
+				// + status + " is supported");
 		}
 
 		ReportSendOperation operation = new ReportSendOperation(dcfDataset, opType);
@@ -1064,4 +1068,8 @@ public class ReportService implements IReportService {
 
 	}
 
+	@Override
+	public TableRowList getAllReports() {
+		return daoService.getAll(TableSchemaList.getByName(AppPaths.REPORT_SHEET));
+	}
 }

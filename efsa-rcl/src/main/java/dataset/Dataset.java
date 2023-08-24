@@ -34,6 +34,7 @@ public class Dataset extends DcfDataset implements IDataset, Checkable {
 	private String id;
 	private String senderId;
 	private RCLDatasetStatus status;
+	private String collectionCode;
 	
 	public Dataset() {
 		this.rows = new ArrayList<>();
@@ -53,6 +54,8 @@ public class Dataset extends DcfDataset implements IDataset, Checkable {
 		
 		return split[0];
 	}
+
+
 	
 	/**
 	 * Get the version of the dataset if possible.

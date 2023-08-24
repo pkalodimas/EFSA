@@ -1,16 +1,8 @@
 package table_database;
 
-import java.io.IOException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.Iterator;
+import app_config.AppPaths;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import app_config.AppPaths;
 import table_relations.Relation;
 import table_skeleton.TableCell;
 import table_skeleton.TableColumn;
@@ -19,6 +11,10 @@ import table_skeleton.TableRowList;
 import xlsx_reader.TableSchema;
 import xml_catalog_reader.XmlContents;
 import xml_catalog_reader.XmlLoader;
+
+import java.io.IOException;
+import java.sql.*;
+import java.util.Iterator;
 
 /**
  * Dao which communicates with the database and all the tables that follow a

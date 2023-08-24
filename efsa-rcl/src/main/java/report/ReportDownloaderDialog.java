@@ -48,28 +48,6 @@ public abstract class ReportDownloaderDialog {
 	}
 	
 	/**
-	 * Get only the available data collections for which the user is registered
-	 * @return
-	 * @throws DetailedSOAPException
-	 */
-	private IDcfDataCollectionsList<IDcfDataCollection> getAvailableDcList() throws DetailedSOAPException {
-		IDcfDataCollectionsList<IDcfDataCollection> output = new DcfDataCollectionsList();
-		GetDataCollectionsList<IDcfDataCollection> req = new GetDataCollectionsList<>();
-		IDcfDataCollectionsList<IDcfDataCollection> filteredOutput = new DcfDataCollectionsList();
-		Collection<String> validDcs = GetAvailableDataCollections.getCodes();
-
-		IDcfList<IDcfDataCollection> list = req.getList(Config.getEnvironment(), User.getInstance(), output);
-		for(IDcfDataCollection dc : list) {
-			// remove not valid data collection
-			if (validDcs.contains(dc.getCode())) {
-				filteredOutput.add(dc);
-			}
-		}
-
-		return filteredOutput;
-	}
-	
-	/**
 	 * Download a dataset from the dcf
 	 * @throws DetailedSOAPException
 	 */
@@ -79,7 +57,7 @@ public abstract class ReportDownloaderDialog {
 		// select the data collection
 		IDcfDataCollectionsList<IDcfDataCollection> list;
 		try {
-			list = getAvailableDcList();
+			list = GetAvailableDataCollections.getAvailableDcList();
 		} catch(DetailedSOAPException e) {
 			shell.setCursor(shell.getDisplay().getSystemCursor(SWT.CURSOR_ARROW));
 			throw e;
@@ -92,8 +70,8 @@ public abstract class ReportDownloaderDialog {
 			return;
 		}
 		
-		IDataCollectionsDialog dcDialog = getDataCollectionsDialog(shell, list);
-		IDcfDataCollection selectedDc = dcDialog.open();
+		IDataCollectionsDialog dcDialog = getDataCollectionsDialog(shell, list, "dc.dialog.button.open.datasets");
+		IDcfDataCollection selectedDc = dcDialog.open("dc.dialog.title");
 		if (selectedDc == null)
 			return;
 		
@@ -229,7 +207,7 @@ public abstract class ReportDownloaderDialog {
 	 * @return
 	 */
 	public abstract IDataCollectionsDialog getDataCollectionsDialog(Shell shell, 
-			IDcfDataCollectionsList<IDcfDataCollection> list);
+			IDcfDataCollectionsList<IDcfDataCollection> list, String buttonTextKey);
 	
 	/**
 	 * Get the dialog which should be shown to select the dataset to download.

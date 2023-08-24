@@ -1,0 +1,1097 @@
+2023-08-24 11:39:28,628 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:28,631 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:29,009 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:29,010 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:29,031 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:29,054 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:39:29,059 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:39:29,081 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:39:29,086 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:39:29,145 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:39:29,150 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:39:29,154 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:39:29,159 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:39:29,253 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:29,253 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:29,351 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:29,351 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:29,361 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:29,371 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:39:29,373 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:39:29,378 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:39:29,380 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:39:29,386 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:39:29,388 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:39:29,392 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:39:29,395 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:39:29,474 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:29,474 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:29,557 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:29,558 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:29,566 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:29,578 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:39:29,580 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:39:29,585 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:39:29,587 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:39:29,591 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:39:29,594 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:39:29,599 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:39:29,602 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:39:29,691 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:29,691 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:29,767 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:29,767 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:29,776 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:39:29,794 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:39:29,796 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:39:29,801 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:39:29,803 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:39:29,808 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:39:29,810 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:39:29,813 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:39:29,815 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:39:38,586 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 9
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:39:38,642 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 9
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:39:38,680 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 7
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:39:38,715 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 7
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:39:38,746 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:39:38,776 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:39:38,805 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:39:38,846 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:39:38,897 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:39:38,925 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:39:38,955 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:39:38,980 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:39:39,007 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:39:39,034 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:39:39,061 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:39:39,089 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:06,296 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 9
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:06,328 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 9
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:06,363 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 7
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:06,398 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 7
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:06,426 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:06,453 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:06,479 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:06,516 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:06,541 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:06,568 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:06,596 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:06,624 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:06,650 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:06,676 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:06,704 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:06,729 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:51,737 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 9
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:51,768 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 9
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:51,800 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 7
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:51,835 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 7
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:51,861 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:51,892 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:51,916 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:51,940 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:51,977 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:52,001 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:52,027 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:52,053 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:52,079 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:52,106 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:52,131 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:40:52,155 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:41:04,318 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:41:04,318 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:41:04,474 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:41:04,474 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:41:04,482 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:41:04,491 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:41:04,492 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:41:04,494 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:41:04,496 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:41:04,498 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:41:04,500 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:41:04,503 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:41:04,505 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:41:04,568 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:41:04,569 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:41:04,640 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:41:04,640 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:41:04,647 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:41:04,655 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:41:04,657 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:41:04,659 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:41:04,660 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:41:04,664 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:41:04,665 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:41:04,667 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:41:04,668 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:41:38,662 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 1 Found Birth=2008 10
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:41:38,694 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 1 Found Birth=2008 4
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:41:38,719 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:41:38,743 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:41:38,768 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:41:38,792 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:41:38,825 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:41:38,850 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-24 11:45:29,463 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:29,463 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:29,647 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:29,647 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:29,664 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:29,676 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:45:29,678 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:45:29,687 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:45:29,688 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:45:29,693 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:45:29,694 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:45:29,700 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:45:29,702 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:45:29,829 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:29,829 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:29,911 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:29,911 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:29,925 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:29,942 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:45:29,944 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:45:29,946 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:45:29,948 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:45:29,951 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:45:29,953 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:45:29,959 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:45:29,961 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:45:30,093 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:30,093 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:30,198 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:30,198 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:30,208 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:30,220 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:45:30,222 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:45:30,227 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:45:30,228 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:45:30,234 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:45:30,238 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:45:30,245 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:45:30,246 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:45:30,327 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:30,327 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:30,396 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:30,396 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:30,404 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:30,413 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:45:30,415 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:45:30,418 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:45:30,419 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:45:30,422 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:45:30,425 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:45:30,427 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:45:30,428 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:45:35,077 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:35,078 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:35,244 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:35,244 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:35,252 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:35,261 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:45:35,263 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:45:35,266 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:45:35,268 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:45:35,270 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:45:35,271 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:45:35,273 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:45:35,274 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:45:35,414 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:35,414 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:35,505 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:35,505 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:35,515 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-24 11:45:35,524 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:45:35,525 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:45:35,527 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:45:35,528 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:45:35,531 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:45:35,533 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:45:35,536 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:45:35,538 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:46:02,300 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:46:02,301 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:46:02,304 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:46:02,306 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:46:02,309 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:46:02,310 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:46:02,315 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:46:02,316 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:46:02,453 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:46:02,454 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:46:02,456 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:46:02,458 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:46:02,460 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:46:02,461 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:46:02,465 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:46:02,466 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:46:02,660 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:46:02,662 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:46:02,663 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:46:02,664 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:46:02,666 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:46:02,667 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:46:02,669 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:46:02,670 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:46:02,831 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:46:02,833 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:46:02,841 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:46:02,842 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:46:02,845 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:46:02,846 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:46:02,854 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:46:02,855 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:46:03,341 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:46:03,342 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:46:03,344 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:46:03,345 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:46:03,347 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:46:03,349 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:46:03,350 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:46:03,351 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:46:03,501 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-24 11:46:03,503 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-24 11:46:03,507 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:46:03,510 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:46:03,513 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:46:03,518 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:46:03,524 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-24 11:46:03,526 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-24 11:46:19,771 ERROR t.Database [main] Error in shutting down the database
+java.sql.SQLNonTransientConnectionException: Database 'database\' shutdown.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_382]
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.AutoloadedDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[?:1.8.0_382]
+	at java.sql.DriverManager.getConnection(DriverManager.java:270) ~[?:1.8.0_382]
+	at table_database.Database.shutdown(Database.java:207) [classes/:?]
+	at tse_main.StartUI.shutdown(StartUI.java:156) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:198) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: Database 'database\' shutdown.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.shutdownDatabaseException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 13 more

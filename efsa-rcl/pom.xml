@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>openefsa</groupId>
 	<version>1.2.2</version>
@@ -13,6 +13,42 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.eclipse.platform</groupId>
+			<artifactId>swt.win64</artifactId>
+			<version>3.655</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.platform</groupId>
+			<artifactId>jface</artifactId>
+			<version>3.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>openefsa</groupId>
+			<artifactId>dcf-webservice-framework</artifactId>
+			<version>1.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>openefsa</groupId>
+			<artifactId>progress-bar</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>openefsa</groupId>
+			<artifactId>email-generator</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>openefsa</groupId>
+			<artifactId>version-manager</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>openefsa</groupId>
+			<artifactId>exceptions-manager</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
@@ -74,6 +110,7 @@
 			<scope>test</scope>
 			<version>5.5.2</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.apache.xmlbeans</groupId>
 			<artifactId>xmlbeans</artifactId>

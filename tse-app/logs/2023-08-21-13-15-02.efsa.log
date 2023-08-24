@@ -1,0 +1,1731 @@
+2023-08-21 13:24:01,140 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-21 13:24:01,140 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-21 13:24:01,141 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-21 13:24:01,141 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-21 13:24:01,141 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2015
+2023-08-21 13:24:01,141 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2015
+2023-08-21 13:24:01,147 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-21 13:24:01,147 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-21 13:24:01,147 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2016
+2023-08-21 13:24:01,148 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2016
+2023-08-21 13:24:01,148 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2016
+2023-08-21 13:24:01,148 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2016
+2023-08-21 13:24:01,148 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2005
+2023-08-21 13:24:01,148 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-21 13:24:01,149 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-21 13:24:01,149 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-21 13:24:01,149 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-21 13:24:01,149 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2013
+2023-08-21 13:24:01,149 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-21 13:24:01,150 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-21 13:24:01,150 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2012
+2023-08-21 13:24:01,150 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2012
+2023-08-21 13:24:01,150 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2016
+2023-08-21 13:24:01,151 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2010
+2023-08-21 13:24:01,151 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2010
+2023-08-21 13:24:01,151 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2096
+2023-08-21 13:24:01,151 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2096
+2023-08-21 13:24:01,151 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-21 13:24:01,151 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2015
+2023-08-21 13:24:01,151 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2011
+2023-08-21 13:24:01,152 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2004
+2023-08-21 13:24:01,152 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-21 13:24:01,152 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2000
+2023-08-21 13:24:01,152 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-21 13:24:20,074 WARN t.TableRow [Thread-7] Cannot pick the value 2017 from list reportYearsList. Either the list or the element do not exist. Empty element returned instead.
+2023-08-21 13:24:20,390 WARN f.RelationFormula [Thread-7] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=9;value=birthCountry=FI$birthYear=2008$birthMonth=9
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0012;value=0012
+Column: anMethRefId code=AT12A.F638A;value=AT12A.F638A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004896-PAR;value=RF-00004896-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=610;value=610
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0012;value=0012
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT12A;value=AT12A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000024;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000024
+Column: anMethCode code=F638A;value=F638A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004896-PAR;value=RF-00004896-PAR
+Column: sampUnitIds code=animalId=3429 $PSUId=09724;value=animalId=3429 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A;value=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:20,431 WARN f.RelationFormula [Thread-7] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=9;value=birthCountry=FI$birthYear=2008$birthMonth=9
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0012;value=0012
+Column: anMethRefId code=AT08A.F626A;value=AT08A.F626A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=610;value=610
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0012;value=0012
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT08A;value=AT08A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000023;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000023
+Column: anMethCode code=F626A;value=F626A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: sampUnitIds code=animalId=3429 $PSUId=09724;value=animalId=3429 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A;value=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:20,447 WARN f.RelationFormula [Thread-7] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=9;value=birthCountry=FI$birthYear=2008$birthMonth=9
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0012;value=0012
+Column: anMethRefId code=AT06A.F647A;value=AT06A.F647A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=610;value=610
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0012;value=0012
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT06A;value=AT06A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000022;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000022
+Column: anMethCode code=F647A;value=F647A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: sampUnitIds code=animalId=3429 $PSUId=09724;value=animalId=3429 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A;value=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:20,467 WARN f.RelationFormula [Thread-7] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=9;value=birthCountry=FI$birthYear=2008$birthMonth=9
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0011;value=0011
+Column: anMethRefId code=AT12A.F638A;value=AT12A.F638A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004896-PAR;value=RF-00004896-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=610;value=610
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0011;value=0011
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT12A;value=AT12A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000021;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000021
+Column: anMethCode code=F638A;value=F638A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004896-PAR;value=RF-00004896-PAR
+Column: sampUnitIds code=animalId=3429 $PSUId=09724;value=animalId=3429 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A;value=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:20,480 WARN f.RelationFormula [Thread-7] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=9;value=birthCountry=FI$birthYear=2008$birthMonth=9
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0011;value=0011
+Column: anMethRefId code=AT08A.F626A;value=AT08A.F626A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=610;value=610
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0011;value=0011
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT08A;value=AT08A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000020;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000020
+Column: anMethCode code=F626A;value=F626A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: sampUnitIds code=animalId=3429 $PSUId=09724;value=animalId=3429 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A;value=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:20,519 WARN f.RelationFormula [Thread-7] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=9;value=birthCountry=FI$birthYear=2008$birthMonth=9
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0011;value=0011
+Column: anMethRefId code=AT06A.F647A;value=AT06A.F647A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=610;value=610
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0011;value=0011
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT06A;value=AT06A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000019;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000019
+Column: anMethCode code=F647A;value=F647A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: sampUnitIds code=animalId=3429 $PSUId=09724;value=animalId=3429 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A;value=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:20,540 WARN f.RelationFormula [Thread-7] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=7;value=birthCountry=FI$birthYear=2008$birthMonth=7
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0014;value=0014
+Column: anMethRefId code=AT12A.F638A;value=AT12A.F638A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004896-PAR;value=RF-00004896-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=610;value=610
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0014;value=0014
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT12A;value=AT12A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000018;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000018
+Column: anMethCode code=F638A;value=F638A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004896-PAR;value=RF-00004896-PAR
+Column: sampUnitIds code=animalId=IT896424 $PSUId=09724;value=animalId=IT896424 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A;value=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:20,550 WARN f.RelationFormula [Thread-7] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=7;value=birthCountry=FI$birthYear=2008$birthMonth=7
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0014;value=0014
+Column: anMethRefId code=AT08A.F626A;value=AT08A.F626A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=610;value=610
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0014;value=0014
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT08A;value=AT08A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000017;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000017
+Column: anMethCode code=F626A;value=F626A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: sampUnitIds code=animalId=IT896424 $PSUId=09724;value=animalId=IT896424 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A;value=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:20,560 WARN f.RelationFormula [Thread-7] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=7;value=birthCountry=FI$birthYear=2008$birthMonth=7
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0014;value=0014
+Column: anMethRefId code=AT06A.F647A;value=AT06A.F647A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=610;value=610
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0014;value=0014
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT06A;value=AT06A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000016;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000016
+Column: anMethCode code=F647A;value=F647A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: sampUnitIds code=animalId=IT896424 $PSUId=09724;value=animalId=IT896424 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A;value=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:20,573 WARN f.RelationFormula [Thread-7] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=7;value=birthCountry=FI$birthYear=2008$birthMonth=7
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0013;value=0013
+Column: anMethRefId code=AT12A.F638A;value=AT12A.F638A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004896-PAR;value=RF-00004896-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=610;value=610
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0013;value=0013
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT12A;value=AT12A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000015;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000015
+Column: anMethCode code=F638A;value=F638A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004896-PAR;value=RF-00004896-PAR
+Column: sampUnitIds code=animalId=IT896424 $PSUId=09724;value=animalId=IT896424 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A;value=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:20,584 WARN f.RelationFormula [Thread-7] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=7;value=birthCountry=FI$birthYear=2008$birthMonth=7
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0013;value=0013
+Column: anMethRefId code=AT08A.F626A;value=AT08A.F626A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=610;value=610
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0013;value=0013
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT08A;value=AT08A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000014;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000014
+Column: anMethCode code=F626A;value=F626A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: sampUnitIds code=animalId=IT896424 $PSUId=09724;value=animalId=IT896424 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A;value=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:20,593 WARN f.RelationFormula [Thread-7] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=7;value=birthCountry=FI$birthYear=2008$birthMonth=7
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0013;value=0013
+Column: anMethRefId code=AT06A.F647A;value=AT06A.F647A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=610;value=610
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0013;value=0013
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT06A;value=AT06A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000013;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000013
+Column: anMethCode code=F647A;value=F647A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: sampUnitIds code=animalId=IT896424 $PSUId=09724;value=animalId=IT896424 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A;value=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:36,286 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-21 13:24:36,287 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-21 13:24:36,287 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-21 13:24:36,287 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-21 13:24:36,287 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2015
+2023-08-21 13:24:36,287 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2015
+2023-08-21 13:24:36,288 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-21 13:24:36,288 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-21 13:24:36,288 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2016
+2023-08-21 13:24:36,288 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2016
+2023-08-21 13:24:36,288 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2016
+2023-08-21 13:24:36,288 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2016
+2023-08-21 13:24:36,288 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2005
+2023-08-21 13:24:36,289 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-21 13:24:36,289 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-21 13:24:36,289 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-21 13:24:36,289 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-21 13:24:36,289 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2013
+2023-08-21 13:24:36,289 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-21 13:24:36,290 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-21 13:24:36,290 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2012
+2023-08-21 13:24:36,290 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2012
+2023-08-21 13:24:36,290 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2016
+2023-08-21 13:24:36,290 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2010
+2023-08-21 13:24:36,290 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2010
+2023-08-21 13:24:36,291 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2096
+2023-08-21 13:24:36,291 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2096
+2023-08-21 13:24:36,291 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2017
+2023-08-21 13:24:36,291 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2015
+2023-08-21 13:24:36,291 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2011
+2023-08-21 13:24:36,291 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2004
+2023-08-21 13:24:36,291 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-21 13:24:36,292 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2000
+2023-08-21 13:24:36,292 ERROR r.TseReportDownloader [main] No value found in reportYearsList for 2001
+2023-08-21 13:24:50,104 WARN t.TableRow [Thread-9] Cannot pick the value 2017 from list reportYearsList. Either the list or the element do not exist. Empty element returned instead.
+2023-08-21 13:24:50,253 WARN f.RelationFormula [Thread-9] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=9;value=birthCountry=FI$birthYear=2008$birthMonth=9
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0012;value=0012
+Column: anMethRefId code=AT12A.F638A;value=AT12A.F638A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004896-PAR;value=RF-00004896-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=611;value=611
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0012;value=0012
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT12A;value=AT12A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000024;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000024
+Column: anMethCode code=F638A;value=F638A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004896-PAR;value=RF-00004896-PAR
+Column: sampUnitIds code=animalId=3429 $PSUId=09724;value=animalId=3429 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A;value=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:50,263 WARN f.RelationFormula [Thread-9] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=9;value=birthCountry=FI$birthYear=2008$birthMonth=9
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0012;value=0012
+Column: anMethRefId code=AT08A.F626A;value=AT08A.F626A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=611;value=611
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0012;value=0012
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT08A;value=AT08A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000023;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000023
+Column: anMethCode code=F626A;value=F626A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: sampUnitIds code=animalId=3429 $PSUId=09724;value=animalId=3429 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A;value=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:50,272 WARN f.RelationFormula [Thread-9] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=9;value=birthCountry=FI$birthYear=2008$birthMonth=9
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0012;value=0012
+Column: anMethRefId code=AT06A.F647A;value=AT06A.F647A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=611;value=611
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0012;value=0012
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT06A;value=AT06A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000022;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000022
+Column: anMethCode code=F647A;value=F647A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: sampUnitIds code=animalId=3429 $PSUId=09724;value=animalId=3429 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A;value=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:50,285 WARN f.RelationFormula [Thread-9] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=9;value=birthCountry=FI$birthYear=2008$birthMonth=9
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0011;value=0011
+Column: anMethRefId code=AT12A.F638A;value=AT12A.F638A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004896-PAR;value=RF-00004896-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=611;value=611
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0011;value=0011
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT12A;value=AT12A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000021;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000021
+Column: anMethCode code=F638A;value=F638A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004896-PAR;value=RF-00004896-PAR
+Column: sampUnitIds code=animalId=3429 $PSUId=09724;value=animalId=3429 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A;value=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:50,297 WARN f.RelationFormula [Thread-9] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=9;value=birthCountry=FI$birthYear=2008$birthMonth=9
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0011;value=0011
+Column: anMethRefId code=AT08A.F626A;value=AT08A.F626A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=611;value=611
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0011;value=0011
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT08A;value=AT08A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000020;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000020
+Column: anMethCode code=F626A;value=F626A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: sampUnitIds code=animalId=3429 $PSUId=09724;value=animalId=3429 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A;value=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:50,307 WARN f.RelationFormula [Thread-9] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=9;value=birthCountry=FI$birthYear=2008$birthMonth=9
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0011;value=0011
+Column: anMethRefId code=AT06A.F647A;value=AT06A.F647A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=611;value=611
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0011;value=0011
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT06A;value=AT06A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000019;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000019
+Column: anMethCode code=F647A;value=F647A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: sampUnitIds code=animalId=3429 $PSUId=09724;value=animalId=3429 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A;value=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:50,322 WARN f.RelationFormula [Thread-9] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=7;value=birthCountry=FI$birthYear=2008$birthMonth=7
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0014;value=0014
+Column: anMethRefId code=AT12A.F638A;value=AT12A.F638A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004896-PAR;value=RF-00004896-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=611;value=611
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0014;value=0014
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT12A;value=AT12A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000018;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000018
+Column: anMethCode code=F638A;value=F638A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004896-PAR;value=RF-00004896-PAR
+Column: sampUnitIds code=animalId=IT896424 $PSUId=09724;value=animalId=IT896424 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A;value=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:50,334 WARN f.RelationFormula [Thread-9] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=7;value=birthCountry=FI$birthYear=2008$birthMonth=7
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0014;value=0014
+Column: anMethRefId code=AT08A.F626A;value=AT08A.F626A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=611;value=611
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0014;value=0014
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT08A;value=AT08A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000017;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000017
+Column: anMethCode code=F626A;value=F626A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: sampUnitIds code=animalId=IT896424 $PSUId=09724;value=animalId=IT896424 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A;value=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:50,343 WARN f.RelationFormula [Thread-9] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=7;value=birthCountry=FI$birthYear=2008$birthMonth=7
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0014;value=0014
+Column: anMethRefId code=AT06A.F647A;value=AT06A.F647A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=611;value=611
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0014;value=0014
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT06A;value=AT06A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000016;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000016
+Column: anMethCode code=F647A;value=F647A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: sampUnitIds code=animalId=IT896424 $PSUId=09724;value=animalId=IT896424 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A;value=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:50,363 WARN f.RelationFormula [Thread-9] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=7;value=birthCountry=FI$birthYear=2008$birthMonth=7
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0013;value=0013
+Column: anMethRefId code=AT12A.F638A;value=AT12A.F638A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004896-PAR;value=RF-00004896-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=611;value=611
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0013;value=0013
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT12A;value=AT12A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000015;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000015
+Column: anMethCode code=F638A;value=F638A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004896-PAR;value=RF-00004896-PAR
+Column: sampUnitIds code=animalId=IT896424 $PSUId=09724;value=animalId=IT896424 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A;value=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:50,373 WARN f.RelationFormula [Thread-9] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=7;value=birthCountry=FI$birthYear=2008$birthMonth=7
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0013;value=0013
+Column: anMethRefId code=AT08A.F626A;value=AT08A.F626A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=611;value=611
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0013;value=0013
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT08A;value=AT08A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000014;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000014
+Column: anMethCode code=F626A;value=F626A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: sampUnitIds code=animalId=IT896424 $PSUId=09724;value=animalId=IT896424 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A;value=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:24:50,386 WARN f.RelationFormula [Thread-9] No value was found for relation Relation: [SummarizedInformation] 1=>N [AnalyticalResults] for formula RELATION{SummarizedInformation,type.code} in ID: -1
+Column: statusHerd code=FI$birthYear;value=FI$birthYear
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=7;value=birthCountry=FI$birthYear=2008$birthMonth=7
+Column: repYear code=2017;value=2017
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0013;value=0013
+Column: anMethRefId code=AT06A.F647A;value=AT06A.F647A
+Column: sampCountry code=LV;value=LV
+Column: paramCodeBaseTerm code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: resType code=BIN;value=BIN
+Column: ReportId code=611;value=611
+Column: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0013;value=0013
+Column: analysisY code=2017;value=2017
+Column: anMethType code=AT06A;value=AT06A
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000013;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000013
+Column: anMethCode code=F647A;value=F647A
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: paramCode code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: sampUnitIds code=animalId=IT896424 $PSUId=09724;value=animalId=IT896424 $PSUId=09724
+Column: anMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A;value=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+
+2023-08-21 13:25:16,196 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,196 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,372 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,372 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,380 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,396 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-21 13:25:16,398 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-21 13:25:16,401 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 13:25:16,403 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 13:25:16,406 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 13:25:16,408 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 13:25:16,410 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 13:25:16,412 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 13:25:16,479 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,479 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,552 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,552 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,560 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,574 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-21 13:25:16,576 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-21 13:25:16,579 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 13:25:16,582 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 13:25:16,585 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 13:25:16,588 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 13:25:16,592 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 13:25:16,594 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 13:25:16,656 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,656 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,728 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,728 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,735 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,744 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-21 13:25:16,746 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-21 13:25:16,749 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 13:25:16,751 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 13:25:16,755 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 13:25:16,756 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 13:25:16,760 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 13:25:16,762 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 13:25:16,836 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,836 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,908 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,908 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,916 ERROR t.TableDao [main] IMPORTANT: The element 2017 is missing in the picklist reportYearsList in the picklists\ folder. Putting an empty value.
+2023-08-21 13:25:16,925 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-21 13:25:16,927 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-21 13:25:16,930 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 13:25:16,931 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 13:25:16,934 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 13:25:16,936 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 13:25:16,939 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 13:25:16,940 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 13:25:43,141 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 9
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:43,180 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 9
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:43,212 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 7
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:43,250 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 7
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:43,279 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:43,306 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:43,331 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:43,357 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:43,381 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:43,419 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:43,450 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:43,476 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:43,506 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:43,534 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:43,558 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:43,582 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:54,937 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 9
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:54,967 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 9
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:54,997 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 7
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:55,028 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 7
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:55,055 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:55,081 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:55,110 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:55,159 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:55,182 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:55,207 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:55,232 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:55,258 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:55,285 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:55,311 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:55,336 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:25:55,360 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:534) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:27:24,100 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 9
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:27:24,131 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 9
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:27:24,167 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 7
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:27:24,199 ERROR t.TseReportValidator [main] Cannot check age class
+java.io.IOException: Cannot validate age with wrong year/month data. Found Report= 3 Found Birth=2008 7
+	at tse_validator.AgeClassValidator.validate(AgeClassValidator.java:101) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkAgeClass(TseReportValidator.java:491) [classes/:?]
+	at tse_validator.TseReportValidator.checkCaseInfo(TseReportValidator.java:387) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:87) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:27:24,225 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:27:24,252 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:27:24,278 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:27:24,302 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:27:24,326 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:27:24,357 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:27:24,381 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:27:24,409 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:27:24,434 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:27:24,459 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:27:24,484 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:27:24,508 ERROR t.TseReportValidator [main] Error in parsing a non-numeric String
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at date_comparator.TseDate.<init>(TseDate.java:14) ~[classes/:?]
+	at tse_validator.TseReportValidator.checkResult(TseReportValidator.java:535) [classes/:?]
+	at tse_validator.TseReportValidator.validate(TseReportValidator.java:85) [classes/:?]
+	at tse_summarized_information.SummarizedInfoDialog$5.widgetSelected(SummarizedInfoDialog.java:345) [classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 13:27:55,543 ERROR t.Database [main] Error in shutting down the database
+java.sql.SQLNonTransientConnectionException: Database 'database\' shutdown.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_382]
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.AutoloadedDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[?:1.8.0_382]
+	at java.sql.DriverManager.getConnection(DriverManager.java:270) ~[?:1.8.0_382]
+	at table_database.Database.shutdown(Database.java:207) [classes/:?]
+	at tse_main.StartUI.shutdown(StartUI.java:156) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:198) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: Database 'database\' shutdown.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.shutdownDatabaseException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 13 more

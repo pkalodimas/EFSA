@@ -1,18 +1,10 @@
 package tse_report;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import app_config.AppPaths;
 import dataset.DcfDatasetStatus;
 import dataset.RCLDatasetStatus;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import providers.ITableDaoService;
 import report.EFSAReport;
 import report.Report;
@@ -25,6 +17,13 @@ import tse_config.CatalogLists;
 import tse_config.CustomStrings;
 import xlsx_reader.TableSchema;
 import xlsx_reader.TableSchemaList;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 /**
  * A TSE report
@@ -258,5 +257,10 @@ public class TseReport extends Report {
 		}
 
 		return null;
+	}
+
+	public boolean notAmended() {
+		return !this.getRCLStatus().equals(RCLDatasetStatus.LOCALLY_VALIDATED)
+				|| Integer.parseInt(this.getVersion()) <= 0;
 	}
 }

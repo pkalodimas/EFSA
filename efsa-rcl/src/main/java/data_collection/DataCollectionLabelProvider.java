@@ -20,6 +20,7 @@ public class DataCollectionLabelProvider extends ColumnLabelProvider {
 	public static final String STD_DATE_FORMAT = "yyyy-MM-dd";
 	
 	private String key;
+
 	public DataCollectionLabelProvider(String key) {
 		this.key = key;
 	}

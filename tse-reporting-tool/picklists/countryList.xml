@@ -5,6 +5,9 @@
 		<selection code="AL">
 			<description>Albania</description>
 		</selection>
+		<selection code="DZ">
+			<description>Algeria</description>
+		</selection>
 		<selection code="AT">
 			<description>Austria</description>
 		</selection>
@@ -38,6 +41,9 @@
 		<selection code="FR">
 			<description>France</description>
 		</selection>
+		<selection code="GE">
+			<description>Georgia</description>
+		</selection>
 		<selection code="DE">
 			<description>Germany</description>
 		</selection>
@@ -56,8 +62,14 @@
 		<selection code="IT">
 			<description>Italy</description>
 		</selection>
+		<selection code="XK">
+			<description>Kosovo</description>
+		</selection>
 		<selection code="LV">
 			<description>Latvia</description>
+		</selection>
+		<selection code="LY">
+			<description>Libya</description>
 		</selection>
 		<selection code="LT">
 			<description>Lithuania</description>
@@ -65,11 +77,17 @@
 		<selection code="LU">
 			<description>Luxembourg</description>
 		</selection>
-		<selection code="ME">
-			<description>Montenegro</description>
+		<selection code="GE">
+			<description>Georgia</description>
 		</selection>
 		<selection code="MT">
 			<description>Malta</description>
+		</selection>
+		<selection code="MD">
+			<description>Moldova</description>
+		</selection>
+		<selection code="ME">
+			<description>Montenegro</description>
 		</selection>
 		<selection code="NL">
 			<description>Netherlands</description>
@@ -107,8 +125,14 @@
 		<selection code="CH">
 			<description>Switzerland</description>
 		</selection>
+		<selection code="TN">
+			<description>Tunisia</description>
+		</selection>
 		<selection code="TR">
 			<description>Turkey</description>
+		</selection>
+		<selection code="UA">
+			<description>Ukraine</description>
 		</selection>
 		<selection code="GB">
 			<description>United Kingdom</description>

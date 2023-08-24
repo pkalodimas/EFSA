@@ -1,8 +1,14 @@
 package tse_summarized_information;
 
-import java.io.File;
-import java.util.Collection;
-
+import app_config.AppPaths;
+import app_config.PropertiesReader;
+import dataset.RCLDatasetStatus;
+import global_utils.Message;
+import global_utils.Warnings;
+import html_viewer.HtmlViewer;
+import i18n_messages.TSEMessages;
+import message.MessageConfigBuilder;
+import message_creator.OperationType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -17,27 +23,12 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
 import org.eclipse.swt.widgets.Shell;
-
-import app_config.AppPaths;
-import app_config.PropertiesReader;
-import dataset.RCLDatasetStatus;
-import global_utils.Message;
-import global_utils.Warnings;
-import html_viewer.HtmlViewer;
-import i18n_messages.TSEMessages;
-import message.MessageConfigBuilder;
-import message_creator.OperationType;
 import progress_bar.IndeterminateProgressDialog;
 import providers.IFormulaService;
 import providers.ITableDaoService;
 import providers.TseReportService;
-import report.DisplayAckResult;
-import report.DisplayAckThread;
-import report.RefreshStatusThread;
-import report.Report;
-import report.ReportActions;
+import report.*;
 import report.ReportActions.ReportAction;
-import report.ThreadFinishedListener;
 import report_validator.ReportError;
 import session_manager.TSERestoreableWindowDao;
 import soap.DetailedSOAPException;
@@ -66,6 +57,9 @@ import xlsx_reader.TableSchema;
 import xlsx_reader.TableSchemaList;
 import xml_catalog_reader.Selection;
 
+import java.io.File;
+import java.util.Collection;
+
 /**
  * Class which allows adding and editing a summarized information report.
  * 
@@ -78,6 +72,7 @@ public class SummarizedInfoDialog extends TableDialogWithMenu {
 	protected static final Logger LOGGER = LogManager.getLogger(SummarizedInfoDialog.class);
 
 	protected TseReportService reportService;
+
 	protected ITableDaoService daoService;
 	private IFormulaService formulaService;
 
@@ -776,7 +771,7 @@ public class SummarizedInfoDialog extends TableDialogWithMenu {
 
 		// add version if possible
 		if (!TableVersion.isFirstVersion(report.getVersion())) {
-			int revisionInt = Integer.valueOf(report.getVersion()); // remove 0 from 01..
+			int revisionInt = Integer.parseInt(report.getVersion()); // remove 0 from 01..
 			String revision = String.valueOf(revisionInt);
 			reportRow = TSEMessages.get("si.report.opened.revision", reportYear, reportMonth, revision);
 		} else {
@@ -797,7 +792,7 @@ public class SummarizedInfoDialog extends TableDialogWithMenu {
 		if (DebugConfig.debug)
 			panel.setLabelText("senderDatasetIdLabel", senderDatasetId);
 
-		// enable the table only if report status if correct
+		// enable the table only if report status is correct
 		RCLDatasetStatus datasetStatus = RCLDatasetStatus.fromString(status);
 		boolean editableReport = datasetStatus.isEditable();
 		panel.setTableEditable(editableReport);
@@ -805,9 +800,9 @@ public class SummarizedInfoDialog extends TableDialogWithMenu {
 
 		panel.setEnabled("editBtn", !DebugConfig.disableMainPanel && datasetStatus.canBeMadeEditable());
 		panel.setEnabled("validateBtn", !DebugConfig.disableMainPanel && datasetStatus.canBeChecked());
-		panel.setEnabled("sendBtn", !DebugConfig.disableMainPanel && datasetStatus.canBeSent());
+		panel.setEnabled("sendBtn", !DebugConfig.disableMainPanel && datasetStatus.canBeSent() && report.notAmended());
 		panel.setEnabled("amendBtn", !DebugConfig.disableMainPanel && datasetStatus.canBeAmended());
-		panel.setEnabled("submitBtn", !DebugConfig.disableMainPanel && datasetStatus.canBeSubmitted());
+		panel.setEnabled("submitBtn", !DebugConfig.disableMainPanel && datasetStatus.canBeSubmitted() && report.notAmended());
 		// panel.setEnabled("rejectBtn", !DebugConfig.disableMainPanel &&
 		// datasetStatus.canBeRejected());
 		panel.setEnabled("displayAckBtn", !DebugConfig.disableMainPanel && datasetStatus.canDisplayAck());
@@ -869,7 +864,7 @@ public class SummarizedInfoDialog extends TableDialogWithMenu {
 		if (row == null)
 			return;
 
-		// if the row is RGT dont open the sample case
+		// if the row is RGT don't open the sample case
 		boolean isRGT = row.getCode(CustomStrings.SUMMARIZED_INFO_TYPE).equals(CustomStrings.SUMMARIZED_INFO_RGT_TYPE);
 		if (isRGT)
 			return;

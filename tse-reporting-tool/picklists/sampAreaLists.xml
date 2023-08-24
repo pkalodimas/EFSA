@@ -309,6 +309,11 @@
 			<description>Extra-Regio NUTS 2 (2021 and 2022)</description>
 		</selection>
 	</selectionList>
+	<selectionList id="DZ">
+		<selection code="DZ">
+			<description>Algeria</description>
+		</selection>
+	</selectionList>
 	<selectionList id="EE">
 		<selection code="EE00">
 			<description>Eesti (2021 and 2022)</description>
@@ -611,6 +616,11 @@
 		</selection>
 		<selection code="UKZZ">
 			<description>Extra-Regio NUTS 2 (2021 and 2022)</description>
+		</selection>
+	</selectionList>
+	<selectionList id="GE">
+		<selection code="GE">
+			<description>Georgia</description>
 		</selection>
 	</selectionList>
 	<selectionList id="XU">
@@ -955,6 +965,16 @@
 			<description>Extra-Regio NUTS 2 (2021 and 2022)</description>
 		</selection>
 	</selectionList>
+	<selectionList id="LY">
+		<selection code="LY">
+			<description>Libya</description>
+		</selection>
+	</selectionList>
+	<selectionList id="MD">
+		<selection code="MD">
+			<description>Moldova</description>
+		</selection>
+	</selectionList>
 	<selectionList id="ME">
 		<selection code="ME00">
 			<description>Црна Гора (Crna Gora) (NUTS level 2) (2021 and 2022)</description>
@@ -1222,6 +1242,11 @@
 			<description>Extra-Regio NUTS 2 (2021 and 2022)</description>
 		</selection>
 	</selectionList>
+	<selectionList id="TN">
+		<selection code="TN">
+			<description>Tunisia</description>
+		</selection>
+	</selectionList>
 	<selectionList id="TR">
 		<selection code="TR10">
 			<description>Istanbul (NUTS level 2) (2021 and 2022)</description>
@@ -1296,6 +1321,11 @@
 			<description>Mardin, Batman, Sirnak, Siirt (2021 and 2022)</description>
 		</selection>
 	</selectionList>
+	<selectionList id="UA">
+		<selection code="UA">
+			<description>Ukraine</description>
+		</selection>
+	</selectionList>
 	<selectionList id="EU">
 	<selection code="MTZZ">
 		<description>Extra-Regio NUTS 2</description>
@@ -1305,6 +1335,11 @@
 	<selection code="MTZZ">
 		<description>Extra-Regio NUTS 2</description>
 	</selection>
+	</selectionList>
+	<selectionList id="XK">
+		<selection code="XK">
+			<description>Kosovo</description>
+		</selection>
 	</selectionList>
 	<selectionList id="XX">
 	<selection code="MTZZ">

@@ -194,4 +194,28 @@ public abstract class Report extends TableRow implements EFSAReport {
 	 * @return
 	 */
 	public abstract String getRowIdFieldName();
+
+	public void setIsAggregated(boolean isAggregated) {
+		this.put(AppPaths.REPORT_IS_AGGREGATED, String.valueOf(isAggregated));
+	}
+
+	public boolean getIsAggregated() {
+		return Boolean.TRUE.toString().equalsIgnoreCase(this.getCode(AppPaths.REPORT_IS_AGGREGATED));
+	}
+
+	public void setAggregatorId(String aggregatorId) {
+		this.put(AppPaths.REPORT_AGGREGATOR_ID, aggregatorId);
+	}
+
+	public String getAggregatorId() {
+		return this.getCode(AppPaths.REPORT_AGGREGATOR_ID);
+	}
+
+	public void setDcCode(String dcCode) {
+		this.put(AppPaths.REPORT_DC_CODE, dcCode);
+	}
+
+	public String getDcCode() {
+		return this.getCode(AppPaths.REPORT_DC_CODE);
+	}
 }

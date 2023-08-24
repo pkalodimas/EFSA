@@ -257,7 +257,7 @@ public class PropertiesReader {
 	 */
 	public static String getDataCollectionCode(String reportYear) {
 		String dcPattern = getValue(APP_DC_PATTERN_PROPERTY);
-		int reportYearInt = Integer.valueOf(reportYear);
+		int reportYearInt = Integer.parseInt(reportYear);
 		int startingYear = getDataCollectionStartingYear();
 		
 		String dcCode = null;

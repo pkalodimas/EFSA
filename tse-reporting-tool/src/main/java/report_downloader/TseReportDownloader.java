@@ -221,7 +221,7 @@ public class TseReportDownloader extends ReportDownloaderDialog {
 
 	@Override
 	public IDataCollectionsDialog getDataCollectionsDialog(Shell shell1,
-			IDcfDataCollectionsList<IDcfDataCollection> list) {
-		return new TSEDataCollectionsListDialog(shell1, list);
+			IDcfDataCollectionsList<IDcfDataCollection> list, String buttonTextKey) {
+		return new TSEDataCollectionsListDialog(shell1, list, buttonTextKey);
 	}
 }

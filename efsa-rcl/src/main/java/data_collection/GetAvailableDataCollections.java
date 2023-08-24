@@ -5,6 +5,11 @@ import java.util.Calendar;
 import java.util.Collection;
 
 import app_config.PropertiesReader;
+import config.Config;
+import response_parser.IDcfList;
+import soap.DetailedSOAPException;
+import soap.GetDataCollectionsList;
+import user.User;
 
 public class GetAvailableDataCollections {
 	
@@ -37,5 +42,22 @@ public class GetAvailableDataCollections {
 		}
 		
 		return dcCodes;
+	}
+
+	public static IDcfDataCollectionsList<IDcfDataCollection> getAvailableDcList() throws DetailedSOAPException {
+		IDcfDataCollectionsList<IDcfDataCollection> output = new DcfDataCollectionsList();
+		GetDataCollectionsList<IDcfDataCollection> req = new GetDataCollectionsList<>();
+		IDcfDataCollectionsList<IDcfDataCollection> filteredOutput = new DcfDataCollectionsList();
+		Collection<String> validDcs = GetAvailableDataCollections.getCodes();
+
+		IDcfList<IDcfDataCollection> list = req.getList(Config.getEnvironment(), User.getInstance(), output);
+		for(IDcfDataCollection dc : list) {
+			// remove not valid data collection
+			if (validDcs.contains(dc.getCode())) {
+				filteredOutput.add(dc);
+			}
+		}
+
+		return filteredOutput;
 	}
 }

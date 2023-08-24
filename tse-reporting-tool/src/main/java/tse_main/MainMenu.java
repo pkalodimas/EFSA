@@ -1,11 +1,14 @@
 package tse_main;
 
-import java.io.File;
-import java.io.IOException;
-import java.text.ParseException;
-
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.stream.XMLStreamException;
+import amend_manager.AmendException;
+import app_config.PropertiesReader;
+import dataset.Dataset;
+import formula.FormulaException;
+import global_utils.Message;
+import global_utils.Warnings;
+import i18n_messages.TSEMessages;
+import message.MessageConfigBuilder;
+import message_creator.OperationType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.eclipse.swt.SWT;
@@ -17,16 +20,6 @@ import org.eclipse.swt.widgets.MenuItem;
 import org.eclipse.swt.widgets.MessageBox;
 import org.eclipse.swt.widgets.Shell;
 import org.xml.sax.SAXException;
-
-import amend_manager.AmendException;
-import app_config.PropertiesReader;
-import dataset.Dataset;
-import formula.FormulaException;
-import global_utils.Message;
-import global_utils.Warnings;
-import i18n_messages.TSEMessages;
-import message.MessageConfigBuilder;
-import message_creator.OperationType;
 import providers.IFormulaService;
 import providers.ITableDaoService;
 import providers.TseReportService;
@@ -39,6 +32,7 @@ import table_database.TableDao;
 import table_skeleton.TableRow;
 import table_skeleton.TableVersion;
 import test_case.EnumPicker;
+import tse_amend_report.TSEDataCollectionAmender;
 import tse_config.CustomStrings;
 import tse_config.DebugConfig;
 import tse_main.listeners.CopySelectionListener;
@@ -50,6 +44,12 @@ import tse_report.TseReport;
 import user_interface.ProxySettingsDialog;
 import xlsx_reader.TableSchema;
 import xlsx_reader.TableSchemaList;
+
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.stream.XMLStreamException;
+import java.io.File;
+import java.io.IOException;
+import java.text.ParseException;
 
 /**
  * Create the main menu of the application in the given shell
@@ -82,6 +82,7 @@ public class MainMenu {
 	protected MenuItem importReport;
 	protected MenuItem copyReport;
 	protected MenuItem downloadReport;
+	protected MenuItem amendReports;
 	protected MenuItem exportReport;
 	protected MenuItem exitApplication;
 
@@ -351,6 +352,27 @@ public class MainMenu {
 					e.printStackTrace();
 					Warnings.showSOAPWarning(shell, e);
 				}
+			}
+		});
+
+		amendReports = new MenuItem(fileMenu, SWT.PUSH);
+		amendReports.setText(TSEMessages.get("amend.report.item"));
+		amendReports.addSelectionListener(new SelectionListener() {
+			@Override
+			public void widgetSelected(SelectionEvent arg0) {
+				LOGGER.debug("Opening submit amendments dialog");
+				TSEDataCollectionAmender dataCollectionAmender = new TSEDataCollectionAmender(shell, reportService, daoService);
+				try {
+					dataCollectionAmender.amend();
+				} catch (DetailedSOAPException e) {
+					LOGGER.error("Amend reports failed", e);
+					e.printStackTrace();
+					Warnings.showSOAPWarning(shell, e);
+				}
+			}
+
+			@Override
+			public void widgetDefaultSelected(SelectionEvent arg0) {
 			}
 		});
 

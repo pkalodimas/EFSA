@@ -1,0 +1,2015 @@
+2023-08-21 14:13:44,334 ERROR t.TableDao [main] Wrong integer field PreferencesId with value 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at table_database.TableDao.setParameters(TableDao.java:186) ~[classes/:?]
+	at table_database.TableDao.update(TableDao.java:262) ~[classes/:?]
+	at providers.TableDaoService.update(TableDaoService.java:25) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:308) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 14:13:44,357 ERROR t.TableDao [main] Cannot update row
+java.sql.SQLException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at table_database.TableDao.update(TableDao.java:265) ~[classes/:?]
+	at providers.TableDaoService.update(TableDaoService.java:25) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:308) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.throwIfMissingParms(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.exe.ac888c4022x018ax17ccxaf9fx0000151ce9e80.reinit(Unknown Source) ~[?:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericActivationHolder.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 23 more
+2023-08-21 14:13:44,369 ERROR t.TableDao [main] Errors in updating ID: -1
+Column: reportMessageId code=;value=
+Column: reportStatus code=DRAFT;value=DRAFT
+Column: reportPreviousStatus code=OTHER;value=OTHER
+ for APP.Report
+2023-08-21 14:13:45,001 ERROR t.TableDao [main] Wrong integer field ReportId with value 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at table_database.TableDao.setParameters(TableDao.java:186) ~[classes/:?]
+	at table_database.TableDao.add(TableDao.java:221) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.initSummarizedInfo(TseReportService.java:377) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:350) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 14:13:45,003 ERROR t.TableDao [main] Cannot add row to the table
+java.sql.SQLException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at table_database.TableDao.add(TableDao.java:224) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.initSummarizedInfo(TseReportService.java:377) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:350) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.throwIfMissingParms(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.exe.aca13ec033x018ax17ccxaf9fx0000151ce9e80.reinit(Unknown Source) ~[?:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericActivationHolder.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 26 more
+2023-08-21 14:13:45,010 ERROR t.TableDao [main] Errors in adding ID: 516
+Column: tseTargetGroup code=TG006A;value=SUS (clinical suspect animals)
+Column: sampMatCode code=A04MQ#F01.A056Q$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: statusHerd code=;value=
+Column: totSamplesTested code=3;value=3
+Column: sampY code=2017;value=2017
+Column: source code=F01.A056Q;value=Reindeer (Rangifer tarandus L.)
+Column: type code=CWD;value=monitoring of CWD
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: totSamplesUnsuitable code=0;value=0
+Column: repYear code=2017;value=2017
+Column: sampEventInfo code=;value=
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P003A;value=P003A
+Column: sampAnId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: anMethRefId code=AT06A.F647A;value=AT06A.F647A
+Column: SummarizedInformationId code=516;value=516
+Column: allele2 code=;value=
+Column: allele1 code=;value=
+Column: totSamplesPositive code=2;value=2
+Column: animage code=F31.A16NG;value=>=12 months
+Column: sampCountry code=LV;value=Latvia
+Column: prod code=F21.A07RV;value=Farmed
+Column: PSUId code=09724;value=09724
+Column: sex code=F32.A0C8Z;value=Female
+Column: SettingsId code=1;value=1
+Column: ReportIdColumn: progInfo code=tseTargetGroup=TG006A$totSamplesTested=3$totSamplesPositive=2$totSamplesNegative=0$totSamplesInconclusive=1$totSamplesUnsuitable=0;value=tseTargetGroup=TG006A$totSamplesTested=3$totSamplesPositive=2$totSamplesNegative=0$totSamplesInconclusive=1$totSamplesUnsuitable=0
+Column: analysisY code=2017;value=2017
+Column: sampId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: anMethType code=AT06A;value=Screening
+Column: PreferencesId code=1;value=1
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.0;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.0
+Column: childrenContainErrors code=no;value=no
+Column: anMethCode code=F647A;value=IDEXX-HerdChek BSE-Scrapie Antigen (using CWD protocol)
+Column: paramCode code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: totSamplesInconclusive code=1;value=1
+Column: sampUnitIds code=PSUId=09724;value=PSUId=09724
+Column: totSamplesNegative code=0;value=0
+Column: repCountry code=LV;value=Latvia
+Column: sampM code=3;value=March
+Column: progLegalRef code=N123A;value=N123A
+ to APP.SummarizedInformation
+2023-08-21 14:13:45,487 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-21 14:13:45,490 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-21 14:13:45,499 ERROR t.TableDao [main] Wrong integer field ReportId with value 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at table_database.TableDao.setParameters(TableDao.java:186) ~[classes/:?]
+	at table_database.TableDao.add(TableDao.java:221) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.initCaseReport(TseReportService.java:381) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:352) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 14:13:45,502 ERROR t.TableDao [main] Cannot add row to the table
+java.sql.SQLException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at table_database.TableDao.add(TableDao.java:224) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.initCaseReport(TseReportService.java:381) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:352) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.throwIfMissingParms(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.exe.ac82080041x018ax17ccxaf9fx0000151ce9e80.reinit(Unknown Source) ~[?:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericActivationHolder.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 26 more
+2023-08-21 14:13:45,508 ERROR t.TableDao [main] Errors in adding ID: 225
+Column: tseIndexCase code=Y;value=Yes
+Column: animage code=F31.A16NG;value=>=12 months
+Column: sampHoldingId code=;value=
+Column: part code=F02.A16YZ;value=Retropharyngeal lymph node
+Column: sex code=F32.A0C8Z;value=Female
+Column: ReportIdColumn: sampEventAsses code=J050A;value=Inconclusive case
+Column: tseNationalCaseId code=IT986425;value=IT986425
+Column: sampId code=0012;value=0012
+Column: animalId code=3429 ;value=3429 
+Column: breed code=;value=
+Column: childrenContainErrors code=no;value=no
+Column: sampD code=;value=
+Column: birthMonth code=9;value=September
+Column: sampArea code=LV00;value=Latvija (2021 and 2022)
+Column: CasesInformationId code=225;value=225
+Column: birthYear code=2008;value=2008
+Column: SummarizedInformationId code=-1;value=-1
+Column: herdId code=;value=
+Column: birthCountry code=FI;value=Finland
+Column: birthInFlockHerd code=;value=
+Column: evalCom code=;value=
+ to APP.CasesInformation
+2023-08-21 14:13:45,510 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:13:45,513 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:13:45,531 ERROR t.TableDao [main] Wrong integer field ReportId with value 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at table_database.TableDao.setParameters(TableDao.java:186) ~[classes/:?]
+	at table_database.TableDao.add(TableDao.java:221) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 14:13:45,532 ERROR t.TableDao [main] Cannot add row to the table
+java.sql.SQLException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at table_database.TableDao.add(TableDao.java:224) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.throwIfMissingParms(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.exe.acea5bc046x018ax17ccxaf9fx0000151ce9e80.reinit(Unknown Source) ~[?:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericActivationHolder.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 26 more
+2023-08-21 14:13:45,536 ERROR t.TableDao [main] Errors in adding ID: 282
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: repYear code=2017;value=2017
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=9;value=birthCountry=FI$birthYear=2008$birthMonth=9
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0012;value=0012
+Column: anMethRefId code=AT08A.F072A;value=AT08A.F072A
+Column: SummarizedInformationId code=-1;value=-1
+Column: allele2 code=;value=
+Column: allele1 code=;value=
+Column: progIdSuffix code=N123A.TG006A;value=N123A.TG006A
+Column: animage code=F31.A16NG;value=F31.A16NG
+Column: paramCodeBaseTerm code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: sampCountry code=LV;value=LV
+Column: testAim code=RF-00004628-PAR$POS;value=Positive
+Column: AnalyticalResultsId code=282;value=282
+Column: resType code=BIN;value=BIN
+Column: sex code=F32.A0C8Z;value=F32.A0C8Z
+Column: ReportIdColumn: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0012;value=0012
+Column: analysisY code=2022;value=2022
+Column: anMethType code=AT08A;value=Confirmatory
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000024;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000024
+Column: sampD code=;value=
+Column: anMethCode code=F072A;value=Western Blot
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: CasesInformationId code=-1;value=-1
+Column: paramCode code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: origSampId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: sampUnitIds code=animalId=3429  $PSUId=09724;value=animalId=3429  $PSUId=09724
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A;value=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+Column: sampMatInfo code=;value=
+ to APP.AnalyticalResults
+2023-08-21 14:13:45,538 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:13:45,540 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:13:45,542 ERROR t.TableDao [main] Wrong integer field ReportId with value 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at table_database.TableDao.setParameters(TableDao.java:186) ~[classes/:?]
+	at table_database.TableDao.add(TableDao.java:221) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 14:13:45,543 ERROR t.TableDao [main] Cannot add row to the table
+java.sql.SQLException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at table_database.TableDao.add(TableDao.java:224) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.throwIfMissingParms(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.exe.acea5bc046x018ax17ccxaf9fx0000151ce9e80.reinit(Unknown Source) ~[?:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericActivationHolder.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 26 more
+2023-08-21 14:13:45,547 ERROR t.TableDao [main] Errors in adding ID: 281
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: repYear code=2017;value=2017
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=9;value=birthCountry=FI$birthYear=2008$birthMonth=9
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0012;value=0012
+Column: anMethRefId code=AT08A.F072A;value=AT08A.F072A
+Column: SummarizedInformationId code=-1;value=-1
+Column: allele2 code=;value=
+Column: allele1 code=;value=
+Column: progIdSuffix code=N123A.TG006A;value=N123A.TG006A
+Column: animage code=F31.A16NG;value=F31.A16NG
+Column: paramCodeBaseTerm code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: sampCountry code=LV;value=LV
+Column: testAim code=RF-00004628-PAR$POS;value=Positive
+Column: AnalyticalResultsId code=281;value=281
+Column: resType code=BIN;value=BIN
+Column: sex code=F32.A0C8Z;value=F32.A0C8Z
+Column: ReportIdColumn: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0012;value=0012
+Column: analysisY code=2024;value=2024
+Column: anMethType code=AT08A;value=Confirmatory
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000023;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000023
+Column: sampD code=;value=
+Column: anMethCode code=F072A;value=Western Blot
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: CasesInformationId code=-1;value=-1
+Column: paramCode code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: origSampId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: sampUnitIds code=animalId=3429  $PSUId=09724;value=animalId=3429  $PSUId=09724
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A;value=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+Column: sampMatInfo code=;value=
+ to APP.AnalyticalResults
+2023-08-21 14:13:45,548 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:13:45,551 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:13:45,552 ERROR t.TableDao [main] Wrong integer field ReportId with value 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at table_database.TableDao.setParameters(TableDao.java:186) ~[classes/:?]
+	at table_database.TableDao.add(TableDao.java:221) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 14:13:45,553 ERROR t.TableDao [main] Cannot add row to the table
+java.sql.SQLException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at table_database.TableDao.add(TableDao.java:224) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.throwIfMissingParms(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.exe.acea5bc046x018ax17ccxaf9fx0000151ce9e80.reinit(Unknown Source) ~[?:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericActivationHolder.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 26 more
+2023-08-21 14:13:45,557 ERROR t.TableDao [main] Errors in adding ID: 280
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: repYear code=2017;value=2017
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=9;value=birthCountry=FI$birthYear=2008$birthMonth=9
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0012;value=0012
+Column: anMethRefId code=AT06A.F647A;value=AT06A.F647A
+Column: SummarizedInformationId code=-1;value=-1
+Column: allele2 code=;value=
+Column: allele1 code=;value=
+Column: progIdSuffix code=N123A.TG006A;value=N123A.TG006A
+Column: animage code=F31.A16NG;value=F31.A16NG
+Column: paramCodeBaseTerm code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: sampCountry code=LV;value=LV
+Column: testAim code=RF-00004895-PAR$POS;value=Positive
+Column: AnalyticalResultsId code=280;value=280
+Column: resType code=BIN;value=BIN
+Column: sex code=F32.A0C8Z;value=F32.A0C8Z
+Column: ReportIdColumn: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0012;value=0012
+Column: analysisY code=2022;value=2022
+Column: anMethType code=AT06A;value=Screening
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000022;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000022
+Column: sampD code=;value=
+Column: anMethCode code=F647A;value=IDEXX-HerdChek BSE-Scrapie Antigen (using CWD protocol)
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: CasesInformationId code=-1;value=-1
+Column: paramCode code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: origSampId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: sampUnitIds code=animalId=3429  $PSUId=09724;value=animalId=3429  $PSUId=09724
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A;value=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+Column: sampMatInfo code=;value=
+ to APP.AnalyticalResults
+2023-08-21 14:13:45,862 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-21 14:13:45,864 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-21 14:13:45,866 ERROR t.TableDao [main] Wrong integer field ReportId with value 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at table_database.TableDao.setParameters(TableDao.java:186) ~[classes/:?]
+	at table_database.TableDao.add(TableDao.java:221) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.initCaseReport(TseReportService.java:381) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:352) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 14:13:45,867 ERROR t.TableDao [main] Cannot add row to the table
+java.sql.SQLException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at table_database.TableDao.add(TableDao.java:224) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.initCaseReport(TseReportService.java:381) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:352) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.throwIfMissingParms(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.exe.ac82080041x018ax17ccxaf9fx0000151ce9e80.reinit(Unknown Source) ~[?:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericActivationHolder.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 26 more
+2023-08-21 14:13:45,870 ERROR t.TableDao [main] Errors in adding ID: 224
+Column: tseIndexCase code=Y;value=Yes
+Column: animage code=F31.A16NG;value=>=12 months
+Column: sampHoldingId code=;value=
+Column: part code=F02.A16YL;value=Obex
+Column: sex code=F32.A0C8Z;value=Female
+Column: ReportIdColumn: sampEventAsses code=J050A;value=Inconclusive case
+Column: tseNationalCaseId code=IT986425;value=IT986425
+Column: sampId code=0011;value=0011
+Column: animalId code=3429 ;value=3429 
+Column: breed code=;value=
+Column: childrenContainErrors code=no;value=no
+Column: sampD code=;value=
+Column: birthMonth code=9;value=September
+Column: sampArea code=LV00;value=Latvija (2021 and 2022)
+Column: CasesInformationId code=224;value=224
+Column: birthYear code=2008;value=2008
+Column: SummarizedInformationId code=-1;value=-1
+Column: herdId code=;value=
+Column: birthCountry code=FI;value=Finland
+Column: birthInFlockHerd code=;value=
+Column: evalCom code=;value=
+ to APP.CasesInformation
+2023-08-21 14:13:45,872 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:13:45,874 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:13:45,875 ERROR t.TableDao [main] Wrong integer field ReportId with value 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at table_database.TableDao.setParameters(TableDao.java:186) ~[classes/:?]
+	at table_database.TableDao.add(TableDao.java:221) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 14:13:45,877 ERROR t.TableDao [main] Cannot add row to the table
+java.sql.SQLException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at table_database.TableDao.add(TableDao.java:224) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.throwIfMissingParms(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.exe.acea5bc046x018ax17ccxaf9fx0000151ce9e80.reinit(Unknown Source) ~[?:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericActivationHolder.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 26 more
+2023-08-21 14:13:45,881 ERROR t.TableDao [main] Errors in adding ID: 279
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: repYear code=2017;value=2017
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=9;value=birthCountry=FI$birthYear=2008$birthMonth=9
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0011;value=0011
+Column: anMethRefId code=AT06A.F647A;value=AT06A.F647A
+Column: SummarizedInformationId code=-1;value=-1
+Column: allele2 code=;value=
+Column: allele1 code=;value=
+Column: progIdSuffix code=N123A.TG006A;value=N123A.TG006A
+Column: animage code=F31.A16NG;value=F31.A16NG
+Column: paramCodeBaseTerm code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: sampCountry code=LV;value=LV
+Column: testAim code=RF-00004895-PAR$POS;value=Positive
+Column: AnalyticalResultsId code=279;value=279
+Column: resType code=BIN;value=BIN
+Column: sex code=F32.A0C8Z;value=F32.A0C8Z
+Column: ReportIdColumn: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0011;value=0011
+Column: analysisY code=2021;value=2021
+Column: anMethType code=AT06A;value=Screening
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000021;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000021
+Column: sampD code=;value=
+Column: anMethCode code=F647A;value=IDEXX-HerdChek BSE-Scrapie Antigen (using CWD protocol)
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: CasesInformationId code=-1;value=-1
+Column: paramCode code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: origSampId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: sampUnitIds code=animalId=3429  $PSUId=09724;value=animalId=3429  $PSUId=09724
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A;value=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+Column: sampMatInfo code=;value=
+ to APP.AnalyticalResults
+2023-08-21 14:13:45,883 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:13:45,886 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:13:45,888 ERROR t.TableDao [main] Wrong integer field ReportId with value 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at table_database.TableDao.setParameters(TableDao.java:186) ~[classes/:?]
+	at table_database.TableDao.add(TableDao.java:221) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 14:13:45,893 ERROR t.TableDao [main] Cannot add row to the table
+java.sql.SQLException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at table_database.TableDao.add(TableDao.java:224) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.throwIfMissingParms(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.exe.acea5bc046x018ax17ccxaf9fx0000151ce9e80.reinit(Unknown Source) ~[?:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericActivationHolder.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 26 more
+2023-08-21 14:13:45,901 ERROR t.TableDao [main] Errors in adding ID: 278
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: repYear code=2017;value=2017
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=9;value=birthCountry=FI$birthYear=2008$birthMonth=9
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0011;value=0011
+Column: anMethRefId code=AT08A.F072A;value=AT08A.F072A
+Column: SummarizedInformationId code=-1;value=-1
+Column: allele2 code=;value=
+Column: allele1 code=;value=
+Column: progIdSuffix code=N123A.TG006A;value=N123A.TG006A
+Column: animage code=F31.A16NG;value=F31.A16NG
+Column: paramCodeBaseTerm code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: sampCountry code=LV;value=LV
+Column: testAim code=RF-00004628-PAR$POS;value=Positive
+Column: AnalyticalResultsId code=278;value=278
+Column: resType code=BIN;value=BIN
+Column: sex code=F32.A0C8Z;value=F32.A0C8Z
+Column: ReportIdColumn: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0011;value=0011
+Column: analysisY code=2023;value=2023
+Column: anMethType code=AT08A;value=Confirmatory
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000020;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000020
+Column: sampD code=;value=
+Column: anMethCode code=F072A;value=Western Blot
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: CasesInformationId code=-1;value=-1
+Column: paramCode code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: origSampId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: sampUnitIds code=animalId=3429  $PSUId=09724;value=animalId=3429  $PSUId=09724
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A;value=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+Column: sampMatInfo code=;value=
+ to APP.AnalyticalResults
+2023-08-21 14:13:45,903 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:13:45,910 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:13:45,913 ERROR t.TableDao [main] Wrong integer field ReportId with value 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at table_database.TableDao.setParameters(TableDao.java:186) ~[classes/:?]
+	at table_database.TableDao.add(TableDao.java:221) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 14:13:45,916 ERROR t.TableDao [main] Cannot add row to the table
+java.sql.SQLException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at table_database.TableDao.add(TableDao.java:224) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.throwIfMissingParms(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.exe.acea5bc046x018ax17ccxaf9fx0000151ce9e80.reinit(Unknown Source) ~[?:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericActivationHolder.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 26 more
+2023-08-21 14:13:45,920 ERROR t.TableDao [main] Errors in adding ID: 277
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.3429
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: repYear code=2017;value=2017
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=9;value=birthCountry=FI$birthYear=2008$birthMonth=9
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0011;value=0011
+Column: anMethRefId code=AT06A.F647A;value=AT06A.F647A
+Column: SummarizedInformationId code=-1;value=-1
+Column: allele2 code=;value=
+Column: allele1 code=;value=
+Column: progIdSuffix code=N123A.TG006A;value=N123A.TG006A
+Column: animage code=F31.A16NG;value=F31.A16NG
+Column: paramCodeBaseTerm code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: sampCountry code=LV;value=LV
+Column: testAim code=RF-00004895-PAR$POS;value=Positive
+Column: AnalyticalResultsId code=277;value=277
+Column: resType code=BIN;value=BIN
+Column: sex code=F32.A0C8Z;value=F32.A0C8Z
+Column: ReportIdColumn: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0011;value=0011
+Column: analysisY code=2022;value=2022
+Column: anMethType code=AT06A;value=Screening
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000019;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000019
+Column: sampD code=;value=
+Column: anMethCode code=F647A;value=IDEXX-HerdChek BSE-Scrapie Antigen (using CWD protocol)
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: CasesInformationId code=-1;value=-1
+Column: paramCode code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: origSampId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: sampUnitIds code=animalId=3429  $PSUId=09724;value=animalId=3429  $PSUId=09724
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A;value=tseNationalCaseId=IT986425$tseIndexCase=Y$sampEventAsses=J050A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+Column: sampMatInfo code=;value=
+ to APP.AnalyticalResults
+2023-08-21 14:13:46,133 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-21 14:13:46,137 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-21 14:13:46,138 ERROR t.TableDao [main] Wrong integer field ReportId with value 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at table_database.TableDao.setParameters(TableDao.java:186) ~[classes/:?]
+	at table_database.TableDao.add(TableDao.java:221) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.initCaseReport(TseReportService.java:381) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:352) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 14:13:46,140 ERROR t.TableDao [main] Cannot add row to the table
+java.sql.SQLException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at table_database.TableDao.add(TableDao.java:224) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.initCaseReport(TseReportService.java:381) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:352) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.throwIfMissingParms(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.exe.ac82080041x018ax17ccxaf9fx0000151ce9e80.reinit(Unknown Source) ~[?:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericActivationHolder.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 26 more
+2023-08-21 14:13:46,144 ERROR t.TableDao [main] Errors in adding ID: 223
+Column: tseIndexCase code=Y;value=Yes
+Column: animage code=F31.A16NG;value=>=12 months
+Column: sampHoldingId code=;value=
+Column: part code=F02.A16YZ;value=Retropharyngeal lymph node
+Column: sex code=F32.A0C8Z;value=Female
+Column: ReportIdColumn: sampEventAsses code=J049A;value=CWD
+Column: tseNationalCaseId code=IT25783;value=IT25783
+Column: sampId code=0014;value=0014
+Column: animalId code=IT896424 ;value=IT896424 
+Column: breed code=;value=
+Column: childrenContainErrors code=no;value=no
+Column: sampD code=;value=
+Column: birthMonth code=7;value=July
+Column: sampArea code=LV00;value=Latvija (2021 and 2022)
+Column: CasesInformationId code=223;value=223
+Column: birthYear code=2008;value=2008
+Column: SummarizedInformationId code=-1;value=-1
+Column: herdId code=;value=
+Column: birthCountry code=FI;value=Finland
+Column: birthInFlockHerd code=;value=
+Column: evalCom code=;value=
+ to APP.CasesInformation
+2023-08-21 14:13:46,146 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:13:46,152 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:13:46,154 ERROR t.TableDao [main] Wrong integer field ReportId with value 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at table_database.TableDao.setParameters(TableDao.java:186) ~[classes/:?]
+	at table_database.TableDao.add(TableDao.java:221) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 14:13:46,158 ERROR t.TableDao [main] Cannot add row to the table
+java.sql.SQLException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at table_database.TableDao.add(TableDao.java:224) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.throwIfMissingParms(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.exe.acea5bc046x018ax17ccxaf9fx0000151ce9e80.reinit(Unknown Source) ~[?:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericActivationHolder.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 26 more
+2023-08-21 14:13:46,170 ERROR t.TableDao [main] Errors in adding ID: 276
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: repYear code=2017;value=2017
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=7;value=birthCountry=FI$birthYear=2008$birthMonth=7
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0014;value=0014
+Column: anMethRefId code=AT08A.F072A;value=AT08A.F072A
+Column: SummarizedInformationId code=-1;value=-1
+Column: allele2 code=;value=
+Column: allele1 code=;value=
+Column: progIdSuffix code=N123A.TG006A;value=N123A.TG006A
+Column: animage code=F31.A16NG;value=F31.A16NG
+Column: paramCodeBaseTerm code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: sampCountry code=LV;value=LV
+Column: testAim code=RF-00004628-PAR$POS;value=Positive
+Column: AnalyticalResultsId code=276;value=276
+Column: resType code=BIN;value=BIN
+Column: sex code=F32.A0C8Z;value=F32.A0C8Z
+Column: ReportIdColumn: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0014;value=0014
+Column: analysisY code=2023;value=2023
+Column: anMethType code=AT08A;value=Confirmatory
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000018;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000018
+Column: sampD code=;value=
+Column: anMethCode code=F072A;value=Western Blot
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: CasesInformationId code=-1;value=-1
+Column: paramCode code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: origSampId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: sampUnitIds code=animalId=IT896424  $PSUId=09724;value=animalId=IT896424  $PSUId=09724
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A;value=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+Column: sampMatInfo code=;value=
+ to APP.AnalyticalResults
+2023-08-21 14:13:46,179 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:13:46,182 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:13:46,186 ERROR t.TableDao [main] Wrong integer field ReportId with value 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at table_database.TableDao.setParameters(TableDao.java:186) ~[classes/:?]
+	at table_database.TableDao.add(TableDao.java:221) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 14:13:46,188 ERROR t.TableDao [main] Cannot add row to the table
+java.sql.SQLException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at table_database.TableDao.add(TableDao.java:224) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.throwIfMissingParms(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.exe.acea5bc046x018ax17ccxaf9fx0000151ce9e80.reinit(Unknown Source) ~[?:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericActivationHolder.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 26 more
+2023-08-21 14:13:46,192 ERROR t.TableDao [main] Errors in adding ID: 275
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: repYear code=2017;value=2017
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=7;value=birthCountry=FI$birthYear=2008$birthMonth=7
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0014;value=0014
+Column: anMethRefId code=AT08A.F155A;value=AT08A.F155A
+Column: SummarizedInformationId code=-1;value=-1
+Column: allele2 code=;value=
+Column: allele1 code=;value=
+Column: progIdSuffix code=N123A.TG006A;value=N123A.TG006A
+Column: animage code=F31.A16NG;value=F31.A16NG
+Column: paramCodeBaseTerm code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: sampCountry code=LV;value=LV
+Column: testAim code=RF-00004628-PAR$POS;value=Positive
+Column: AnalyticalResultsId code=275;value=275
+Column: resType code=BIN;value=BIN
+Column: sex code=F32.A0C8Z;value=F32.A0C8Z
+Column: ReportIdColumn: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0014;value=0014
+Column: analysisY code=2023;value=2023
+Column: anMethType code=AT08A;value=Confirmatory
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000017;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000017
+Column: sampD code=;value=
+Column: anMethCode code=F155A;value=ImmunoHistoChemistry (IHC)
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: CasesInformationId code=-1;value=-1
+Column: paramCode code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: origSampId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: sampUnitIds code=animalId=IT896424  $PSUId=09724;value=animalId=IT896424  $PSUId=09724
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A;value=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+Column: sampMatInfo code=;value=
+ to APP.AnalyticalResults
+2023-08-21 14:13:46,194 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:13:46,196 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:13:46,197 ERROR t.TableDao [main] Wrong integer field ReportId with value 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at table_database.TableDao.setParameters(TableDao.java:186) ~[classes/:?]
+	at table_database.TableDao.add(TableDao.java:221) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 14:13:46,198 ERROR t.TableDao [main] Cannot add row to the table
+java.sql.SQLException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at table_database.TableDao.add(TableDao.java:224) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.throwIfMissingParms(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.exe.acea5bc046x018ax17ccxaf9fx0000151ce9e80.reinit(Unknown Source) ~[?:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericActivationHolder.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 26 more
+2023-08-21 14:13:46,202 ERROR t.TableDao [main] Errors in adding ID: 274
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YZ$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: repYear code=2017;value=2017
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=7;value=birthCountry=FI$birthYear=2008$birthMonth=7
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0014;value=0014
+Column: anMethRefId code=AT06A.F647A;value=AT06A.F647A
+Column: SummarizedInformationId code=-1;value=-1
+Column: allele2 code=;value=
+Column: allele1 code=;value=
+Column: progIdSuffix code=N123A.TG006A;value=N123A.TG006A
+Column: animage code=F31.A16NG;value=F31.A16NG
+Column: paramCodeBaseTerm code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: sampCountry code=LV;value=LV
+Column: testAim code=RF-00004895-PAR$POS;value=Positive
+Column: AnalyticalResultsId code=274;value=274
+Column: resType code=BIN;value=BIN
+Column: sex code=F32.A0C8Z;value=F32.A0C8Z
+Column: ReportIdColumn: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0014;value=0014
+Column: analysisY code=2023;value=2023
+Column: anMethType code=AT06A;value=Screening
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000016;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000016
+Column: sampD code=;value=
+Column: anMethCode code=F647A;value=IDEXX-HerdChek BSE-Scrapie Antigen (using CWD protocol)
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: CasesInformationId code=-1;value=-1
+Column: paramCode code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: origSampId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: sampUnitIds code=animalId=IT896424  $PSUId=09724;value=animalId=IT896424  $PSUId=09724
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A;value=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+Column: sampMatInfo code=;value=
+ to APP.AnalyticalResults
+2023-08-21 14:13:46,356 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-08-21 14:13:46,358 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-08-21 14:13:46,367 ERROR t.TableDao [main] Wrong integer field ReportId with value 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at table_database.TableDao.setParameters(TableDao.java:186) ~[classes/:?]
+	at table_database.TableDao.add(TableDao.java:221) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.initCaseReport(TseReportService.java:381) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:352) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 14:13:46,368 ERROR t.TableDao [main] Cannot add row to the table
+java.sql.SQLException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at table_database.TableDao.add(TableDao.java:224) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.initCaseReport(TseReportService.java:381) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:352) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.throwIfMissingParms(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.exe.ac82080041x018ax17ccxaf9fx0000151ce9e80.reinit(Unknown Source) ~[?:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericActivationHolder.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 26 more
+2023-08-21 14:13:46,372 ERROR t.TableDao [main] Errors in adding ID: 222
+Column: tseIndexCase code=Y;value=Yes
+Column: animage code=F31.A16NG;value=>=12 months
+Column: sampHoldingId code=;value=
+Column: part code=F02.A16YL;value=Obex
+Column: sex code=F32.A0C8Z;value=Female
+Column: ReportIdColumn: sampEventAsses code=J049A;value=CWD
+Column: tseNationalCaseId code=IT25783;value=IT25783
+Column: sampId code=0013;value=0013
+Column: animalId code=IT896424 ;value=IT896424 
+Column: breed code=;value=
+Column: childrenContainErrors code=no;value=no
+Column: sampD code=;value=
+Column: birthMonth code=7;value=July
+Column: sampArea code=LV00;value=Latvija (2021 and 2022)
+Column: CasesInformationId code=222;value=222
+Column: birthYear code=2008;value=2008
+Column: SummarizedInformationId code=-1;value=-1
+Column: herdId code=;value=
+Column: birthCountry code=FI;value=Finland
+Column: birthInFlockHerd code=;value=
+Column: evalCom code=;value=
+ to APP.CasesInformation
+2023-08-21 14:13:46,375 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:13:46,378 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:13:46,380 ERROR t.TableDao [main] Wrong integer field ReportId with value 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at table_database.TableDao.setParameters(TableDao.java:186) ~[classes/:?]
+	at table_database.TableDao.add(TableDao.java:221) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 14:13:46,381 ERROR t.TableDao [main] Cannot add row to the table
+java.sql.SQLException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at table_database.TableDao.add(TableDao.java:224) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.throwIfMissingParms(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.exe.acea5bc046x018ax17ccxaf9fx0000151ce9e80.reinit(Unknown Source) ~[?:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericActivationHolder.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 26 more
+2023-08-21 14:13:46,387 ERROR t.TableDao [main] Errors in adding ID: 273
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: repYear code=2017;value=2017
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=7;value=birthCountry=FI$birthYear=2008$birthMonth=7
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0013;value=0013
+Column: anMethRefId code=AT11A.F500A;value=AT11A.F500A
+Column: SummarizedInformationId code=-1;value=-1
+Column: allele2 code=;value=
+Column: allele1 code=;value=
+Column: progIdSuffix code=N123A.TG006A;value=N123A.TG006A
+Column: animage code=F31.A16NG;value=F31.A16NG
+Column: paramCodeBaseTerm code=RF-00004896-PAR;value=RF-00004896-PAR
+Column: sampCountry code=LV;value=LV
+Column: testAim code=RF-00004896-PAR$POS;value=CWD
+Column: AnalyticalResultsId code=273;value=273
+Column: resType code=BIN;value=BIN
+Column: sex code=F32.A0C8Z;value=F32.A0C8Z
+Column: ReportIdColumn: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0013;value=0013
+Column: analysisY code=2021;value=2021
+Column: anMethType code=AT11A;value=Isolate characterisation
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000015;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000015
+Column: sampD code=;value=
+Column: anMethCode code=F500A;value=Classification not possible
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: CasesInformationId code=-1;value=-1
+Column: paramCode code=RF-00004896-PAR;value=RF-00004896-PAR
+Column: origSampId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: sampUnitIds code=animalId=IT896424  $PSUId=09724;value=animalId=IT896424  $PSUId=09724
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A;value=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+Column: sampMatInfo code=;value=
+ to APP.AnalyticalResults
+2023-08-21 14:13:46,389 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:13:46,391 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:13:46,393 ERROR t.TableDao [main] Wrong integer field ReportId with value 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at table_database.TableDao.setParameters(TableDao.java:186) ~[classes/:?]
+	at table_database.TableDao.add(TableDao.java:221) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 14:13:46,395 ERROR t.TableDao [main] Cannot add row to the table
+java.sql.SQLException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at table_database.TableDao.add(TableDao.java:224) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.throwIfMissingParms(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.exe.acea5bc046x018ax17ccxaf9fx0000151ce9e80.reinit(Unknown Source) ~[?:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericActivationHolder.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 26 more
+2023-08-21 14:13:46,399 ERROR t.TableDao [main] Errors in adding ID: 272
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: repYear code=2017;value=2017
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=7;value=birthCountry=FI$birthYear=2008$birthMonth=7
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0013;value=0013
+Column: anMethRefId code=AT08A.F072A;value=AT08A.F072A
+Column: SummarizedInformationId code=-1;value=-1
+Column: allele2 code=;value=
+Column: allele1 code=;value=
+Column: progIdSuffix code=N123A.TG006A;value=N123A.TG006A
+Column: animage code=F31.A16NG;value=F31.A16NG
+Column: paramCodeBaseTerm code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: sampCountry code=LV;value=LV
+Column: testAim code=RF-00004628-PAR$POS;value=Positive
+Column: AnalyticalResultsId code=272;value=272
+Column: resType code=BIN;value=BIN
+Column: sex code=F32.A0C8Z;value=F32.A0C8Z
+Column: ReportIdColumn: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0013;value=0013
+Column: analysisY code=2022;value=2022
+Column: anMethType code=AT08A;value=Confirmatory
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000014;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000014
+Column: sampD code=;value=
+Column: anMethCode code=F072A;value=Western Blot
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: CasesInformationId code=-1;value=-1
+Column: paramCode code=RF-00004628-PAR;value=RF-00004628-PAR
+Column: origSampId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: sampUnitIds code=animalId=IT896424  $PSUId=09724;value=animalId=IT896424  $PSUId=09724
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A;value=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+Column: sampMatInfo code=;value=
+ to APP.AnalyticalResults
+2023-08-21 14:13:46,401 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-08-21 14:13:46,404 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-08-21 14:13:46,405 ERROR t.TableDao [main] Wrong integer field ReportId with value 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_382]
+	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_382]
+	at java.lang.Integer.valueOf(Integer.java:766) ~[?:1.8.0_382]
+	at table_database.TableDao.setParameters(TableDao.java:186) ~[classes/:?]
+	at table_database.TableDao.add(TableDao.java:221) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+2023-08-21 14:13:46,407 ERROR t.TableDao [main] Cannot add row to the table
+java.sql.SQLException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at table_database.TableDao.add(TableDao.java:224) ~[classes/:?]
+	at providers.TableDaoService.add(TableDaoService.java:18) ~[classes/:?]
+	at providers.TseReportService.copyTableRow(TseReportService.java:407) ~[classes/:?]
+	at providers.TseReportService.copyAnalyticalResult(TseReportService.java:386) ~[classes/:?]
+	at providers.TseReportService.copyReportChildren(TseReportService.java:354) ~[classes/:?]
+	at providers.TseReportService.copyReport(TseReportService.java:310) ~[classes/:?]
+	at providers.TseReportService.createAggregatedReport(TseReportService.java:287) ~[classes/:?]
+	at tse_amend_report.MassAmendListDialog$1.widgetSelected(MassAmendListDialog.java:62) ~[classes/:?]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) ~[swt.win64-3.655.jar:?]
+	at tse_amend_report.MassAmendListDialog.open(MassAmendListDialog.java:192) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$1.finished(ReportAmenderDialog.java:75) ~[classes/:?]
+	at tse_amend_report.ReportAmenderDialog$2.lambda$finished$0(ReportAmenderDialog.java:165) ~[classes/:?]
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source) [swt.win64-3.655.jar:?]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source) [swt.win64-3.655.jar:?]
+	at tse_main.StartUI.launch(StartUI.java:368) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:197) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: At least one parameter to the current statement is uninitialized.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.throwIfMissingParms(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.exe.acea5bc046x018ax17ccxaf9fx0000151ce9e80.reinit(Unknown Source) ~[?:?]
+	at org.apache.derby.impl.sql.execute.BaseActivation.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericActivationHolder.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 26 more
+2023-08-21 14:13:46,411 ERROR t.TableDao [main] Errors in adding ID: 271
+Column: sampMatCode code=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z;value=A04MQ#F01.A056Q$F02.A16YL$F21.A07RV$F31.A16NG$F32.A0C8Z
+Column: sampEventId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.A.IT896424
+Column: sampY code=2017;value=2017
+Column: progId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.N123A.TG006A
+Column: repYear code=2017;value=2017
+Column: sampEventInfo code=birthCountry=FI$birthYear=2008$birthMonth=7;value=birthCountry=FI$birthYear=2008$birthMonth=7
+Column: sampMatType code=S000A;value=S000A
+Column: sampInfo code=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=origSampId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: paramType code=P001A;value=P001A
+Column: sampAnId code=0013;value=0013
+Column: anMethRefId code=AT06A.F647A;value=AT06A.F647A
+Column: SummarizedInformationId code=-1;value=-1
+Column: allele2 code=;value=
+Column: allele1 code=;value=
+Column: progIdSuffix code=N123A.TG006A;value=N123A.TG006A
+Column: animage code=F31.A16NG;value=F31.A16NG
+Column: paramCodeBaseTerm code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: sampCountry code=LV;value=LV
+Column: testAim code=RF-00004895-PAR$POS;value=Positive
+Column: AnalyticalResultsId code=271;value=271
+Column: resType code=BIN;value=BIN
+Column: sex code=F32.A0C8Z;value=F32.A0C8Z
+Column: ReportIdColumn: progInfo code=tseTargetGroup=TG006A;value=tseTargetGroup=TG006A
+Column: sampId code=0013;value=0013
+Column: analysisY code=2021;value=2021
+Column: anMethType code=AT06A;value=Screening
+Column: resId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000013;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000013
+Column: sampD code=;value=
+Column: anMethCode code=F647A;value=IDEXX-HerdChek BSE-Scrapie Antigen (using CWD protocol)
+Column: sampArea code=LV00;value=LV00
+Column: resQualValue code=POS;value=POS
+Column: CasesInformationId code=-1;value=-1
+Column: paramCode code=RF-00004895-PAR;value=RF-00004895-PAR
+Column: origSampId code=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5;value=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5
+Column: sampUnitIds code=animalId=IT896424  $PSUId=09724;value=animalId=IT896424  $PSUId=09724
+Column: anPortSeq code=1;value=1
+Column: evalInfo code=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A;value=tseNationalCaseId=IT25783$tseIndexCase=Y$sampEventAsses=J049A
+Column: sampUnitType code=G199A;value=G199A
+Column: repCountry code=LV;value=LV
+Column: sampM code=3;value=3
+Column: progLegalRef code=N123A;value=N123A
+Column: sampMatInfo code=;value=
+ to APP.AnalyticalResults
+2023-08-21 14:15:31,784 ERROR t.Database [main] Error in shutting down the database
+java.sql.SQLNonTransientConnectionException: Database 'database\' shutdown.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_382]
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.AutoloadedDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[?:1.8.0_382]
+	at java.sql.DriverManager.getConnection(DriverManager.java:270) ~[?:1.8.0_382]
+	at table_database.Database.shutdown(Database.java:207) [classes/:?]
+	at tse_main.StartUI.shutdown(StartUI.java:156) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:198) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: Database 'database\' shutdown.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.shutdownDatabaseException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 13 more

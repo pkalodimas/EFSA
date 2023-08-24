@@ -698,22 +698,20 @@ public abstract class TableDialog {
 	 * @return
 	 */
 	public TableRowList getRows() {
-
-		if (parentFilter != null)
-			LOGGER.info("GetRows with filter=" + parentFilter);
-
-		TableRowList rows = null;
+		TableRowList rows;
 
 		// load parents rows
 		TableDao dao = new TableDao();
 
 		// if no filter get all
-		if (parentFilter == null)
+		if (parentFilter == null) {
 			rows = dao.getAll(schema);
-		else
+		}
+		else {
+			LOGGER.info("GetRows with filter=" + parentFilter);
 			rows = dao.getByParentId(schema, parentFilter.getSchema().getSheetName(), parentFilter.getDatabaseId(),
 					true);
-
+		}
 		return rows;
 	}
 

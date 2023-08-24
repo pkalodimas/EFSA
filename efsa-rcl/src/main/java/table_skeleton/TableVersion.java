@@ -30,7 +30,7 @@ public class TableVersion {
 		if (version == null || version.isEmpty())
 			return 0;
 		
-		return Integer.valueOf(version);
+		return Integer.parseInt(version);
 	}
 	
 	public static String getPreviousVersion(String versionCode) {
@@ -45,7 +45,7 @@ public class TableVersion {
 		try {
 			
 			// get the current version (integer)
-			int versionNumber = Integer.valueOf(versionCode);
+			int versionNumber = Integer.parseInt(versionCode);
 			
 			// increase the version number by 1
 			versionNumber--;
@@ -72,8 +72,6 @@ public class TableVersion {
 	/**
 	 * Create a new version formatted as:
 	 * 01, 02, 03, ..., 10, 11, ..., 99
-	 * @param versionCode
-	 * @return
 	 */
 	public static String createNewVersion(String versionCode) {
 		
@@ -87,7 +85,7 @@ public class TableVersion {
 		try {
 			
 			// get the current version (integer)
-			int versionNumber = Integer.valueOf(versionCode);
+			int versionNumber = Integer.parseInt(versionCode);
 			
 			// increase the version number by 1
 			versionNumber++;
@@ -110,9 +108,9 @@ public class TableVersion {
 	
 	/**
 	 * Merge the string passed in name with the version by a dot
-	 * @param name
-	 * @param version
-	 * @return
+	 * @param name name
+	 * @param version version
+	 * @return merged
 	 */
 	public static String mergeNameAndVersion(String name, String version) {
 		return name + "." + version;

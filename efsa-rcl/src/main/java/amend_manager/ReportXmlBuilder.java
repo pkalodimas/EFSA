@@ -16,6 +16,7 @@ import progress_bar.ProgressListener;
 import providers.IFormulaService;
 import providers.ITableDaoService;
 import report.EFSAReport;
+import report.Report;
 import report.ReportException;
 import table_skeleton.TableRow;
 
@@ -40,8 +41,8 @@ public class ReportXmlBuilder implements AutoCloseable {
 	 * @throws SAXException 
 	 * @throws ParserConfigurationException 
 	 */
-	public ReportXmlBuilder(EFSAReport report, MessageConfigBuilder messageConfig, 
-			String rowIdField, ITableDaoService daoService, IFormulaService formulaService) {
+	public ReportXmlBuilder(Report report, MessageConfigBuilder messageConfig,
+							String rowIdField, ITableDaoService daoService, IFormulaService formulaService) {
 
 		this.report = report;
 		this.messageConfig = messageConfig;
