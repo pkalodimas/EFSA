@@ -2,6 +2,6 @@
 **/*/logs/*
 .idea
 automation
-tse-app/*
+tse-app/**
 tse-app
 **/*/target/*
