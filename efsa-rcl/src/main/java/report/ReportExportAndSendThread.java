@@ -27,8 +27,10 @@ public class ReportExportAndSendThread extends Thread {
 	private Dataset dcfDataset;
 	private ProgressListener progressListener;
 
-	public ReportExportAndSendThread(Report report, Dataset dcfDataset, 
-			MessageConfigBuilder messageConfig, IReportService reportService) {
+	public ReportExportAndSendThread(Report report,
+									 Dataset dcfDataset,
+									 MessageConfigBuilder messageConfig,
+									 IReportService reportService) {
 		this.report = report;
 		this.messageConfig = messageConfig;
 		this.dcfDataset = dcfDataset;
@@ -41,7 +43,6 @@ public class ReportExportAndSendThread extends Thread {
 
 	@Override
 	public void run() {
-
 		try {
 			reportService.send(report, dcfDataset, messageConfig, progressListener);
 		} catch (DetailedSOAPException | IOException | ParserConfigurationException | SAXException
@@ -49,7 +50,6 @@ public class ReportExportAndSendThread extends Thread {
 
 			LOGGER.error("Cannot send report=" + report.getSenderId(), e);
 			e.printStackTrace();
-
 			if (progressListener != null)
 				this.progressListener.progressStopped(e);
 		}

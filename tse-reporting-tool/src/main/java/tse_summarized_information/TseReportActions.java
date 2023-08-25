@@ -29,8 +29,9 @@ public class TseReportActions extends ReportActions {
 	private final TseReport report;
 	private final Shell shell;
 	
-	public TseReportActions(Shell shell, TseReport report, 
-			TseReportService reportService) {
+	public TseReportActions(Shell shell,
+							TseReport report,
+							TseReportService reportService) {
 		super(shell, report, reportService);
 		this.shell = shell;
 		this.report = report;

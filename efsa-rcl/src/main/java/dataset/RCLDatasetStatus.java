@@ -2,6 +2,8 @@ package dataset;
 
 import i18n_messages.Messages;
 
+import java.util.Arrays;
+
 /**
  * Enumerator that identifies the status of a {@link Dataset}
  * @author avonva
@@ -278,5 +280,9 @@ public enum RCLDatasetStatus {
 	@Override
 	public String toString() {
 		return this.getLabel();
+	}
+
+	public boolean isFinalized(){
+		return Arrays.asList(VALID,REJECTED,REJECTED_EDITABLE).contains(this);
 	}
 }

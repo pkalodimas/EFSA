@@ -35,6 +35,7 @@ import report.ReportDownloaderDialog;
 import session_manager.TSERestoreableWindowDao;
 import soap.DetailedSOAPException;
 import tse_config.CustomStrings;
+import tse_data_collection.TSEDataCollectionsListDialog;
 import window_restorer.RestoreableWindow;
 import xml_catalog_reader.Selection;
 import xml_catalog_reader.XmlContents;

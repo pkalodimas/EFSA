@@ -347,7 +347,7 @@ public class SummarizedInfoDialog extends TableDialogWithMenu {
 
 					// if no errors update report status
 					if (errors.isEmpty()) {
-						report.setStatus(RCLDatasetStatus.LOCALLY_VALIDATED);
+						report.setRCLStatus(RCLDatasetStatus.LOCALLY_VALIDATED);
 						report.update();
 						updateUI();
 						warnUser(TSEMessages.get("success.title"), TSEMessages.get("check.success"), SWT.ICON_INFORMATION);
@@ -547,7 +547,7 @@ public class SummarizedInfoDialog extends TableDialogWithMenu {
 				}
 
 				// update the report status and UI
-				report.setStatus(status);
+				report.setRCLStatus(status);
 				report.update();
 				updateUI();
 			}

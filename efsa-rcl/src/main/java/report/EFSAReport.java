@@ -88,13 +88,13 @@ public interface EFSAReport extends IDataset {
 	 * Update the dataset status
 	 * @param status
 	 */
-	public void setStatus(String status);
+	public void setRCLStatus(String status);
 	
 	/**
 	 * Update the dataset status
 	 * @param status
 	 */
-	public void setStatus(RCLDatasetStatus status);
+	public void setRCLStatus(RCLDatasetStatus status);
 	
 	/**
 	 * Get the sender dataset id related to the report.

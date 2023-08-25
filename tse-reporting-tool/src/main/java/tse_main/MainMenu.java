@@ -32,7 +32,7 @@ import table_database.TableDao;
 import table_skeleton.TableRow;
 import table_skeleton.TableVersion;
 import test_case.EnumPicker;
-import tse_amend_report.TSEDataCollectionAmender;
+import tse_amend_report.ReportAmendDialog;
 import tse_config.CustomStrings;
 import tse_config.DebugConfig;
 import tse_main.listeners.CopySelectionListener;
@@ -361,9 +361,9 @@ public class MainMenu {
 			@Override
 			public void widgetSelected(SelectionEvent arg0) {
 				LOGGER.debug("Opening submit amendments dialog");
-				TSEDataCollectionAmender dataCollectionAmender = new TSEDataCollectionAmender(shell, reportService, daoService);
+				ReportAmendDialog dataCollectionAmender = new ReportAmendDialog(shell, reportService, daoService);
 				try {
-					dataCollectionAmender.amend();
+					dataCollectionAmender.open();
 				} catch (DetailedSOAPException e) {
 					LOGGER.error("Amend reports failed", e);
 					e.printStackTrace();

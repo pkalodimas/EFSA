@@ -53,7 +53,7 @@ public class TseReport extends Report {
 		TseReport report = new TseReport();
 		report.setCountry("Default");
 		report.setSenderId("Default");
-		report.setStatus(RCLDatasetStatus.DRAFT);
+		report.setRCLStatus(RCLDatasetStatus.DRAFT);
 		report.setMonth("");
 		report.setYear("");
 		report.setVersion(TableVersion.getFirstVersion());

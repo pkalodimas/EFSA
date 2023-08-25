@@ -7,8 +7,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.soap.SOAPException;
@@ -20,7 +18,6 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
-import data_collection.DataCollectionsListDialog;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.eclipse.swt.SWT;
@@ -217,17 +214,18 @@ public class ReportService implements IReportService {
 	 * @param response
 	 * @return
 	 */
-	private RCLDatasetStatus updateReportWithSendResponse(Report report, OperationType requiredSendOp,
-			MessageResponse response) {
-
+	private RCLDatasetStatus updateReportWithSendResponse(Report report,
+														  OperationType requiredSendOp,
+														  MessageResponse response) {
 		RCLDatasetStatus newStatus;
 
 		// save the message id
 		report.setMessageId(response.getMessageId());
 		report.setLastMessageId(response.getMessageId());
 
-		if (requiredSendOp == OperationType.INSERT || requiredSendOp == OperationType.REPLACE)
+		if (requiredSendOp == OperationType.INSERT || requiredSendOp == OperationType.REPLACE) {
 			report.setLastModifyingMessageId(response.getMessageId());
+		}
 
 		// if correct response then save the message id
 		// into the report
@@ -255,15 +253,17 @@ public class ReportService implements IReportService {
 		}
 
 		if (newStatus != null) {
-			report.setStatus(newStatus);
+			report.setRCLStatus(newStatus);
 			daoService.update(report);
 		}
 
 		return newStatus;
 	}
 
-	public void send(Report report, Dataset dcfDataset, MessageConfigBuilder messageConfig,
-			ProgressListener progressListener) throws DetailedSOAPException, IOException, ParserConfigurationException,
+	public void send(Report report,
+					 Dataset dcfDataset,
+					 MessageConfigBuilder messageConfig,
+					 ProgressListener progressListener) throws DetailedSOAPException, IOException, ParserConfigurationException,
 			SAXException, SendMessageException, ReportException, AmendException {
 
 		// Update the report dataset id if it was found in the DCF
@@ -311,9 +311,10 @@ public class ReportService implements IReportService {
 	 * @throws AmendException
 	 * @throws SOAPException
 	 */
-	public MessageResponse exportAndSend(Report report, MessageConfigBuilder messageConfig,
-			ProgressListener progressListener) throws IOException, ParserConfigurationException, SAXException,
-			SendMessageException, DetailedSOAPException, ReportException, AmendException {
+	public MessageResponse exportAndSend(Report report,
+										 MessageConfigBuilder messageConfig,
+										 ProgressListener progressListener)
+			throws IOException, ParserConfigurationException, SAXException, SendMessageException, DetailedSOAPException, ReportException, AmendException {
 
 		// export the report and get an handle to the exported file
 		File file;
@@ -323,7 +324,7 @@ public class ReportService implements IReportService {
 		} catch (AmendException e1) {
 			LOGGER.error("Error during export", e1);
 			// upload failed if errors in the amendments
-			report.setStatus(RCLDatasetStatus.UPLOAD_FAILED);
+			report.setRCLStatus(RCLDatasetStatus.UPLOAD_FAILED);
 			this.daoService.update(report);
 
 			throw e1;
@@ -680,7 +681,7 @@ public class ReportService implements IReportService {
 			RCLDatasetStatus failedStatus = RCLDatasetStatus.getFailedVersionOf(report.getRCLStatus());
 
 			if (failedStatus != null) {
-				report.setStatus(failedStatus);
+				report.setRCLStatus(failedStatus);
 
 				// permanently save data
 				daoService.update(report);
@@ -729,7 +730,7 @@ public class ReportService implements IReportService {
 			RCLDatasetStatus failedStatus = RCLDatasetStatus.getFailedVersionOf(report.getRCLStatus());
 
 			if (failedStatus != null) {
-				report.setStatus(failedStatus);
+				report.setRCLStatus(failedStatus);
 
 				// permanently save data
 				daoService.update(report);
@@ -805,7 +806,7 @@ public class ReportService implements IReportService {
 
 			// update status with dataset status
 			// update dataset id
-			report.setStatus(dcfDataset.getRCLStatus());
+			report.setRCLStatus(dcfDataset.getRCLStatus());
 			report.setId(dcfDataset.getId());
 			this.daoService.update(report);
 

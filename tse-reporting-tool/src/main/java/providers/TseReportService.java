@@ -284,8 +284,8 @@ public class TseReportService extends ReportService {
 	 * @param reportList list of the amended reports
 	 * @return the newly created report
 	 */
-	public TseReport createAggregatedReport(ArrayList<TseReport> reportList) {
-		String aggrSenderId = String.format("AGGR_%s_%S", LocalDate.now().format(DateTimeFormatter.ofPattern("yyyyMMdd")),reportList.get(0).getDcCode());
+	public TseReport createAggregatedReport(List<TseReport> reportList) {
+		String aggrSenderId = String.format("AGGR_%s_%s", LocalDate.now().format(DateTimeFormatter.ofPattern("yyyyMMdd")),reportList.get(0).getDcCode());
 		if( this.aggregationReportExists(aggrSenderId) ){
 			throw new RuntimeException("Aggregation report cannot be created");
 		}
@@ -320,7 +320,7 @@ public class TseReportService extends ReportService {
 			e.printStackTrace();
 		}
 		aggrRep.setDcCode(templateReport.getDcCode());
-		aggrRep.setStatus(RCLDatasetStatus.LOCALLY_VALIDATED);
+		aggrRep.setRCLStatus(RCLDatasetStatus.LOCALLY_VALIDATED);
 		aggrRep.setType(ReportType.COLLECTION_AGGREGATION);
 		aggrRep.setYear(templateReport.getYear());
 		aggrRep.setVersion(version);
@@ -361,7 +361,7 @@ public class TseReportService extends ReportService {
 			daoService.deleteByParentId(rel.getChildSchema(), target.getSchema().getSheetName(), target.getDatabaseId());
 		}
 
-		target.setStatus(RCLDatasetStatus.DRAFT);
+		target.setRCLStatus(RCLDatasetStatus.DRAFT);
 		target.setMessageId("");
 		daoService.update(target);
 
@@ -424,7 +424,7 @@ public class TseReportService extends ReportService {
 		String newVersion = TableVersion.createNewVersion(source.getVersion());
 		target.setVersion(newVersion);
 
-		target.setStatus(RCLDatasetStatus.DRAFT);
+		target.setRCLStatus(RCLDatasetStatus.DRAFT);
 		target.setId("");
 		target.setMessageId("");
 		getDaoService().add(target);
@@ -531,7 +531,7 @@ public class TseReportService extends ReportService {
 		}
 
 		report.setSenderId(senderId);
-		report.setStatus(dataset.getRCLStatus() != null ? dataset.getRCLStatus() : RCLDatasetStatus.DRAFT);
+		report.setRCLStatus(dataset.getRCLStatus() != null ? dataset.getRCLStatus() : RCLDatasetStatus.DRAFT);
 
 		// split FR1705... into country year and month
 		if (senderId.length() < 6) {
@@ -704,7 +704,7 @@ public class TseReportService extends ReportService {
 		return groupedReports.getOrDefault(dcCode, new ArrayList<>()).stream()
 				.map(TseReport::new)
 				.filter(r -> ReportType.COLLECTION_AGGREGATION.equals(r.getType()))
-				.anyMatch(r -> !filterOutStatuses.contains(r.getStatus()));
+				.anyMatch(r -> !filterOutStatuses.contains(r.getRCLStatus()));
 	}
 
 	public boolean dcHasAmendedReport(Map<String, List<TableRow>> groupedReports, String dcCode) {

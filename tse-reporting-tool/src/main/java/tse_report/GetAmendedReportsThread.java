@@ -3,9 +3,15 @@ package tse_report;
 import dataset.RCLDatasetStatus;
 import providers.IReportService;
 import report.Report;
+import report.ReportType;
 import report.ThreadFinishedListener;
+import table_skeleton.TableRow;
 import table_skeleton.TableRowList;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class GetAmendedReportsThread extends Thread {
@@ -14,19 +20,16 @@ public class GetAmendedReportsThread extends Thread {
 
 	private ThreadFinishedListener listener;
 
-	private final IReportService reportService;
-	private final String dcCode;
-
-	public GetAmendedReportsThread(String dcCode, IReportService reportService) {
-		this.dcCode = dcCode;
-		this.reportService = reportService;
+	public GetAmendedReportsThread(List<TseReport> reports) {
+		this.reports = new TableRowList(new ArrayList<TableRow>(reports));
 	}
 	
 	@Override
 	public void run() {
 		reports = getAmendedReports();
-		if (listener != null)
+		if (listener != null) {
 			listener.finished(this);
+		}
 	}
 	
 	public void setListener(ThreadFinishedListener listener) {
@@ -43,16 +46,39 @@ public class GetAmendedReportsThread extends Thread {
 	 * @return
 	 */
 	private TableRowList getAmendedReports() {
-		return filterReports(reportService.getAllReports(), dcCode);
-	}
+		return null;
+//		List<TseReport> allReports = reportService.getAllReports()
+//				.stream()
+//				.map(TseReport::new)
+//				.collect(Collectors.toList());
+//
+//		return allReports.stream()
+//				.filter(Report::isVisible)
+//				.filter(r -> r.getDcCode().equals(dcCode))
+//				.filter(r -> r.getRCLStatus().equals(RCLDatasetStatus.LOCALLY_VALIDATED))
+//				.filter(r -> Integer.parseInt(r.getVersion()) > 0)
+//				.collect(Collectors.toCollection(TableRowList::new));
 
-	private TableRowList filterReports(TableRowList unfiltered, String dcCode) {
-		return unfiltered.stream()
-				.map(TseReport::new)
-				.filter(Report::isVisible)
-				.filter(r -> r.getDcCode().equals(dcCode))
-				.filter(r -> r.getRCLStatus().equals(RCLDatasetStatus.LOCALLY_VALIDATED))
-				.filter(r -> Integer.parseInt(r.getVersion()) > 0)
-				.collect(Collectors.toCollection(TableRowList::new));
+//		List<String> aggregatedIds = allReports.stream()
+//				.map(TseReport::new)
+//				.filter(r ->r.getDcCode().equals(dcCode))
+//				.filter(r-> ReportType.COLLECTION_AGGREGATION.equals(r.getType()))
+//				.filter(r-> Boolean.FALSE.equals(r.getRCLStatus().isFinalized()))
+//				.map(Report::getId)
+//				.collect(Collectors.toList());
+//
+//		if( Boolean.FALSE.equals(aggregatedIds.isEmpty()) ){
+//			return new TableRowList(
+//					allReports.stream()
+//							.map(TseReport::new)
+//							.filter(Report::isVisible)
+//							.filter(r -> r.getDcCode().equals(dcCode))
+//							.filter(r -> aggregatedIds.contains(r.getAggregatorId()))
+//							.collect(Collectors.toList())
+//			);
+//		}
+//		else {
+//
+//		}
 	}
 }

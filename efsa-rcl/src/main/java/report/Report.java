@@ -11,7 +11,6 @@ import xlsx_reader.TableSchema;
 import xlsx_reader.TableSchemaList;
 
 import java.util.Objects;
-import java.util.Optional;
 
 public abstract class Report extends TableRow implements EFSAReport {
 
@@ -109,7 +108,7 @@ public abstract class Report extends TableRow implements EFSAReport {
 		return RCLDatasetStatus.fromString(status);
 	}
 
-	public void setStatus(String status) {
+	public void setRCLStatus(String status) {
 		this.put(AppPaths.REPORT_PREVIOUS_STATUS, this.getRCLStatus().getStatus());
 		this.put(AppPaths.REPORT_STATUS, status);
 	}
@@ -131,8 +130,8 @@ public abstract class Report extends TableRow implements EFSAReport {
 		return RCLDatasetStatus.fromString(status);
 	}
 
-	public void setStatus(RCLDatasetStatus status) {
-		this.setStatus(status.getStatus());
+	public void setRCLStatus(RCLDatasetStatus status) {
+		this.setRCLStatus(status.getStatus());
 	}
 
 	public String getYear() {
@@ -155,7 +154,7 @@ public abstract class Report extends TableRow implements EFSAReport {
 	 * Force the report to be editable
 	 */
 	public void makeEditable() {
-		this.setStatus(RCLDatasetStatus.DRAFT);
+		this.setRCLStatus(RCLDatasetStatus.DRAFT);
 	}
 
 	/**

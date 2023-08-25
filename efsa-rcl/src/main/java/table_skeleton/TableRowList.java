@@ -18,8 +18,8 @@ public class TableRowList extends ArrayList<TableRow> {
 	
 	public TableRowList() {
 	}
-	
-	public TableRowList(Collection<TableRow> rows) {
+
+	public TableRowList(Collection<? extends TableRow> rows) {
 		super(rows);
 	}
 	

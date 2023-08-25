@@ -15,79 +15,72 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Dialog;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
-import providers.IReportService;
 import providers.ITableDaoService;
 import providers.TseReportService;
 import report.IMassAmendReportDialog;
 import report.ReportActions;
+import report.ReportType;
+import session_manager.TSERestoreableWindowDao;
 import table_dialog.DialogBuilder;
 import table_skeleton.TableRowList;
 import tse_report.TseReport;
 import tse_summarized_information.TseReportActions;
+import window_restorer.RestoreableWindow;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 /**
  * Dialog showing the amended reports of the collection
  * @author chalvatzaras
  *
  */
-public class MassAmendListDialog extends Dialog implements IMassAmendReportDialog {
+public class AmendReportListDialog extends Dialog {
 
-	private TableRowList list;
+	private final String windowCode;
+	private RestoreableWindow window;
 
-	private ArrayList<TseReport> reportList;
-
-	protected TseReportService reportService;
-
-	protected ITableDaoService daoService;
-
+	private List<TseReport> reports;
 	private DialogBuilder viewer;
 
-	public MassAmendListDialog(Shell parent, TableRowList list, IReportService reportService, ITableDaoService daoService, int style) {
-		super(parent, style);
-		this.list = list;
-		this.daoService = daoService;
-		this.reportService = (TseReportService) reportService;
-	}
+	private TseReportService reportService;
+	private ITableDaoService daoService;
 
-	public void setReportList(TableRowList list) {
-		this.list = list;
-		this.reportList = convertTableRowsToReports(list);
+	public AmendReportListDialog(Shell parent,
+								 String windowCode,
+								 List<TseReport> reports,
+								 TseReportService reportService,
+								 ITableDaoService daoService) {
+		super(parent, SWT.SHELL_TRIM | SWT.APPLICATION_MODAL);
+		this.windowCode = windowCode;
+		this.reports = reports;
+		this.daoService = Objects.requireNonNull(daoService);
+		this.reportService = Objects.requireNonNull(reportService);
 	}
 
 	protected void createContents(Shell shell) {
-		SelectionListener sendListener = new SelectionAdapter() {
+		SelectionListener sendListener =  new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent arg0) {
-
-				TseReport aggregatedReport = reportService.createAggregatedReport(reportList);
-				ReportActions actions = new TseReportActions(shell, aggregatedReport, reportService);
-				actions.send(reportService.getSendMessageConfiguration(aggregatedReport), arg01 -> updateUI());
-				updateUI();
+				sendReports();
 			}
 		};
-
 		SelectionListener submitListener = new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent arg0) {
-				updateUI();
+				submit();
 			}
 		};
-
 		SelectionListener refreshStateListener = new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent arg0) {
-				updateUI();
+				refreshStatuses();
 			}
 		};
 
-//		SelectionListener displayReportListener = new SelectionAdapter() {
-//			@Override
-//			public void widgetSelected(SelectionEvent arg0) {
-//				updateUI();
-//			}
-//		};
 
 		viewer = new DialogBuilder(shell);
 
@@ -98,16 +91,16 @@ public class MassAmendListDialog extends Dialog implements IMassAmendReportDialo
 			// add the buttons to the toolbar
 			.addButtonToComposite("sendBtn", "buttonsComp", "Send", sendListener)
 			.addButtonToComposite("submitBtn", "buttonsComp", "Submit", submitListener)
-			.addButtonToComposite("refreshBtn", "buttonsComp", "Refresh Status",
-					refreshStateListener);
-//			.addButtonToComposite("displayReportBtn", "buttonsComp", "Display Report",
-//					displayReportListener);
+			.addButtonToComposite("refreshBtn", "buttonsComp", "Refresh Status", refreshStateListener);
 		addTableToComposite();
 
 		initUI();
 		updateUI();
-
 		shell.pack();
+
+		window = new RestoreableWindow(shell, this.windowCode);
+		window.restore(TSERestoreableWindowDao.class);
+		window.saveOnClosure(TSERestoreableWindowDao.class);
 	}
 
 	private void addTableToComposite() {
@@ -135,7 +128,7 @@ public class MassAmendListDialog extends Dialog implements IMassAmendReportDialo
 			col.getColumn().setWidth(150);
 		}
 
-		table.setInput(list);
+		table.setInput(new TableRowList(reports));
 	}
 
 	/**
@@ -145,7 +138,6 @@ public class MassAmendListDialog extends Dialog implements IMassAmendReportDialo
 		viewer.setEnabled("refreshBtn", true);
 		viewer.setEnabled("sendBtn", canAllBeSent() && !listIsEmpty());
 		viewer.setEnabled("submitBtn", canAllBeSubmitted());
-//		viewer.setEnabled("displayReportBtn", true);
 
 		// add image to send button
 		Image sendImage = new Image(Display.getCurrent(),
@@ -175,11 +167,9 @@ public class MassAmendListDialog extends Dialog implements IMassAmendReportDialo
 		viewer.setEnabled("sendBtn", canAllBeSent());
 		viewer.setEnabled("submitBtn", canAllBeSubmitted());
 		viewer.setEnabled("refreshBtn", true);
-//		viewer.setEnabled("displayReportBtn", true);
 	}
 
 	public void open() {
-
 		Shell shell = new Shell(getParent(), SWT.SHELL_TRIM | SWT.APPLICATION_MODAL);
 		shell.setLayout(new GridLayout(1, false));
 		shell.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, true, false));
@@ -187,7 +177,7 @@ public class MassAmendListDialog extends Dialog implements IMassAmendReportDialo
 		shell.setText(Messages.get("ma.dialog.title"));
 		shell.setImage(getParent().getImage());
 
-		createContents(shell);
+		this.createContents(shell);
 
 		shell.open();
 
@@ -200,28 +190,45 @@ public class MassAmendListDialog extends Dialog implements IMassAmendReportDialo
 	}
 
 	private boolean canAllBeSent() {
-		return reportList.stream()
+		return reports.stream()
 				.allMatch(tseReport -> tseReport.getRCLStatus().equals(RCLDatasetStatus.LOCALLY_VALIDATED));
 	}
 
 	private boolean canAllBeSubmitted() {
-		return reportList.stream()
-				.allMatch(tseReport -> tseReport.getRCLStatus().canBeSubmitted());
+		return reports.stream()
+				.allMatch(report -> report.getRCLStatus().canBeSubmitted());
 	}
 
 	private boolean listIsEmpty() {
-		return reportList.isEmpty();
+		return reports.isEmpty();
 	}
 
-	/**
-	 * Converts TableRowListToReports.
-	 * @param list Table Row List.
-	 *
-	 * @return  Array list of reports.
-	 */
-	private ArrayList<TseReport> convertTableRowsToReports(TableRowList list) {
-		ArrayList<TseReport> reports = new ArrayList<>();
-		list.forEach(tr -> reports.add(new TseReport(tr)));
-		return reports;
+	private void sendReports(){
+		TseReport report = this.reports.size() == 1
+				? this.reports.get(0)
+				: this.reportService.createAggregatedReport(reports);
+
+//				ReportActions actions = new TseReportActions(shell, report, reportService);
+//				actions.send(reportService.getSendMessageConfiguration(report), arg01 -> updateUI());
+		report.setRCLStatus(RCLDatasetStatus.UPLOADED);
+		report.setId(String.valueOf(System.currentTimeMillis()));
+		this.daoService.update(report);
+
+		if(ReportType.COLLECTION_AGGREGATION.equals(report.getType())){
+			this.reports.forEach(r->{
+				r.setRCLStatus(report.getRCLStatus());
+				r.setAggregatorId(report.getId());
+				this.daoService.update(r);
+			});
+		}
+		updateUI();
+	}
+
+	private void refreshStatuses(){
+
+	}
+
+	private void submit(){
+
 	}
 }

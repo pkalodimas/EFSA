@@ -162,24 +162,14 @@ public abstract class ReportActions {
 		ReportExportAndSendThread sender = new ReportExportAndSendThread(report, dataset, messageConfig, reportService);
 
 		sender.setProgressListener(new ProgressListener() {
-
 			@Override
 			public void progressCompleted() {
-
-				shell.getDisplay().syncExec(new Runnable() {
-
-					@Override
-					public void run() {
-
-						progressBarDialog.fillToMax();
-
-						progressBarDialog.close();
-
-						if (listener != null)
-							listener.handleEvent(null);
-
-						end(ReportAction.SEND);
-					}
+				shell.getDisplay().syncExec(() -> {
+					progressBarDialog.fillToMax();
+					progressBarDialog.close();
+					if (listener != null)
+						listener.handleEvent(null);
+					end(ReportAction.SEND);
 				});
 			}
 
@@ -194,15 +184,9 @@ public abstract class ReportActions {
 
 			@Override
 			public void progressStopped(Exception e) {
-				shell.getDisplay().syncExec(new Runnable() {
-
-					@Override
-					public void run() {
-
-						progressBarDialog.close();
-
-						manageException(e, ReportAction.SEND);
-					}
+				shell.getDisplay().syncExec(() -> {
+					progressBarDialog.close();
+					manageException(e, ReportAction.SEND);
 				});
 			}
 		});
