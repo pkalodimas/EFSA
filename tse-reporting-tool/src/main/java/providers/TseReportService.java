@@ -21,6 +21,7 @@ import formula.FormulaException;
 import formula.FormulaSolver;
 import message.MessageConfigBuilder;
 import report.Report;
+import report.ReportType;
 import report_downloader.TSEFormulaDecomposer;
 import soap_interface.IGetAck;
 import soap_interface.IGetDataset;
@@ -320,7 +321,7 @@ public class TseReportService extends ReportService {
 		}
 		aggrRep.setDcCode(templateReport.getDcCode());
 		aggrRep.setStatus(RCLDatasetStatus.LOCALLY_VALIDATED);
-		aggrRep.setIsAggregated(true);
+		aggrRep.setType(ReportType.COLLECTION_AGGREGATION);
 		aggrRep.setYear(templateReport.getYear());
 		aggrRep.setVersion(version);
 		aggrRep.setSenderId(senderId);
@@ -699,11 +700,11 @@ public class TseReportService extends ReportService {
 	}
 
 	public boolean dcHasAggregatedReport(Map<String, List<TableRow>> groupedReports, String dcCode) {
+		List<RCLDatasetStatus> filterOutStatuses = Arrays.asList(RCLDatasetStatus.ACCEPTED_DWH, RCLDatasetStatus.REJECTED, RCLDatasetStatus.REJECTED_EDITABLE);
 		return groupedReports.getOrDefault(dcCode, new ArrayList<>()).stream()
-				.filter(r -> Boolean.TRUE.toString().equalsIgnoreCase(r.getCode(AppPaths.REPORT_IS_AGGREGATED)))
-				.filter(r -> !RCLDatasetStatus.fromString(r.getCode(AppPaths.REPORT_STATUS)).equals(RCLDatasetStatus.ACCEPTED_DWH))
-				.filter(r -> !RCLDatasetStatus.fromString(r.getCode(AppPaths.REPORT_STATUS)).equals(RCLDatasetStatus.REJECTED))
-				.anyMatch(r -> !RCLDatasetStatus.fromString(r.getCode(AppPaths.REPORT_STATUS)).equals(RCLDatasetStatus.REJECTED_EDITABLE));
+				.map(TseReport::new)
+				.filter(r -> ReportType.COLLECTION_AGGREGATION.equals(r.getType()))
+				.anyMatch(r -> !filterOutStatuses.contains(r.getStatus()));
 	}
 
 	public boolean dcHasAmendedReport(Map<String, List<TableRow>> groupedReports, String dcCode) {

@@ -40,7 +40,7 @@ public class AppPaths {
 
 	public static final String REPORT_SHEET = "Report";
 	public static final String REPORT_YEAR_COL = "reportYear";
-	public static final String REPORT_IS_AGGREGATED = "isAggregated";
+	public static final String REPORT_TYPE = "type";
 	public static final String REPORT_AGGREGATOR_ID = "aggregatorId";
 	public static final String REPORT_DC_CODE = "dcCode";
 	public static final String REPORT_MONTH_COL = "reportMonth";

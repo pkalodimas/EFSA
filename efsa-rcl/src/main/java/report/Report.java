@@ -10,6 +10,9 @@ import table_skeleton.TableVersion;
 import xlsx_reader.TableSchema;
 import xlsx_reader.TableSchemaList;
 
+import java.util.Objects;
+import java.util.Optional;
+
 public abstract class Report extends TableRow implements EFSAReport {
 
 	public Report(TableRow row) {
@@ -112,7 +115,7 @@ public abstract class Report extends TableRow implements EFSAReport {
 	}
 
 	public boolean isVisible(){
-		return Boolean.FALSE.equals(this.getIsAggregated());
+		return ReportType.SIMPLE_MONTHLY.equals(this.getType());
 	}
 	/**
 	 * Get the previous status of the dataset
@@ -198,14 +201,6 @@ public abstract class Report extends TableRow implements EFSAReport {
 	 */
 	public abstract String getRowIdFieldName();
 
-	public void setIsAggregated(boolean isAggregated) {
-		this.put(AppPaths.REPORT_IS_AGGREGATED, String.valueOf(isAggregated));
-	}
-
-	public boolean getIsAggregated() {
-		return Boolean.TRUE.toString().equalsIgnoreCase(this.getCode(AppPaths.REPORT_IS_AGGREGATED));
-	}
-
 	public void setAggregatorId(String aggregatorId) {
 		this.put(AppPaths.REPORT_AGGREGATOR_ID, aggregatorId);
 	}
@@ -220,5 +215,14 @@ public abstract class Report extends TableRow implements EFSAReport {
 
 	public String getDcCode() {
 		return this.getCode(AppPaths.REPORT_DC_CODE);
+	}
+
+	public void setType(ReportType type){
+		String val = (Objects.nonNull(type) ? type : ReportType.SIMPLE_MONTHLY).name();
+		this.put(AppPaths.REPORT_TYPE, val);
+	}
+
+	public ReportType getType(){
+		return ReportType.getOrDefault(this.getCode(AppPaths.REPORT_TYPE));
 	}
 }
