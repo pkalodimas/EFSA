@@ -76,7 +76,6 @@ public class ReportAmendDialog {
 		}
 		AmendReportListDialog amendedReportsDialog = this.getAmendedReportsDialog(shell, selectedDc.getCode());
 		amendedReportsDialog.open();
-		// TODO, when the AmendReportsListDialog close, it should refresh the data.
 	}
 
 	private IDcfDataCollectionsList<IDcfDataCollection> getDataCollectionsWithAmendedReports() throws DetailedSOAPException {

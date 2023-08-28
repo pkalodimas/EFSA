@@ -73,14 +73,22 @@ public class AmendReportListDialog extends Dialog {
 	}
 
 	private void loadAmendedMonthlyReports(){
-		this.reports = this.reportService.getAllReports()
+		List<TseReport> amendedReports = this.reportService.getAllReports()
 				.stream()
 				.map(TseReport::new)
 				.filter(r -> r.getDcCode().equals(dcCode))
-				.filter(Report::isVisible)
 				.filter(r -> Integer.parseInt(r.getVersion()) > 0)
 				.filter(r -> Boolean.FALSE.equals(r.getRCLStatus().isFinalized()))
 				.collect(Collectors.toList());
+
+		if( amendedReports.stream().anyMatch(r->ReportType.COLLECTION_AGGREGATION.equals(r.getType())) ){
+			this.reports = amendedReports.stream()
+					.filter(TseReport::isAggregated)
+					.collect(Collectors.toList());
+		}
+		else {
+			this.reports = amendedReports;
+		}
 	}
 
 	protected void createContents(Shell shell) {
@@ -156,7 +164,7 @@ public class AmendReportListDialog extends Dialog {
 	 * Initialise the labels to their initial state
 	 */
 	private void initUI() {
-		viewer.setEnabled("refreshBtn", true);
+		viewer.setEnabled("refreshBtn", canRefreshStatus());
 		viewer.setEnabled("sendBtn", canAllBeSent() && !listIsEmpty());
 		viewer.setEnabled("submitBtn", canAllBeSubmitted());
 
@@ -187,7 +195,7 @@ public class AmendReportListDialog extends Dialog {
 	public void updateUI() {
 		viewer.setEnabled("sendBtn", canAllBeSent());
 		viewer.setEnabled("submitBtn", canAllBeSubmitted());
-		viewer.setEnabled("refreshBtn", true);
+		viewer.setEnabled("refreshBtn", canRefreshStatus());
 	}
 
 	public void open() {
@@ -218,6 +226,11 @@ public class AmendReportListDialog extends Dialog {
 	private boolean canAllBeSubmitted() {
 		return !this.listIsEmpty() &&
 				reports.stream().allMatch(report -> report.getRCLStatus().canBeSubmitted());
+	}
+
+	private boolean canRefreshStatus(){
+		return !this.listIsEmpty() &&
+			this.reports.stream().anyMatch(report-> report.getRCLStatus().canBeRefreshed());
 	}
 
 	private boolean listIsEmpty() {
