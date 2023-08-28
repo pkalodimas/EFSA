@@ -66,7 +66,7 @@ public class RefreshStatusThread extends Thread {
         }
 
 //        result = this.reportService.refreshStatus(aggrReport);
-        aggrReport.setRCLStatus(RCLDatasetStatus.VALID);
+        aggrReport.setRCLStatus(RCLDatasetStatus.ACCEPTED_DWH);
         this.daoService.update(aggrReport);
 
         this.daoService.getByStringField(
@@ -75,6 +75,9 @@ public class RefreshStatusThread extends Thread {
                 .map(TseReport::new)
                 .forEach(rep -> {
                     rep.setRCLStatus(aggrReport.getRCLStatus());
+                    if( aggrReport.getRCLStatus().isFinalized() ){
+                        rep.setAggregatorId(null);
+                    }
                     daoService.update(rep);
                 });
 
