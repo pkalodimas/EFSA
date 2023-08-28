@@ -283,6 +283,6 @@ public enum RCLDatasetStatus {
 	}
 
 	public boolean isFinalized(){
-		return Arrays.asList(VALID,REJECTED,REJECTED_EDITABLE).contains(this);
+		return Arrays.asList(ACCEPTED_DWH,REJECTED,REJECTED_EDITABLE).contains(this);
 	}
 }

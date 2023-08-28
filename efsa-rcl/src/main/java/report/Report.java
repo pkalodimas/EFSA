@@ -11,6 +11,7 @@ import xlsx_reader.TableSchema;
 import xlsx_reader.TableSchemaList;
 
 import java.util.Objects;
+import java.util.Optional;
 
 public abstract class Report extends TableRow implements EFSAReport {
 
@@ -205,7 +206,10 @@ public abstract class Report extends TableRow implements EFSAReport {
 	}
 
 	public String getAggregatorId() {
-		return this.getCode(AppPaths.REPORT_AGGREGATOR_ID);
+		return Optional.ofNullable(this.getCode(AppPaths.REPORT_AGGREGATOR_ID))
+				.map(String::trim)
+				.filter(str->Boolean.FALSE.equals(str.isEmpty()))
+				.orElse(null);
 	}
 
 	public void setDcCode(String dcCode) {

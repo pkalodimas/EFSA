@@ -49,6 +49,7 @@ import tse_config.CatalogLists;
 import tse_config.CustomStrings;
 import tse_config.DebugConfig;
 import tse_main.TseFileDialog;
+import tse_report.RefreshStatusThread;
 import tse_report.TseReport;
 import tse_validator.SummarizedInfoValidator;
 import tse_validator.TseReportValidator;
@@ -275,7 +276,7 @@ public class SummarizedInfoDialog extends TableDialogWithMenu {
 						SWT.APPLICATION_MODAL, TSEMessages.get("refresh.status.progress.bar.label"));
 				progressBar.open();
 
-				RefreshStatusThread refreshStatus = new RefreshStatusThread(report, reportService);
+				RefreshStatusThread refreshStatus = new RefreshStatusThread(report, reportService, daoService);
 				refreshStatus.setListener(new ThreadFinishedListener() {
 					@Override
 					public void finished(Runnable thread) {

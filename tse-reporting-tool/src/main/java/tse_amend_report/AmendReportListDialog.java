@@ -1,7 +1,13 @@
 package tse_amend_report;
 
+import app_config.PropertiesReader;
 import dataset.RCLDatasetStatus;
+import global_utils.Message;
+import global_utils.Warnings;
 import i18n_messages.Messages;
+import i18n_messages.TSEMessages;
+import message.MessageConfigBuilder;
+import message_creator.OperationType;
 import org.eclipse.jface.viewers.TableViewer;
 import org.eclipse.jface.viewers.TableViewerColumn;
 import org.eclipse.swt.SWT;
@@ -15,23 +21,27 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Dialog;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
+import progress_bar.IndeterminateProgressDialog;
 import providers.ITableDaoService;
 import providers.TseReportService;
-import report.IMassAmendReportDialog;
+import report.Report;
 import report.ReportActions;
 import report.ReportType;
+import report.ThreadFinishedListener;
 import session_manager.TSERestoreableWindowDao;
+import soap.DetailedSOAPException;
 import table_dialog.DialogBuilder;
 import table_skeleton.TableRowList;
+import tse_report.RefreshStatusThread;
 import tse_report.TseReport;
 import tse_summarized_information.TseReportActions;
 import window_restorer.RestoreableWindow;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 /**
  * Dialog showing the amended reports of the collection
@@ -42,7 +52,7 @@ public class AmendReportListDialog extends Dialog {
 
 	private final String windowCode;
 	private RestoreableWindow window;
-
+	private final String dcCode;
 	private List<TseReport> reports;
 	private DialogBuilder viewer;
 
@@ -51,14 +61,26 @@ public class AmendReportListDialog extends Dialog {
 
 	public AmendReportListDialog(Shell parent,
 								 String windowCode,
-								 List<TseReport> reports,
+								 String dcCode,
 								 TseReportService reportService,
 								 ITableDaoService daoService) {
 		super(parent, SWT.SHELL_TRIM | SWT.APPLICATION_MODAL);
 		this.windowCode = windowCode;
-		this.reports = reports;
+		this.dcCode = Objects.requireNonNull(dcCode);
 		this.daoService = Objects.requireNonNull(daoService);
 		this.reportService = Objects.requireNonNull(reportService);
+		this.loadAmendedMonthlyReports();
+	}
+
+	private void loadAmendedMonthlyReports(){
+		this.reports = this.reportService.getAllReports()
+				.stream()
+				.map(TseReport::new)
+				.filter(r -> r.getDcCode().equals(dcCode))
+				.filter(Report::isVisible)
+				.filter(r -> Integer.parseInt(r.getVersion()) > 0)
+				.filter(r -> Boolean.FALSE.equals(r.getRCLStatus().isFinalized()))
+				.collect(Collectors.toList());
 	}
 
 	protected void createContents(Shell shell) {
@@ -80,7 +102,6 @@ public class AmendReportListDialog extends Dialog {
 				refreshStatuses();
 			}
 		};
-
 
 		viewer = new DialogBuilder(shell);
 
@@ -190,13 +211,13 @@ public class AmendReportListDialog extends Dialog {
 	}
 
 	private boolean canAllBeSent() {
-		return reports.stream()
-				.allMatch(tseReport -> tseReport.getRCLStatus().equals(RCLDatasetStatus.LOCALLY_VALIDATED));
+		return !this.listIsEmpty() &&
+				reports.stream().allMatch(tseReport -> tseReport.getRCLStatus().equals(RCLDatasetStatus.LOCALLY_VALIDATED));
 	}
 
 	private boolean canAllBeSubmitted() {
-		return reports.stream()
-				.allMatch(report -> report.getRCLStatus().canBeSubmitted());
+		return !this.listIsEmpty() &&
+				reports.stream().allMatch(report -> report.getRCLStatus().canBeSubmitted());
 	}
 
 	private boolean listIsEmpty() {
@@ -221,14 +242,70 @@ public class AmendReportListDialog extends Dialog {
 				this.daoService.update(r);
 			});
 		}
+		this.loadAmendedMonthlyReports();
 		updateUI();
 	}
 
 	private void refreshStatuses(){
+		Shell shell = this.getParent();
+		TseReport report = this.reports.get(0);
 
+		IndeterminateProgressDialog progressBar = new IndeterminateProgressDialog(
+				shell,
+				SWT.APPLICATION_MODAL,
+				TSEMessages.get("refresh.status.progress.bar.label")
+		);
+		progressBar.open();
+
+		RefreshStatusThread refreshStatus = new RefreshStatusThread(report, reportService, daoService);
+		refreshStatus.setListener(new ThreadFinishedListener() {
+			@Override
+			public void finished(Runnable thread) {
+				shell.getDisplay().asyncExec(() -> {
+					loadAmendedMonthlyReports();
+					updateUI();
+					progressBar.close();
+					Message log = refreshStatus.getLog();
+					if (log != null)
+						log.open(shell);
+				});
+			}
+
+			@Override
+			public void terminated(Runnable thread, Exception e) {
+				shell.getDisplay().asyncExec(() -> {
+					progressBar.close();
+					Message msg = (e instanceof DetailedSOAPException)
+							? Warnings.createSOAPWarning((DetailedSOAPException) e)
+							: Warnings.createFatal(TSEMessages.get("refresh.status.error",
+							PropertiesReader.getSupportEmail()), report);
+					msg.open(shell);
+				});
+			}
+		});
+		refreshStatus.start();
 	}
 
 	private void submit(){
+		if( this.reports.isEmpty() ){
+			return;
+		}
+		TseReport report = Optional.of(this.reports.get(0))
+				.map(TseReport::getAggregatorId)
+				.flatMap(id-> this.reportService.getByDatasetId(id).stream().max(Comparator.comparing(Report::getVersion)))
+				.orElse(this.reports.get(0));
 
+		ReportActions actions = new TseReportActions(this.getParent(), report, reportService);
+		MessageConfigBuilder config = reportService.getSendMessageConfiguration(report);
+		config.setOpType(OperationType.SUBMIT);
+		// reject the report and update the ui
+		actions.perform(config, arg01 ->{
+			this.reports.forEach(r->{
+				r.setRCLStatus(report.getRCLStatus());
+				daoService.update(r);
+			});
+			this.loadAmendedMonthlyReports();
+			updateUI();
+		});
 	}
 }

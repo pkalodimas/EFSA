@@ -5,3 +5,4 @@ automation
 tse-app/**
 tse-app
 **/*/target/*
+**/*/tse-app/*

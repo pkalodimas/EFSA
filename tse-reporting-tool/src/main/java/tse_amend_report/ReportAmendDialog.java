@@ -65,7 +65,7 @@ public class ReportAmendDialog {
 
 		IDcfDataCollectionsList<IDcfDataCollection> dcWithAmends = this.getDataCollectionsWithAmendedReports();
 		if (dcWithAmends.isEmpty()) {
-			Warnings.createFatal(Messages.get("dc.no.element.found", PropertiesReader.getSupportEmail())).open(shell);
+			Warnings.create(Messages.get("dc.no.element.found", PropertiesReader.getSupportEmail())).open(shell);
 			return;
 		}
 		
@@ -74,7 +74,7 @@ public class ReportAmendDialog {
 		if (Objects.isNull(selectedDc)) {
 			return;
 		}
-		AmendReportListDialog amendedReportsDialog = this.getAmendedReportsDialog(shell, this.getAmendedMonthlyReports(selectedDc.getCode()));
+		AmendReportListDialog amendedReportsDialog = this.getAmendedReportsDialog(shell, selectedDc.getCode());
 		amendedReportsDialog.open();
 
 
@@ -108,10 +108,17 @@ public class ReportAmendDialog {
 
 	private IDcfDataCollectionsList<IDcfDataCollection> getDataCollectionsWithAmendedReports() throws DetailedSOAPException {
 		try {
-			IDcfDataCollectionsList<IDcfDataCollection> availableDCs = GetAvailableDataCollections.getAvailableDcList();
-			Map<String, List<TableRow>> groupedReports = reportService.groupReportsByDataCollection();
-			return availableDCs.stream()
-					.filter(dc -> reportService.dcHasAmendedOrAggregatedReports(groupedReports, dc.getCode()))
+			List<String> dcCodes = this.reportService.getAllReports().stream()
+					.map(TseReport::new)
+					.filter(r->Integer.parseInt(r.getVersion()) > 0)
+					.filter(r->Boolean.FALSE.equals(r.getRCLStatus().isFinalized()))
+					.map(Report::getDcCode)
+					.distinct()
+					.collect(Collectors.toList());
+
+			return GetAvailableDataCollections.getAvailableDcList()
+					.stream()
+					.filter(dc->dcCodes.contains(dc.getCode()))
 					.collect(Collectors.toCollection(DcfDataCollectionsList::new));
 		}
 		finally {
@@ -119,36 +126,36 @@ public class ReportAmendDialog {
 		}
 	}
 
-	private GetAmendedReportsThread getAmendedReportThread(List<TseReport> reports,
-														   ThreadFinishedListener listener) {
-		IndeterminateProgressDialog progressBar = new IndeterminateProgressDialog(
-				shell,
-				SWT.APPLICATION_MODAL,
-				Messages.get("get.amended.reports.list.progress.bar.label")
-		);
-		progressBar.open();
-		
-		GetAmendedReportsThread thread = new GetAmendedReportsThread(reports);
-
-		thread.setListener(new ThreadFinishedListener() {
-			@Override
-			public void finished(Runnable thread) {
-				shell.getDisplay().asyncExec(() -> {
-					progressBar.close();
-					listener.finished(thread);
-				});
-			}
-
-			@Override
-			public void terminated(Runnable thread, Exception e) {
-				shell.getDisplay().asyncExec(() -> {
-					progressBar.close();
-					listener.terminated(thread, e);
-				});
-			}
-		});
-		return thread;
-	}
+//	private GetAmendedReportsThread getAmendedReportThread(List<TseReport> reports,
+//														   ThreadFinishedListener listener) {
+//		IndeterminateProgressDialog progressBar = new IndeterminateProgressDialog(
+//				shell,
+//				SWT.APPLICATION_MODAL,
+//				Messages.get("get.amended.reports.list.progress.bar.label")
+//		);
+//		progressBar.open();
+//
+//		GetAmendedReportsThread thread = new GetAmendedReportsThread(reports);
+//
+//		thread.setListener(new ThreadFinishedListener() {
+//			@Override
+//			public void finished(Runnable thread) {
+//				shell.getDisplay().asyncExec(() -> {
+//					progressBar.close();
+//					listener.finished(thread);
+//				});
+//			}
+//
+//			@Override
+//			public void terminated(Runnable thread, Exception e) {
+//				shell.getDisplay().asyncExec(() -> {
+//					progressBar.close();
+//					listener.terminated(thread, e);
+//				});
+//			}
+//		});
+//		return thread;
+//	}
 
 	public IDataCollectionsDialog getDataCollectionsDialog(Shell shell1,
 														   IDcfDataCollectionsList<IDcfDataCollection> list,
@@ -157,26 +164,15 @@ public class ReportAmendDialog {
 		return new TSEDataCollectionsListDialog(shell1, list, buttonTextKey);
 	}
 
-	public AmendReportListDialog getAmendedReportsDialog(Shell shell, List<TseReport> reports) {
+	public AmendReportListDialog getAmendedReportsDialog(Shell shell, String dcCode) {
 		LOGGER.debug("Creating the MassAmendReportDialog");
 		return new AmendReportListDialog(
 				shell,
 				AMEND_REPORT_LIST_DIALOG_WINDOW_CODE,
-				reports,
+				dcCode,
 				this.reportService,
 				this.daoService
 		);
-	}
-
-	private List<TseReport> getAmendedMonthlyReports(String dcCode){
-		return this.reportService.getAllReports()
-				.stream()
-				.map(TseReport::new)
-				.filter(Report::isVisible)
-				.filter(r -> r.getDcCode().equals(dcCode))
-				.filter(r -> r.getRCLStatus().equals(RCLDatasetStatus.LOCALLY_VALIDATED))
-				.filter(r -> Integer.parseInt(r.getVersion()) > 0)
-				.collect(Collectors.toList());
 	}
 
 	public void end() {

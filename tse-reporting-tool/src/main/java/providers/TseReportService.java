@@ -695,28 +695,17 @@ public class TseReportService extends ReportService {
 		return results;
 	}
 
-	public boolean dcHasAmendedOrAggregatedReports(Map<String, List<TableRow>> groupedReports, String dcCode) {
-		return dcHasAggregatedReport(groupedReports, dcCode) || dcHasAmendedReport(groupedReports, dcCode);
-	}
-
-	public boolean dcHasAggregatedReport(Map<String, List<TableRow>> groupedReports, String dcCode) {
-		List<RCLDatasetStatus> filterOutStatuses = Arrays.asList(RCLDatasetStatus.ACCEPTED_DWH, RCLDatasetStatus.REJECTED, RCLDatasetStatus.REJECTED_EDITABLE);
-		return groupedReports.getOrDefault(dcCode, new ArrayList<>()).stream()
+	public List<TseReport> getByDatasetId(String datasetId){
+		return this.daoService.getByStringField(TableSchemaList.getByName(AppPaths.REPORT_SHEET), AppPaths.REPORT_DATASET_ID, datasetId)
+				.stream()
 				.map(TseReport::new)
-				.filter(r -> ReportType.COLLECTION_AGGREGATION.equals(r.getType()))
-				.anyMatch(r -> !filterOutStatuses.contains(r.getRCLStatus()));
+				.collect(Collectors.toList());
 	}
 
-	public boolean dcHasAmendedReport(Map<String, List<TableRow>> groupedReports, String dcCode) {
-		return groupedReports.getOrDefault(dcCode, new ArrayList<>()).stream()
-				.filter(r -> RCLDatasetStatus.fromString(r.getCode(AppPaths.REPORT_STATUS)).equals(RCLDatasetStatus.LOCALLY_VALIDATED))
-				.anyMatch(r -> Integer.parseInt(r.getCode(AppPaths.REPORT_VERSION)) > 0);
-	}
-
-	public Map<String, List<TableRow>> groupReportsByDataCollection() {
-		TableRowList allReports = getAllReports();
-
-		return allReports.stream()
-				.collect(Collectors.groupingBy(r -> r.getCode(AppPaths.REPORT_DC_CODE)));
+	public List<TseReport> getBySenderId(String senderId){
+		return this.daoService.getByStringField(TableSchemaList.getByName(AppPaths.REPORT_SHEET), AppPaths.REPORT_SENDER_ID, senderId)
+				.stream()
+				.map(TseReport::new)
+				.collect(Collectors.toList());
 	}
 }

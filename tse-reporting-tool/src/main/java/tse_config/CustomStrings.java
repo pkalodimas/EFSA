@@ -29,7 +29,6 @@ public class CustomStrings {
 	public static final String SETTINGS_ORG_CODE = "orgCode";
 	
 	public static final String REPORT_COUNTRY = "country";
-	public static final String REPORT_IS_AGGREGATED = "isAggregated";
 	public static final String REPORT_AGGREGATOR_ID = "aggregatorId";
 	public static final String REPORT_MONTH = "reportMonth";
 	public static final String REPORT_YEAR = "reportYear";
