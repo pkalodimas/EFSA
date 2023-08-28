@@ -291,14 +291,14 @@ public class AmendReportListDialog extends Dialog {
 			return;
 		}
 		TseReport report = Optional.of(this.reports.get(0))
-				.map(TseReport::getAggregatorId)
-				.flatMap(id-> this.reportService.getByDatasetId(id).stream().max(Comparator.comparing(Report::getVersion)))
+				.filter(TseReport::isAggregated)
+				.flatMap(r-> this.reportService.getByDatasetId(r.getAggregatorId()).stream().max(Comparator.comparing(Report::getVersion)))
 				.orElse(this.reports.get(0));
 
 		ReportActions actions = new TseReportActions(this.getParent(), report, reportService);
 		MessageConfigBuilder config = reportService.getSendMessageConfiguration(report);
 		config.setOpType(OperationType.SUBMIT);
-		// reject the report and update the ui
+		// Update the reports status with the one after submit.
 		actions.perform(config, arg01 ->{
 			this.reports.forEach(r->{
 				r.setRCLStatus(report.getRCLStatus());

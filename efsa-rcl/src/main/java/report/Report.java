@@ -202,7 +202,7 @@ public abstract class Report extends TableRow implements EFSAReport {
 	public abstract String getRowIdFieldName();
 
 	public void setAggregatorId(String aggregatorId) {
-		this.put(AppPaths.REPORT_AGGREGATOR_ID, aggregatorId);
+		this.put(AppPaths.REPORT_AGGREGATOR_ID, Optional.ofNullable(aggregatorId).map(String::trim).filter(text->!text.isEmpty()).orElse(null));
 	}
 
 	public String getAggregatorId() {
@@ -210,6 +210,10 @@ public abstract class Report extends TableRow implements EFSAReport {
 				.map(String::trim)
 				.filter(str->Boolean.FALSE.equals(str.isEmpty()))
 				.orElse(null);
+	}
+
+	public boolean isAggregated(){
+		return Objects.nonNull(this.getAggregatorId());
 	}
 
 	public void setDcCode(String dcCode) {

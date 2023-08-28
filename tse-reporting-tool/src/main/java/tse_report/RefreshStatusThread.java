@@ -34,7 +34,7 @@ public class RefreshStatusThread extends Thread {
 
     @Override
     public void run() {
-        if (Objects.nonNull(this.report.getAggregatorId())) {
+        if ( this.report.isAggregated() ) {
             result = this.refreshAggregatedReport(report);
         } else {
 //            result = reportService.refreshStatus(report);
