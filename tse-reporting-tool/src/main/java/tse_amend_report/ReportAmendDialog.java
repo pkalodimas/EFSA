@@ -65,7 +65,7 @@ public class ReportAmendDialog {
 
 		IDcfDataCollectionsList<IDcfDataCollection> dcWithAmends = this.getDataCollectionsWithAmendedReports();
 		if (dcWithAmends.isEmpty()) {
-			Warnings.create(Messages.get("dc.no.element.found", PropertiesReader.getSupportEmail())).open(shell);
+			Warnings.create(Messages.get("dc.no.amends.found")).open(shell);
 			return;
 		}
 		
@@ -76,34 +76,7 @@ public class ReportAmendDialog {
 		}
 		AmendReportListDialog amendedReportsDialog = this.getAmendedReportsDialog(shell, selectedDc.getCode());
 		amendedReportsDialog.open();
-
-
-		// get amended reports list
-//		GetAmendedReportsThread thread = this.getAmendedReportThread(
-//				this.getAmendedMonthlyReports(selectedDc.getCode()),
-//				new ThreadFinishedListener() {
-//					public void finished(Runnable runnable) {
-//						GetAmendedReportsThread getDatasetListThread = (GetAmendedReportsThread) runnable;
-//						TableRowList list = getDatasetListThread.getAmendedReportsList();
-//						// open the list of the reports of the data collection
-//						IMassAmendReportDialog dialog = getAmendedReportsDialog(shell,  list);
-//						dialog.setReportList(list);
-//						dialog.open();
-//				}
-//
-//				@Override
-//				public void terminated(Runnable thread, Exception e) {
-//					shell.getDisplay().asyncExec(() -> {
-//						if (e instanceof DetailedSOAPException) {
-//							Warnings.showSOAPWarning(shell, (DetailedSOAPException) e);
-//						}
-//						else {
-//							Warnings.warnUser(shell, Messages.get("error.title"), Messages.get("download.dataset.error"));
-//						}
-//					});
-//				}
-//			});
-//		thread.start();
+		// TODO, when the AmendReportsListDialog close, it should refresh the data.
 	}
 
 	private IDcfDataCollectionsList<IDcfDataCollection> getDataCollectionsWithAmendedReports() throws DetailedSOAPException {
@@ -125,37 +98,6 @@ public class ReportAmendDialog {
 			shell.setCursor(shell.getDisplay().getSystemCursor(SWT.CURSOR_ARROW));
 		}
 	}
-
-//	private GetAmendedReportsThread getAmendedReportThread(List<TseReport> reports,
-//														   ThreadFinishedListener listener) {
-//		IndeterminateProgressDialog progressBar = new IndeterminateProgressDialog(
-//				shell,
-//				SWT.APPLICATION_MODAL,
-//				Messages.get("get.amended.reports.list.progress.bar.label")
-//		);
-//		progressBar.open();
-//
-//		GetAmendedReportsThread thread = new GetAmendedReportsThread(reports);
-//
-//		thread.setListener(new ThreadFinishedListener() {
-//			@Override
-//			public void finished(Runnable thread) {
-//				shell.getDisplay().asyncExec(() -> {
-//					progressBar.close();
-//					listener.finished(thread);
-//				});
-//			}
-//
-//			@Override
-//			public void terminated(Runnable thread, Exception e) {
-//				shell.getDisplay().asyncExec(() -> {
-//					progressBar.close();
-//					listener.terminated(thread, e);
-//				});
-//			}
-//		});
-//		return thread;
-//	}
 
 	public IDataCollectionsDialog getDataCollectionsDialog(Shell shell1,
 														   IDcfDataCollectionsList<IDcfDataCollection> list,
