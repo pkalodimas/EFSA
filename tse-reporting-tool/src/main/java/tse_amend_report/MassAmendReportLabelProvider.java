@@ -7,6 +7,9 @@ import org.eclipse.jface.viewers.ILabelProviderListener;
 import org.eclipse.swt.graphics.Image;
 import table_skeleton.TableRow;
 
+import java.time.LocalDate;
+import java.util.Objects;
+
 /**
  * Label provider of the {@link Dataset}
  *
@@ -52,6 +55,10 @@ public class MassAmendReportLabelProvider extends ColumnLabelProvider {
 			break;
 		case "month":
 			text = String.valueOf(tableRow.getCode(AppPaths.REPORT_MONTH_COL));
+			if(Objects.nonNull(text) ){
+				text = LocalDate.of(2000, Integer.parseInt(text), 1).getMonth().toString();
+				text = text.substring(0,1) + text.substring(1).toLowerCase();
+			}
 			break;
 		case "country":
 			text = String.valueOf(tableRow.getLabel(AppPaths.REPORT_COUNTRY));

@@ -1,5 +1,6 @@
 package tse_amend_report;
 
+import app_config.AppPaths;
 import app_config.PropertiesReader;
 import dataset.RCLDatasetStatus;
 import global_utils.Message;
@@ -24,6 +25,7 @@ import org.eclipse.swt.widgets.Shell;
 import progress_bar.IndeterminateProgressDialog;
 import providers.ITableDaoService;
 import providers.TseReportService;
+import report.EFSAReport;
 import report.Report;
 import report.ReportActions;
 import report.ReportType;
@@ -36,6 +38,7 @@ import tse_report.RefreshStatusThread;
 import tse_report.TseReport;
 import tse_summarized_information.TseReportActions;
 import window_restorer.RestoreableWindow;
+import xlsx_reader.TableSchemaList;
 
 import java.util.Comparator;
 import java.util.List;
@@ -242,24 +245,42 @@ public class AmendReportListDialog extends Dialog {
                 : this.reportService.createAggregatedReport(reports);
 
         ReportActions actions = new TseReportActions(this.getParent(), report, reportService);
-        actions.send(reportService.getSendMessageConfiguration(report), arg01 -> updateUI());
-		// MOCK
+
+        actions.send(
+                reportService.getSendMessageConfiguration(report),
+                arg01 -> { this.onSendReportComplete(report); }
+        );
+        // MOCK
 //        report.setRCLStatus(RCLDatasetStatus.UPLOADED);
 //        report.setId(String.valueOf(System.currentTimeMillis()));
 //        this.daoService.update(report);
 
-        if (ReportType.COLLECTION_AGGREGATION.equals(report.getType())) {
-            this.reports.forEach(r -> {
-                r.setRCLStatus(report.getRCLStatus());
-                r.setAggregatorId(report.getId());
-                this.daoService.update(r);
-            });
-            // We used two versions for the aggregator report so the send process can compare the records and send only the updates/deletions.
-            // After the aggregator report is send, we drop version "00",as we do not need it anymore.
-            report.getAllVersions(this.daoService).stream()
-                    .filter(r->Boolean.FALSE.equals(r.getVersion().equals(report.getVersion())))
-                    .forEach(r->this.daoService.delete((Report) r));
+    }
+
+    private void onSendReportComplete(TseReport report){
+        if (Boolean.FALSE.equals(ReportType.COLLECTION_AGGREGATION.equals(report.getType())) ) {
+            this.loadAmendedMonthlyReports();
+            updateUI();
         }
+        // We used two versions for the aggregator report so the send process can compare the records and send only the updates/deletions.
+        // After the aggregator report is send, we drop version "00",as we do not need it anymore.
+        TseReport aggrReport = report.getAllVersions(this.daoService).stream()
+                .peek(r->{
+                    if( Boolean.FALSE.equals(report.getVersion().equals(r.getVersion())) ){
+                        this.daoService.delete((Report)r);
+                    }
+                })
+                .filter(r->report.getVersion().equals(r.getVersion()))
+                .map(TseReport.class::cast)
+                .findAny()
+                .get();
+
+        this.reports.forEach(r -> {
+            r.setRCLStatus(aggrReport.getRCLStatus());
+            r.setAggregatorId(aggrReport.getDatabaseId());
+            this.daoService.update(r);
+        });
+
         this.loadAmendedMonthlyReports();
         updateUI();
     }
@@ -310,7 +331,8 @@ public class AmendReportListDialog extends Dialog {
         }
         TseReport report = Optional.of(this.reports.get(0))
                 .filter(TseReport::isAggregated)
-                .flatMap(r -> this.reportService.getByDatasetId(r.getAggregatorId()).stream().max(Comparator.comparing(Report::getVersion)))
+                .map(r->this.daoService.getById(TableSchemaList.getByName(AppPaths.REPORT_SHEET),r.getAggregatorId()))
+                .map(TseReport::new)
                 .orElse(this.reports.get(0));
 
         ReportActions actions = new TseReportActions(this.getParent(), report, reportService);

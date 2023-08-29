@@ -4,12 +4,11 @@ import app_config.AppPaths;
 import global_utils.Message;
 import providers.ITableDaoService;
 import providers.TseReportService;
-import report.Report;
 import report.ThreadFinishedListener;
 import xlsx_reader.TableSchemaList;
 
-import java.util.Comparator;
 import java.util.Objects;
+import java.util.Optional;
 
 public class RefreshStatusThread extends Thread {
 
@@ -52,10 +51,8 @@ public class RefreshStatusThread extends Thread {
     }
 
     private Message refreshAggregatedReport(TseReport report){
-        TseReport aggrReport = this.reportService.getByDatasetId(report.getAggregatorId())
-                .stream()
+        TseReport aggrReport = Optional.ofNullable(this.daoService.getById(TableSchemaList.getByName(AppPaths.REPORT_SHEET), report.getAggregatorId()))
                 .map(TseReport::new)
-                .max(Comparator.comparing(Report::getVersion))
                 .orElse(null);
 
         if( Objects.isNull(aggrReport) ){
@@ -72,7 +69,7 @@ public class RefreshStatusThread extends Thread {
 //        this.daoService.update(aggrReport);
 
         this.daoService.getByStringField(
-                        TableSchemaList.getByName(AppPaths.REPORT_SHEET), AppPaths.REPORT_AGGREGATOR_ID, aggrReport.getId()
+                        TableSchemaList.getByName(AppPaths.REPORT_SHEET), AppPaths.REPORT_AGGREGATOR_ID, String.valueOf(aggrReport.getDatabaseId())
                 ).stream()
                 .map(TseReport::new)
                 .forEach(rep -> {
@@ -84,10 +81,7 @@ public class RefreshStatusThread extends Thread {
                 });
 
         if( aggrReport.getRCLStatus().isFinalized() ){
-            this.reportService.getBySenderId(aggrReport.getSenderId()).stream()
-                    .forEach(r->{
-                        this.daoService.delete(r);
-                    });
+            this.daoService.delete(aggrReport);
         }
         return result;
     }

@@ -201,14 +201,15 @@ public abstract class Report extends TableRow implements EFSAReport {
 	 */
 	public abstract String getRowIdFieldName();
 
-	public void setAggregatorId(String aggregatorId) {
-		this.put(AppPaths.REPORT_AGGREGATOR_ID, Optional.ofNullable(aggregatorId).map(String::trim).filter(text->!text.isEmpty()).orElse(null));
+	public void setAggregatorId(Integer aggregatorId) {
+		this.put(AppPaths.REPORT_AGGREGATOR_ID, Objects.isNull(aggregatorId) ? "" : String.valueOf(aggregatorId));
 	}
 
-	public String getAggregatorId() {
+	public Integer getAggregatorId() {
 		return Optional.ofNullable(this.getCode(AppPaths.REPORT_AGGREGATOR_ID))
 				.map(String::trim)
-				.filter(str->Boolean.FALSE.equals(str.isEmpty()))
+				.filter(id->Boolean.FALSE.equals(id.isEmpty()))
+				.map(Integer::parseInt)
 				.orElse(null);
 	}
 

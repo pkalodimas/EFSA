@@ -301,7 +301,7 @@ public class TseReportService extends ReportService {
 
 		TseReport aggrRepV2 = this.createAggregatedReport("01", reportList);
 		reportList.forEach(report->{
-			report.setAggregatorId(aggrRepV2.getId());
+			report.setAggregatorId(aggrRepV2.getDatabaseId());
 			daoService.update(report);
 		});
 
