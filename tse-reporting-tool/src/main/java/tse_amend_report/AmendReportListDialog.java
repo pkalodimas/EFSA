@@ -45,280 +45,285 @@ import java.util.stream.Collectors;
 
 /**
  * Dialog showing the amended reports of the collection
- * @author chalvatzaras
  *
+ * @author chalvatzaras
  */
 public class AmendReportListDialog extends Dialog {
 
-	private final String windowCode;
-	private RestoreableWindow window;
-	private final String dcCode;
-	private List<TseReport> reports;
-	private DialogBuilder viewer;
+    private final String windowCode;
+    private RestoreableWindow window;
+    private final String dcCode;
+    private List<TseReport> reports;
+    private DialogBuilder viewer;
 
-	private TseReportService reportService;
-	private ITableDaoService daoService;
+    private TseReportService reportService;
+    private ITableDaoService daoService;
 
-	public AmendReportListDialog(Shell parent,
-								 String windowCode,
-								 String dcCode,
-								 TseReportService reportService,
-								 ITableDaoService daoService) {
-		super(parent, SWT.SHELL_TRIM | SWT.APPLICATION_MODAL);
-		this.windowCode = windowCode;
-		this.dcCode = Objects.requireNonNull(dcCode);
-		this.daoService = Objects.requireNonNull(daoService);
-		this.reportService = Objects.requireNonNull(reportService);
-		this.loadAmendedMonthlyReports();
-	}
+    public AmendReportListDialog(Shell parent,
+                                 String windowCode,
+                                 String dcCode,
+                                 TseReportService reportService,
+                                 ITableDaoService daoService) {
+        super(parent, SWT.SHELL_TRIM | SWT.APPLICATION_MODAL);
+        this.windowCode = windowCode;
+        this.dcCode = Objects.requireNonNull(dcCode);
+        this.daoService = Objects.requireNonNull(daoService);
+        this.reportService = Objects.requireNonNull(reportService);
+        this.loadAmendedMonthlyReports();
+    }
 
-	private void loadAmendedMonthlyReports(){
-		List<TseReport> amendedReports = this.reportService.getAllReports()
-				.stream()
-				.map(TseReport::new)
-				.filter(r -> r.getDcCode().equals(dcCode))
-				.filter(r -> Integer.parseInt(r.getVersion()) > 0)
-				.filter(r -> Boolean.FALSE.equals(r.getRCLStatus().isFinalized()))
-				.collect(Collectors.toList());
+    private void loadAmendedMonthlyReports() {
+        List<TseReport> amendedReports = this.reportService.getAllReports()
+                .stream()
+                .map(TseReport::new)
+                .filter(r -> r.getDcCode().equals(dcCode))
+                .filter(r -> Integer.parseInt(r.getVersion()) > 0)
+                .filter(r -> Boolean.FALSE.equals(r.getRCLStatus().isFinalized()))
+                .collect(Collectors.toList());
 
-		if( amendedReports.stream().anyMatch(r->ReportType.COLLECTION_AGGREGATION.equals(r.getType())) ){
-			this.reports = amendedReports.stream()
-					.filter(TseReport::isAggregated)
-					.collect(Collectors.toList());
-		}
-		else {
-			this.reports = amendedReports;
-		}
-	}
+        if (amendedReports.stream().anyMatch(r -> ReportType.COLLECTION_AGGREGATION.equals(r.getType()))) {
+            this.reports = amendedReports.stream()
+                    .filter(TseReport::isAggregated)
+                    .collect(Collectors.toList());
+        } else {
+            this.reports = amendedReports;
+        }
+    }
 
-	protected void createContents(Shell shell) {
-		SelectionListener sendListener =  new SelectionAdapter() {
-			@Override
-			public void widgetSelected(SelectionEvent arg0) {
-				sendReports();
-			}
-		};
-		SelectionListener submitListener = new SelectionAdapter() {
-			@Override
-			public void widgetSelected(SelectionEvent arg0) {
-				submit();
-			}
-		};
-		SelectionListener refreshStateListener = new SelectionAdapter() {
-			@Override
-			public void widgetSelected(SelectionEvent arg0) {
-				refreshStatuses();
-			}
-		};
+    protected void createContents(Shell shell) {
+        SelectionListener sendListener = new SelectionAdapter() {
+            @Override
+            public void widgetSelected(SelectionEvent arg0) {
+                sendReports();
+            }
+        };
+        SelectionListener submitListener = new SelectionAdapter() {
+            @Override
+            public void widgetSelected(SelectionEvent arg0) {
+                submit();
+            }
+        };
+        SelectionListener refreshStateListener = new SelectionAdapter() {
+            @Override
+            public void widgetSelected(SelectionEvent arg0) {
+                refreshStatuses();
+            }
+        };
 
-		viewer = new DialogBuilder(shell);
+        viewer = new DialogBuilder(shell);
 
-		// add the toolbar composite
-		viewer.addComposite("panel", new GridLayout(1, false), new GridData(SWT.FILL, SWT.FILL, true, false))
-			.addGroupToComposite("buttonsComp", "panel", "Toolbar",
-					new GridLayout(8, false), new GridData(SWT.FILL, SWT.FILL, true, false))
-			// add the buttons to the toolbar
-			.addButtonToComposite("sendBtn", "buttonsComp", "Send", sendListener)
-			.addButtonToComposite("submitBtn", "buttonsComp", "Submit", submitListener)
-			.addButtonToComposite("refreshBtn", "buttonsComp", "Refresh Status", refreshStateListener);
-		addTableToComposite();
+        // add the toolbar composite
+        viewer.addComposite("panel", new GridLayout(1, false), new GridData(SWT.FILL, SWT.FILL, true, false))
+                .addGroupToComposite("buttonsComp", "panel", "Toolbar",
+                        new GridLayout(8, false), new GridData(SWT.FILL, SWT.FILL, true, false))
+                // add the buttons to the toolbar
+                .addButtonToComposite("sendBtn", "buttonsComp", "Send", sendListener)
+                .addButtonToComposite("submitBtn", "buttonsComp", "Submit", submitListener)
+                .addButtonToComposite("refreshBtn", "buttonsComp", "Refresh Status", refreshStateListener);
+        addTableToComposite();
 
-		initUI();
-		updateUI();
-		shell.pack();
+        initUI();
+        updateUI();
+        shell.pack();
 
-		window = new RestoreableWindow(shell, this.windowCode);
-		window.restore(TSERestoreableWindowDao.class);
-		window.saveOnClosure(TSERestoreableWindowDao.class);
-	}
+        window = new RestoreableWindow(shell, this.windowCode);
+        window.restore(TSERestoreableWindowDao.class);
+        window.saveOnClosure(TSERestoreableWindowDao.class);
+    }
 
-	private void addTableToComposite() {
-		Composite composite = new Composite(viewer.getComposite(), SWT.NONE);
-		composite.setLayout(new GridLayout());
-		composite.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true));
+    private void addTableToComposite() {
+        Composite composite = new Composite(viewer.getComposite(), SWT.NONE);
+        composite.setLayout(new GridLayout());
+        composite.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true));
 
-		TableViewer table = new TableViewer(composite, SWT.BORDER | SWT.V_SCROLL | SWT.H_SCROLL | SWT.HIDE_SELECTION | SWT.NONE);
-		table.getTable().setHeaderVisible(true);
-		table.getTable().setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true));
-		table.setContentProvider(new MassAmendReportContentProvider());
-		table.getTable().setLinesVisible(true);
+        TableViewer table = new TableViewer(composite, SWT.BORDER | SWT.V_SCROLL | SWT.H_SCROLL | SWT.HIDE_SELECTION | SWT.NONE);
+        table.getTable().setHeaderVisible(true);
+        table.getTable().setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true));
+        table.setContentProvider(new MassAmendReportContentProvider());
+        table.getTable().setLinesVisible(true);
 
-		String[][] headers = new String[][] {
-				{"year", Messages.get("ma.header.year")},
-				{"month", Messages.get("ma.header.month")},
-				{"country", Messages.get("ma.header.country")}
-		};
+        String[][] headers = new String[][]{
+                {"year", Messages.get("ma.header.year")},
+                {"month", Messages.get("ma.header.month")},
+                {"country", Messages.get("ma.header.country")}
+        };
 
-		for (String[] header : headers) {
-			// Add the column to the parent table
-			TableViewerColumn col = new TableViewerColumn(table, SWT.NONE | SWT.BORDER);
-			col.getColumn().setText(header[1]);
-			col.setLabelProvider(new MassAmendReportLabelProvider(header[0]));
-			col.getColumn().setWidth(150);
-		}
+        for (String[] header : headers) {
+            // Add the column to the parent table
+            TableViewerColumn col = new TableViewerColumn(table, SWT.NONE | SWT.BORDER);
+            col.getColumn().setText(header[1]);
+            col.setLabelProvider(new MassAmendReportLabelProvider(header[0]));
+            col.getColumn().setWidth(150);
+        }
 
-		table.setInput(new TableRowList(reports));
-	}
+        table.setInput(new TableRowList(reports));
+    }
 
-	/**
-	 * Initialise the labels to their initial state
-	 */
-	private void initUI() {
-		viewer.setEnabled("refreshBtn", canRefreshStatus());
-		viewer.setEnabled("sendBtn", canAllBeSent() && !listIsEmpty());
-		viewer.setEnabled("submitBtn", canAllBeSubmitted());
+    /**
+     * Initialise the labels to their initial state
+     */
+    private void initUI() {
+        viewer.setEnabled("refreshBtn", canRefreshStatus());
+        viewer.setEnabled("sendBtn", canAllBeSent() && !listIsEmpty());
+        viewer.setEnabled("submitBtn", canAllBeSubmitted());
 
-		// add image to send button
-		Image sendImage = new Image(Display.getCurrent(),
-				this.getClass().getClassLoader().getResourceAsStream("send-icon.png"));
-		viewer.addButtonImage("sendBtn", sendImage);
+        // add image to send button
+        Image sendImage = new Image(Display.getCurrent(),
+                this.getClass().getClassLoader().getResourceAsStream("send-icon.png"));
+        viewer.addButtonImage("sendBtn", sendImage);
 
-		// add image to refresh button
-		Image submitImage = new Image(Display.getCurrent(),
-				this.getClass().getClassLoader().getResourceAsStream("submit-icon.png"));
-		viewer.addButtonImage("submitBtn", submitImage);
+        // add image to refresh button
+        Image submitImage = new Image(Display.getCurrent(),
+                this.getClass().getClassLoader().getResourceAsStream("submit-icon.png"));
+        viewer.addButtonImage("submitBtn", submitImage);
 
-		// add image to refresh button
-		Image refreshImage = new Image(Display.getCurrent(),
-				this.getClass().getClassLoader().getResourceAsStream("refresh-icon.png"));
-		viewer.addButtonImage("refreshBtn", refreshImage);
+        // add image to refresh button
+        Image refreshImage = new Image(Display.getCurrent(),
+                this.getClass().getClassLoader().getResourceAsStream("refresh-icon.png"));
+        viewer.addButtonImage("refreshBtn", refreshImage);
 
-		// add image to display button
+        // add image to display button
 //		Image displayImage = new Image(Display.getCurrent(),
 //				this.getClass().getClassLoader().getResourceAsStream("displayAck-icon.png"));
 //		viewer.addButtonImage("displayReportBtn", displayImage);
-	}
+    }
 
-	/**
-	 * Update the ui using the report information
-	 */
-	public void updateUI() {
-		viewer.setEnabled("sendBtn", canAllBeSent());
-		viewer.setEnabled("submitBtn", canAllBeSubmitted());
-		viewer.setEnabled("refreshBtn", canRefreshStatus());
-	}
+    /**
+     * Update the ui using the report information
+     */
+    public void updateUI() {
+        viewer.setEnabled("sendBtn", canAllBeSent());
+        viewer.setEnabled("submitBtn", canAllBeSubmitted());
+        viewer.setEnabled("refreshBtn", canRefreshStatus());
+    }
 
-	public void open() {
-		Shell shell = new Shell(getParent(), SWT.SHELL_TRIM | SWT.APPLICATION_MODAL);
-		shell.setLayout(new GridLayout(1, false));
-		shell.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, true, false));
+    public void open() {
+        Shell shell = new Shell(getParent(), SWT.SHELL_TRIM | SWT.APPLICATION_MODAL);
+        shell.setLayout(new GridLayout(1, false));
+        shell.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, true, false));
 
-		shell.setText(Messages.get("ma.dialog.title"));
-		shell.setImage(getParent().getImage());
+        shell.setText(Messages.get("ma.dialog.title"));
+        shell.setImage(getParent().getImage());
 
-		this.createContents(shell);
+        this.createContents(shell);
 
-		shell.open();
+        shell.open();
 
-		Display display = getParent().getDisplay();
-		while (!shell.isDisposed()) {
-			if (!display.readAndDispatch()) {
-				display.sleep();
-			}
-		}
-	}
+        Display display = getParent().getDisplay();
+        while (!shell.isDisposed()) {
+            if (!display.readAndDispatch()) {
+                display.sleep();
+            }
+        }
+    }
 
-	private boolean canAllBeSent() {
-		return !this.listIsEmpty() &&
-				reports.stream().allMatch(tseReport -> tseReport.getRCLStatus().equals(RCLDatasetStatus.LOCALLY_VALIDATED));
-	}
+    private boolean canAllBeSent() {
+        return !this.listIsEmpty() &&
+                reports.stream().allMatch(tseReport -> tseReport.getRCLStatus().equals(RCLDatasetStatus.LOCALLY_VALIDATED));
+    }
 
-	private boolean canAllBeSubmitted() {
-		return !this.listIsEmpty() &&
-				reports.stream().allMatch(report -> report.getRCLStatus().canBeSubmitted());
-	}
+    private boolean canAllBeSubmitted() {
+        return !this.listIsEmpty() &&
+                reports.stream().allMatch(report -> report.getRCLStatus().canBeSubmitted());
+    }
 
-	private boolean canRefreshStatus(){
-		return !this.listIsEmpty() &&
-			this.reports.stream().anyMatch(report-> report.getRCLStatus().canBeRefreshed());
-	}
+    private boolean canRefreshStatus() {
+        return !this.listIsEmpty() &&
+                this.reports.stream().anyMatch(report -> report.getRCLStatus().canBeRefreshed());
+    }
 
-	private boolean listIsEmpty() {
-		return reports.isEmpty();
-	}
+    private boolean listIsEmpty() {
+        return reports.isEmpty();
+    }
 
-	private void sendReports(){
-		TseReport report = this.reports.size() == 1
-				? this.reports.get(0)
-				: this.reportService.createAggregatedReport(reports);
+    private void sendReports() {
+        TseReport report = this.reports.size() == 1
+                ? this.reports.get(0)
+                : this.reportService.createAggregatedReport(reports);
 
-//				ReportActions actions = new TseReportActions(shell, report, reportService);
-//				actions.send(reportService.getSendMessageConfiguration(report), arg01 -> updateUI());
-		report.setRCLStatus(RCLDatasetStatus.UPLOADED);
-		report.setId(String.valueOf(System.currentTimeMillis()));
-		this.daoService.update(report);
+        ReportActions actions = new TseReportActions(this.getParent(), report, reportService);
+        actions.send(reportService.getSendMessageConfiguration(report), arg01 -> updateUI());
+		// MOCK
+//        report.setRCLStatus(RCLDatasetStatus.UPLOADED);
+//        report.setId(String.valueOf(System.currentTimeMillis()));
+//        this.daoService.update(report);
 
-		if(ReportType.COLLECTION_AGGREGATION.equals(report.getType())){
-			this.reports.forEach(r->{
-				r.setRCLStatus(report.getRCLStatus());
-				r.setAggregatorId(report.getId());
-				this.daoService.update(r);
-			});
-		}
-		this.loadAmendedMonthlyReports();
-		updateUI();
-	}
+        if (ReportType.COLLECTION_AGGREGATION.equals(report.getType())) {
+            this.reports.forEach(r -> {
+                r.setRCLStatus(report.getRCLStatus());
+                r.setAggregatorId(report.getId());
+                this.daoService.update(r);
+            });
+            // We used two versions for the aggregator report so the send process can compare the records and send only the updates/deletions.
+            // After the aggregator report is send, we drop version "00",as we do not need it anymore.
+            report.getAllVersions(this.daoService).stream()
+                    .filter(r->Boolean.FALSE.equals(r.getVersion().equals(report.getVersion())))
+                    .forEach(r->this.daoService.delete((Report) r));
+        }
+        this.loadAmendedMonthlyReports();
+        updateUI();
+    }
 
-	private void refreshStatuses(){
-		Shell shell = this.getParent();
-		TseReport report = this.reports.get(0);
+    private void refreshStatuses() {
+        Shell shell = this.getParent();
+        TseReport report = this.reports.get(0);
 
-		IndeterminateProgressDialog progressBar = new IndeterminateProgressDialog(
-				shell,
-				SWT.APPLICATION_MODAL,
-				TSEMessages.get("refresh.status.progress.bar.label")
-		);
-		progressBar.open();
+        IndeterminateProgressDialog progressBar = new IndeterminateProgressDialog(
+                shell,
+                SWT.APPLICATION_MODAL,
+                TSEMessages.get("refresh.status.progress.bar.label")
+        );
+        progressBar.open();
 
-		RefreshStatusThread refreshStatus = new RefreshStatusThread(report, reportService, daoService);
-		refreshStatus.setListener(new ThreadFinishedListener() {
-			@Override
-			public void finished(Runnable thread) {
-				shell.getDisplay().asyncExec(() -> {
-					loadAmendedMonthlyReports();
-					updateUI();
-					progressBar.close();
-					Message log = refreshStatus.getLog();
-					if (log != null)
-						log.open(shell);
-				});
-			}
+        RefreshStatusThread refreshStatus = new RefreshStatusThread(report, reportService, daoService);
+        refreshStatus.setListener(new ThreadFinishedListener() {
+            @Override
+            public void finished(Runnable thread) {
+                shell.getDisplay().asyncExec(() -> {
+                    loadAmendedMonthlyReports();
+                    updateUI();
+                    progressBar.close();
+                    Message log = refreshStatus.getLog();
+                    if (log != null)
+                        log.open(shell);
+                });
+            }
 
-			@Override
-			public void terminated(Runnable thread, Exception e) {
-				shell.getDisplay().asyncExec(() -> {
-					progressBar.close();
-					Message msg = (e instanceof DetailedSOAPException)
-							? Warnings.createSOAPWarning((DetailedSOAPException) e)
-							: Warnings.createFatal(TSEMessages.get("refresh.status.error",
-							PropertiesReader.getSupportEmail()), report);
-					msg.open(shell);
-				});
-			}
-		});
-		refreshStatus.start();
-	}
+            @Override
+            public void terminated(Runnable thread, Exception e) {
+                shell.getDisplay().asyncExec(() -> {
+                    progressBar.close();
+                    Message msg = (e instanceof DetailedSOAPException)
+                            ? Warnings.createSOAPWarning((DetailedSOAPException) e)
+                            : Warnings.createFatal(TSEMessages.get("refresh.status.error",
+                            PropertiesReader.getSupportEmail()), report);
+                    msg.open(shell);
+                });
+            }
+        });
+        refreshStatus.start();
+    }
 
-	private void submit(){
-		if( this.reports.isEmpty() ){
-			return;
-		}
-		TseReport report = Optional.of(this.reports.get(0))
-				.filter(TseReport::isAggregated)
-				.flatMap(r-> this.reportService.getByDatasetId(r.getAggregatorId()).stream().max(Comparator.comparing(Report::getVersion)))
-				.orElse(this.reports.get(0));
+    private void submit() {
+        if (this.reports.isEmpty()) {
+            return;
+        }
+        TseReport report = Optional.of(this.reports.get(0))
+                .filter(TseReport::isAggregated)
+                .flatMap(r -> this.reportService.getByDatasetId(r.getAggregatorId()).stream().max(Comparator.comparing(Report::getVersion)))
+                .orElse(this.reports.get(0));
 
-		ReportActions actions = new TseReportActions(this.getParent(), report, reportService);
-		MessageConfigBuilder config = reportService.getSendMessageConfiguration(report);
-		config.setOpType(OperationType.SUBMIT);
-		// Update the reports status with the one after submit.
-		actions.perform(config, arg01 ->{
-			this.reports.forEach(r->{
-				r.setRCLStatus(report.getRCLStatus());
-				daoService.update(r);
-			});
-			this.loadAmendedMonthlyReports();
-			updateUI();
-		});
-	}
+        ReportActions actions = new TseReportActions(this.getParent(), report, reportService);
+        MessageConfigBuilder config = reportService.getSendMessageConfiguration(report);
+        config.setOpType(OperationType.SUBMIT);
+        // Update the reports status with the one after submit.
+        actions.perform(config, arg01 -> {
+            this.reports.forEach(r -> {
+                r.setRCLStatus(report.getRCLStatus());
+                daoService.update(r);
+            });
+            this.loadAmendedMonthlyReports();
+            updateUI();
+        });
+    }
 }

@@ -1,7 +1,6 @@
 package tse_report;
 
 import app_config.AppPaths;
-import dataset.RCLDatasetStatus;
 import global_utils.Message;
 import providers.ITableDaoService;
 import providers.TseReportService;
@@ -37,9 +36,10 @@ public class RefreshStatusThread extends Thread {
         if ( this.report.isAggregated() ) {
             result = this.refreshAggregatedReport(report);
         } else {
-//            result = reportService.refreshStatus(report);
-            report.setRCLStatus(RCLDatasetStatus.ACCEPTED_DWH);
-            this.daoService.update(report);
+            result = reportService.refreshStatus(report);
+            // MOCK
+//            report.setRCLStatus(RCLDatasetStatus.ACCEPTED_DWH);
+//            this.daoService.update(report);
         }
 
         if (listener != null) {
@@ -59,15 +59,17 @@ public class RefreshStatusThread extends Thread {
                 .orElse(null);
 
         if( Objects.isNull(aggrReport) ){
-            //                return reportService.refreshStatus(report);
-            report.setRCLStatus(RCLDatasetStatus.VALID);
-            this.daoService.update(report);
-            return null;
+            return reportService.refreshStatus(report);
+            // MOCK
+//            report.setRCLStatus(RCLDatasetStatus.VALID);
+//            this.daoService.update(report);
+//            return null;
         }
 
-//        result = this.reportService.refreshStatus(aggrReport);
-        aggrReport.setRCLStatus(RCLDatasetStatus.ACCEPTED_DWH);
-        this.daoService.update(aggrReport);
+        result = this.reportService.refreshStatus(aggrReport);
+        // MOCK
+//        aggrReport.setRCLStatus(RCLDatasetStatus.ACCEPTED_DWH);
+//        this.daoService.update(aggrReport);
 
         this.daoService.getByStringField(
                         TableSchemaList.getByName(AppPaths.REPORT_SHEET), AppPaths.REPORT_AGGREGATOR_ID, aggrReport.getId()
@@ -87,6 +89,6 @@ public class RefreshStatusThread extends Thread {
                         this.daoService.delete(r);
                     });
         }
-        return null;
+        return result;
     }
 }

@@ -1,12 +1,10 @@
 package tse_amend_report;
 
-import app_config.PropertiesReader;
 import data_collection.DcfDataCollectionsList;
 import data_collection.GetAvailableDataCollections;
 import data_collection.IDataCollectionsDialog;
 import data_collection.IDcfDataCollection;
 import data_collection.IDcfDataCollectionsList;
-import dataset.RCLDatasetStatus;
 import global_utils.Warnings;
 import i18n_messages.Messages;
 import i18n_messages.TSEMessages;
@@ -14,22 +12,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Shell;
-import progress_bar.IndeterminateProgressDialog;
 import providers.ITableDaoService;
 import providers.TseReportService;
-import report.IMassAmendReportDialog;
 import report.Report;
-import report.ThreadFinishedListener;
 import soap.DetailedSOAPException;
-import table_skeleton.TableRow;
-import table_skeleton.TableRowList;
 import tse_data_collection.TSEDataCollectionsListDialog;
-import tse_report.GetAmendedReportsThread;
 import tse_report.TseReport;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Collectors;
 

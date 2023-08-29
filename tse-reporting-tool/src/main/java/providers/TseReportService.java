@@ -1,18 +1,8 @@
 package providers;
 
-import java.io.IOException;
-import java.text.ParseException;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.*;
-import java.util.stream.Collectors;
-
 import app_config.AppPaths;
-import dataset.DcfDatasetStatus;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import dataset.Dataset;
+import dataset.DcfDatasetStatus;
 import dataset.IDataset;
 import dataset.RCLDatasetStatus;
 import formula.Formula;
@@ -20,6 +10,8 @@ import formula.FormulaDecomposer;
 import formula.FormulaException;
 import formula.FormulaSolver;
 import message.MessageConfigBuilder;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import report.Report;
 import report.ReportType;
 import report_downloader.TSEFormulaDecomposer;
@@ -28,7 +20,11 @@ import soap_interface.IGetDataset;
 import soap_interface.IGetDatasetsList;
 import soap_interface.ISendMessage;
 import table_relations.Relation;
-import table_skeleton.*;
+import table_skeleton.TableCell;
+import table_skeleton.TableColumn;
+import table_skeleton.TableRow;
+import table_skeleton.TableRowList;
+import table_skeleton.TableVersion;
 import tse_analytical_result.AnalyticalResult;
 import tse_case_report.CaseReport;
 import tse_config.CustomStrings;
@@ -36,9 +32,19 @@ import tse_report.TseReport;
 import tse_summarized_information.SummarizedInfo;
 import tse_validator.CaseReportValidator;
 import tse_validator.ResultValidator;
+import xlsx_reader.TableHeaders.XlsxHeader;
 import xlsx_reader.TableSchema;
 import xlsx_reader.TableSchemaList;
-import xlsx_reader.TableHeaders.XlsxHeader;
+
+import java.io.IOException;
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Stack;
+import java.util.stream.Collectors;
 
 import static tse_config.CustomStrings.RES_ID_COL;
 
@@ -279,28 +285,21 @@ public class TseReportService extends ReportService {
 	}
 
 	/**
-	 * Create a report containing an aggregation of modified records.
+	 * This method creates 2 reports.
+	 * The aggrRepV1 contains all the records of version "00" of the reports to be aggregated (aggregated reports)
+	 * The aggrRepV2 (aggregator report) contains all the records of the version "01" of the aggregated reports.
+	 * We create 2 versions so that the send report process will compare the 2 versions and detect the changes when sending the aggrRepV2.
+	 * After the aggrRepV2 is sent, then the aggrRepV1 will be deleted.
 	 *
 	 * @param reportList list of the amended reports
 	 * @return the newly created report
 	 */
 	public TseReport createAggregatedReport(List<TseReport> reportList) {
-		String aggrSenderId = String.format("AGGR_%s_%s", LocalDate.now().format(DateTimeFormatter.ofPattern("yyyyMMdd")),reportList.get(0).getDcCode());
-		if( this.aggregationReportExists(aggrSenderId) ){
-			throw new RuntimeException("Aggregation report cannot be created");
-		}
-
-		TseReport aggrRepV1 = this.createAggregatedReport(
-			aggrSenderId,
-			"00",
+		TseReport aggrRepV1 = this.createAggregatedReport("00",
 			reportList.stream().map(r ->(TseReport) r.getPreviousVersion(daoService)).collect(Collectors.toList())
 		);
 
-		TseReport aggrRepV2 = this.createAggregatedReport(
-				aggrSenderId,
-				"01",
-				reportList
-		);
+		TseReport aggrRepV2 = this.createAggregatedReport("01", reportList);
 		reportList.forEach(report->{
 			report.setAggregatorId(aggrRepV2.getId());
 			daoService.update(report);
@@ -309,7 +308,7 @@ public class TseReportService extends ReportService {
 		return aggrRepV2;
 	}
 
-	private TseReport createAggregatedReport(String senderId, String version, List<TseReport> reports){
+	private TseReport createAggregatedReport(String version, List<TseReport> reports){
 		Report templateReport = reports.get(0);
 		TseReport aggrRep = new TseReport();
 
@@ -319,12 +318,12 @@ public class TseReportService extends ReportService {
 			LOGGER.error("Cannot inject global parent=" + CustomStrings.PREFERENCES_SHEET, e);
 			e.printStackTrace();
 		}
+		aggrRep.setSenderId(String.format("AGGR_%s",templateReport.getDcCode()));
 		aggrRep.setDcCode(templateReport.getDcCode());
 		aggrRep.setRCLStatus(RCLDatasetStatus.LOCALLY_VALIDATED);
 		aggrRep.setType(ReportType.COLLECTION_AGGREGATION);
 		aggrRep.setYear(templateReport.getYear());
 		aggrRep.setVersion(version);
-		aggrRep.setSenderId(senderId);
 
 		daoService.add(aggrRep);
 
