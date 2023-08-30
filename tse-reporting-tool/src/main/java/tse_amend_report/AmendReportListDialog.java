@@ -303,6 +303,7 @@ public class AmendReportListDialog extends Dialog {
         if (Boolean.FALSE.equals(ReportType.COLLECTION_AGGREGATION.equals(report.getType())) ) {
             this.loadAmendedMonthlyReports();
             updateUI();
+            return;
         }
         // We used two versions for the aggregator report so the send process can compare the records and send only the updates/deletions.
         // After the aggregator report is send, we drop version "00",as we do not need it anymore.
