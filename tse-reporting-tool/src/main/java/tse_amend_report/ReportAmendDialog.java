@@ -5,6 +5,7 @@ import data_collection.GetAvailableDataCollections;
 import data_collection.IDataCollectionsDialog;
 import data_collection.IDcfDataCollection;
 import data_collection.IDcfDataCollectionsList;
+import dataset.RCLDatasetStatus;
 import global_utils.Warnings;
 import i18n_messages.Messages;
 import i18n_messages.TSEMessages;
@@ -74,6 +75,7 @@ public class ReportAmendDialog {
 					.map(TseReport::new)
 					.filter(r->Integer.parseInt(r.getVersion()) > 0)
 					.filter(r->Boolean.FALSE.equals(r.getRCLStatus().isFinalized()))
+					.filter(r->Boolean.FALSE.equals(RCLDatasetStatus.DRAFT.equals(r.getRCLStatus())))
 					.map(Report::getDcCode)
 					.distinct()
 					.collect(Collectors.toList());
