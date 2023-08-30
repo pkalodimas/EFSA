@@ -41,8 +41,6 @@ public class MessageXmlBuilder implements AutoCloseable {
 
 	private PrintWriter writer; // writer of the file
 
-	private boolean aggregatedReportSend;
-
 	/**
 	 * Export a dataset into the selected file default operation type = Insert
 	 * 
@@ -62,12 +60,6 @@ public class MessageXmlBuilder implements AutoCloseable {
 		this.file = file;
 		this.messageConfig = messageConfig;
 		this.writer = new PrintWriter(file, "UTF-8");
-	}
-
-	public MessageXmlBuilder(File file, MessageConfigBuilder messageConfig, boolean aggregatedReportSend)
-			throws ParserConfigurationException, SAXException, IOException {
-		this(file, messageConfig);
-		this.aggregatedReportSend = aggregatedReportSend;
 	}
 
 	/**
@@ -151,9 +143,6 @@ public class MessageXmlBuilder implements AutoCloseable {
 	private void printOperation() throws IOException {
 		XsdParser parser = new XsdParser(gde2Xsd);
 		List<XSElement> opNodes = parser.getOperationElements();
-		if (aggregatedReportSend) {
-
-		}
 		printElementList(opNodes, "operation");
 	}
 
