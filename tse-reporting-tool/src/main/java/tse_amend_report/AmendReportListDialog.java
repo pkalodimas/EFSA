@@ -205,16 +205,7 @@ public class AmendReportListDialog extends Dialog {
                 this.getClass().getClassLoader().getResourceAsStream("refresh-icon.png"));
         viewer.addButtonImage("refreshBtn", refreshImage);
 
-        viewer.setLabelText("datasetLabel", TSEMessages.get("si.dataset.id", TSEMessages.get("si.no.data")));
-        viewer.setLabelText("statusLabel", TSEMessages.get("si.dataset.status", TSEMessages.get("si.no.data")));
-
-        reports.stream().filter(Report::isAggregated)
-                .findAny()
-                .ifPresent(r -> {
-                    TseReport aggregatorReport = (TseReport) daoService.getById(TableSchemaList.getByName(AppPaths.REPORT_SHEET), r.getAggregatorId());
-                    viewer.setLabelText("datasetLabel", TSEMessages.get("si.dataset.id", aggregatorReport.getId()));
-                    viewer.setLabelText("statusLabel", TSEMessages.get("si.dataset.status", aggregatorReport.getRCLStatus().toString()));
-                });
+        refreshLabels();
 
         // add image to display button
 //		Image displayImage = new Image(Display.getCurrent(),
@@ -229,6 +220,7 @@ public class AmendReportListDialog extends Dialog {
         viewer.setEnabled("sendBtn", canAllBeSent());
         viewer.setEnabled("submitBtn", canAllBeSubmitted());
         viewer.setEnabled("refreshBtn", canRefreshStatus());
+        refreshLabels();
     }
 
     public void open() {
@@ -249,6 +241,19 @@ public class AmendReportListDialog extends Dialog {
                 display.sleep();
             }
         }
+    }
+
+    public void refreshLabels() {
+        viewer.setLabelText("datasetLabel", TSEMessages.get("si.dataset.id", TSEMessages.get("si.no.data")));
+        viewer.setLabelText("statusLabel", TSEMessages.get("si.dataset.status", TSEMessages.get("si.no.data")));
+
+        reports.stream().filter(Report::isAggregated)
+                .findAny()
+                .ifPresent(r -> {
+                    TseReport aggregatorReport = (TseReport) daoService.getById(TableSchemaList.getByName(AppPaths.REPORT_SHEET), r.getAggregatorId());
+                    viewer.setLabelText("datasetLabel", TSEMessages.get("si.dataset.id", aggregatorReport.getId()));
+                    viewer.setLabelText("statusLabel", TSEMessages.get("si.dataset.status", aggregatorReport.getRCLStatus().toString()));
+                });
     }
 
     private boolean canAllBeSent() {
