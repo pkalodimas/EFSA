@@ -394,7 +394,7 @@ public class TseReportService extends ReportService {
 		target.setVersion(newVersion);
 
 		target.setRCLStatus(RCLDatasetStatus.DRAFT);
-		target.setId("");
+
 		target.setMessageId("");
 		getDaoService().add(target);
 	}
