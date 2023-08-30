@@ -7,8 +7,10 @@ import providers.TseReportService;
 import report.ThreadFinishedListener;
 import xlsx_reader.TableSchemaList;
 
+import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class RefreshStatusThread extends Thread {
 
@@ -32,7 +34,7 @@ public class RefreshStatusThread extends Thread {
 
     @Override
     public void run() {
-        if ( this.report.isAggregated() ) {
+        if (this.report.isAggregated()) {
             result = this.refreshAggregatedReport(report);
         } else {
             result = reportService.refreshStatus(report);
@@ -50,39 +52,42 @@ public class RefreshStatusThread extends Thread {
         return result;
     }
 
-    private Message refreshAggregatedReport(TseReport report){
+    private Message refreshAggregatedReport(TseReport report) {
         TseReport aggrReport = Optional.ofNullable(this.daoService.getById(TableSchemaList.getByName(AppPaths.REPORT_SHEET), report.getAggregatorId()))
                 .map(TseReport::new)
                 .orElse(null);
 
-        if( Objects.isNull(aggrReport) ){
+        if (Objects.isNull(aggrReport)) {
             return reportService.refreshStatus(report);
-            // MOCK
-//            report.setRCLStatus(RCLDatasetStatus.VALID);
-//            this.daoService.update(report);
-//            return null;
         }
 
         result = this.reportService.refreshStatus(aggrReport);
-        // MOCK
-//        aggrReport.setRCLStatus(RCLDatasetStatus.ACCEPTED_DWH);
-//        this.daoService.update(aggrReport);
 
-        this.daoService.getByStringField(
+        List<TseReport> aggregatedReports = this.daoService.getByStringField(
                         TableSchemaList.getByName(AppPaths.REPORT_SHEET), AppPaths.REPORT_AGGREGATOR_ID, String.valueOf(aggrReport.getDatabaseId())
                 ).stream()
                 .map(TseReport::new)
-                .forEach(rep -> {
+                .collect(Collectors.toList());
+
+        aggregatedReports.forEach(rep -> {
                     rep.setRCLStatus(aggrReport.getRCLStatus());
-                    if( aggrReport.getRCLStatus().isFinalized() ){
+                    // After the amendment is finalized, the aggregator report will be dropped.
+                    if (aggrReport.getRCLStatus().isFinalized()) {
                         rep.setAggregatorId(null);
                     }
                     daoService.update(rep);
                 });
 
-        if( aggrReport.getRCLStatus().isFinalized() ){
+        // If the amendment is finalized, drop the aggregator report. Is not needed any more.
+        if (aggrReport.getRCLStatus().isFinalized()) {
             this.daoService.delete(aggrReport);
         }
+
+        this.report = aggregatedReports.stream()
+                .filter(r -> r.getDatabaseId() == this.report.getDatabaseId())
+                .findAny()
+                .orElse(this.report);
+
         return result;
     }
 }
