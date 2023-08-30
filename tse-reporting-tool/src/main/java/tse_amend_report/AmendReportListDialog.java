@@ -76,20 +76,38 @@ public class AmendReportListDialog extends Dialog {
     }
 
     private void loadAmendedMonthlyReports() {
-        List<TseReport> amendedReports = this.reportService.getAllReports()
+        TseReport aggrReport = this.reportService.getAllReports()
                 .stream()
                 .map(TseReport::new)
+                .filter(r-> ReportType.COLLECTION_AGGREGATION.equals(r.getType()))
                 .filter(r -> r.getDcCode().equals(dcCode))
                 .filter(r -> Integer.parseInt(r.getVersion()) > 0)
                 .filter(r -> Boolean.FALSE.equals(r.getRCLStatus().isFinalized()))
-                .collect(Collectors.toList());
+                .findAny()
+                .orElse(null);
 
-        if (amendedReports.stream().anyMatch(r -> ReportType.COLLECTION_AGGREGATION.equals(r.getType()))) {
-            this.reports = amendedReports.stream()
-                    .filter(TseReport::isAggregated)
+        if( Objects.nonNull(aggrReport) ){
+            this.reports = this.reportService.getAllReports()
+                    .stream()
+                    .map(TseReport::new)
+                    .filter(r->Objects.nonNull(r.getAggregatorId()))
+                    .filter(r-> aggrReport.getDatabaseId() == r.getAggregatorId())
+                    // The below are a little bit redundant as according to business logic, they will always pass if the above filters pass.
+                    // The aggregator report is deleted after it is finalized.
+                    .filter(r -> r.getDcCode().equals(dcCode))
+                    .filter(r -> Integer.parseInt(r.getVersion()) > 0)
+                    .filter(r -> Boolean.FALSE.equals(r.getRCLStatus().isFinalized()))
                     .collect(Collectors.toList());
-        } else {
-            this.reports = amendedReports;
+        }
+        else {
+            this.reports = this.reportService.getAllReports()
+                    .stream()
+                    .map(TseReport::new)
+                    .filter(r -> r.getDcCode().equals(dcCode))
+                    .filter(r -> Integer.parseInt(r.getVersion()) > 0)
+                    .filter(r -> Boolean.FALSE.equals(r.getRCLStatus().isFinalized()))
+                    .filter(r -> Boolean.FALSE.equals(RCLDatasetStatus.DRAFT.equals(r.getRCLStatus())))
+                    .collect(Collectors.toList());
         }
     }
 
