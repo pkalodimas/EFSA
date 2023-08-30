@@ -253,22 +253,6 @@ public class TseReportService extends ReportService {
 		return new MessageConfigBuilder(formulaService1, messageParents);
 	}
 
-	public MessageConfigBuilder getAcceptDwhBetaMessageConfiguration(TseReport report) {
-		Collection<TableRow> messageParents = new ArrayList<>();
-		messageParents.add(report);
-
-		// add the settings data
-		try {
-			TableRow settings = Relation.getGlobalParent(CustomStrings.SETTINGS_SHEET, getDaoService());
-			messageParents.add(settings);
-		} catch (Exception e) {
-			LOGGER.error("Error in setting Accept Dwh Beta message data", e);
-			e.printStackTrace();
-		}
-
-		return new MessageConfigBuilder(formulaService1, messageParents);
-	}
-
 	/**
 	 * Create a new version of the report and save it into the database. The version
 	 * is automatically increased
@@ -331,20 +315,6 @@ public class TseReportService extends ReportService {
 
 		daoService.update(aggrRep);
 		return aggrRep;
-	}
-
-	private boolean aggregationReportExists(String senderId){
-		List<DcfDatasetStatus> inProgressStatus = Arrays.asList(DcfDatasetStatus.PROCESSING);
-		return daoService.getByStringField(TableSchemaList.getByName(AppPaths.REPORT_SHEET), AppPaths.REPORT_SENDER_ID, senderId)
-				.stream()
-				.map(TseReport::new)
-				.peek(report->{
-					if( Boolean.FALSE.equals(inProgressStatus.contains(report.getStatus())) ){
-						daoService.delete(report);
-					}
-				})
-				.filter(report->inProgressStatus.contains(report.getStatus()))
-				.count() > 0;
 	}
 
 	/**
