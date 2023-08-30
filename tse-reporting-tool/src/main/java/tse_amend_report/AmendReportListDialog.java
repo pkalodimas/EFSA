@@ -67,7 +67,7 @@ public class AmendReportListDialog extends Dialog {
                                  String dcCode,
                                  TseReportService reportService,
                                  ITableDaoService daoService) {
-        super(parent, SWT.SHELL_TRIM | SWT.APPLICATION_MODAL);
+        super(new Shell(parent), SWT.SHELL_TRIM | SWT.APPLICATION_MODAL);
         this.windowCode = windowCode;
         this.dcCode = Objects.requireNonNull(dcCode);
         this.daoService = Objects.requireNonNull(daoService);
@@ -243,16 +243,22 @@ public class AmendReportListDialog extends Dialog {
         }
     }
 
+    public void close(){
+        this.getParent().close();
+    }
+
     public void refreshLabels() {
         viewer.setLabelText("datasetLabel", TSEMessages.get("si.dataset.id", TSEMessages.get("si.no.data")));
         viewer.setLabelText("statusLabel", TSEMessages.get("si.dataset.status", TSEMessages.get("si.no.data")));
 
-        reports.stream().filter(Report::isAggregated)
+        reports.stream()
+                .filter(Report::isAggregated)
                 .findAny()
-                .ifPresent(r -> {
-                    TseReport aggregatorReport = (TseReport) daoService.getById(TableSchemaList.getByName(AppPaths.REPORT_SHEET), r.getAggregatorId());
-                    viewer.setLabelText("datasetLabel", TSEMessages.get("si.dataset.id", aggregatorReport.getId()));
-                    viewer.setLabelText("statusLabel", TSEMessages.get("si.dataset.status", aggregatorReport.getRCLStatus().toString()));
+                .map(r->daoService.getById(TableSchemaList.getByName(AppPaths.REPORT_SHEET), r.getAggregatorId()))
+                .map(TseReport::new)
+                .ifPresent(report->{
+                    viewer.setLabelText("datasetLabel", TSEMessages.get("si.dataset.id", report.getId()));
+                    viewer.setLabelText("statusLabel", TSEMessages.get("si.dataset.status", report.getRCLStatus().toString()));
                 });
     }
 
@@ -337,12 +343,16 @@ public class AmendReportListDialog extends Dialog {
             @Override
             public void finished(Runnable thread) {
                 shell.getDisplay().asyncExec(() -> {
+                    progressBar.close();
                     loadAmendedMonthlyReports();
                     updateUI();
-                    progressBar.close();
                     Message log = refreshStatus.getLog();
-                    if (log != null)
+                    if (log != null) {
                         log.open(shell);
+                    }
+                    if( listIsEmpty() ){
+                        close();
+                    }
                 });
             }
 
