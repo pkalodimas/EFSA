@@ -279,11 +279,18 @@ public class TseReportService extends ReportService {
 	 * @return the newly created report
 	 */
 	public TseReport createAggregatedReport(List<TseReport> reportList) {
-		TseReport aggrRepV1 = this.createAggregatedReport("00",
-			reportList.stream().map(r ->(TseReport) r.getPreviousVersion(daoService)).collect(Collectors.toList())
+		String senderId = String.format("%s00",reportList.get(0).getYear().substring(2));
+		// Clean previous existing aggregator reports
+		this.getBySenderId(senderId).forEach(existingAggrReport->this.daoService.delete(existingAggrReport));
+
+		TseReport aggrRepV1 = this.createAggregatedReport(
+				senderId,
+				"00",
+				reportList.stream().map(r ->(TseReport) r.getPreviousVersion(daoService)).collect(Collectors.toList())
 		);
 
-		TseReport aggrRepV2 = this.createAggregatedReport("01", reportList);
+		TseReport aggrRepV2 = this.createAggregatedReport(senderId, "01", reportList);
+
 		reportList.forEach(report->{
 			report.setAggregatorId(aggrRepV2.getDatabaseId());
 			daoService.update(report);
@@ -292,7 +299,7 @@ public class TseReportService extends ReportService {
 		return aggrRepV2;
 	}
 
-	private TseReport createAggregatedReport(String version, List<TseReport> reports){
+	private TseReport createAggregatedReport(String senderId, String version, List<TseReport> reports){
 		Report templateReport = reports.get(0);
 		TseReport aggrRep = new TseReport();
 
@@ -302,7 +309,7 @@ public class TseReportService extends ReportService {
 			LOGGER.error("Cannot inject global parent=" + CustomStrings.PREFERENCES_SHEET, e);
 			e.printStackTrace();
 		}
-		aggrRep.setSenderId(String.format("AGGR_%s",templateReport.getDcCode()));
+		aggrRep.setSenderId(senderId);
 		aggrRep.setDcCode(templateReport.getDcCode());
 		aggrRep.setRCLStatus(RCLDatasetStatus.LOCALLY_VALIDATED);
 		aggrRep.setType(ReportType.COLLECTION_AGGREGATION);
@@ -394,7 +401,7 @@ public class TseReportService extends ReportService {
 		target.setVersion(newVersion);
 
 		target.setRCLStatus(RCLDatasetStatus.DRAFT);
-
+		target.setId("");
 		target.setMessageId("");
 		getDaoService().add(target);
 	}

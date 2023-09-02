@@ -1,714 +1,101 @@
-2023-08-24 16:34:29,764 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
-2023-08-24 16:34:30,023 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
-2023-08-24 16:34:30,057 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
-2023-08-24 16:34:30,060 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
-2023-08-24 16:34:30,092 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:30,095 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:30,126 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:30,128 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:30,135 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:30,137 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:30,257 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
-2023-08-24 16:34:30,417 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
-2023-08-24 16:34:30,440 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
-2023-08-24 16:34:30,442 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
-2023-08-24 16:34:30,451 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:30,453 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:30,457 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:30,459 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:30,467 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:30,469 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:30,593 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
-2023-08-24 16:34:30,707 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
-2023-08-24 16:34:30,728 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
-2023-08-24 16:34:30,733 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
-2023-08-24 16:34:30,739 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:30,741 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:30,745 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:30,747 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:30,752 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:30,753 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:30,852 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
-2023-08-24 16:34:30,966 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
-2023-08-24 16:34:30,988 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
-2023-08-24 16:34:30,990 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
-2023-08-24 16:34:31,009 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:31,012 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:31,018 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:31,021 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:31,027 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:31,033 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:31,474 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
-2023-08-24 16:34:31,656 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
-2023-08-24 16:34:31,677 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
-2023-08-24 16:34:31,681 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
-2023-08-24 16:34:31,684 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:31,686 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:31,690 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:31,692 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:31,698 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:31,700 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:31,798 ERROR t.TableDao [main] IMPORTANT: The element F638A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
-2023-08-24 16:34:31,894 ERROR t.TableDao [main] IMPORTANT: The element F626A is missing in the picklist anlymdLists in the picklists\ folder. Putting an empty value.
-2023-08-24 16:34:31,933 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
-2023-08-24 16:34:31,935 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
-2023-08-24 16:34:31,939 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:31,942 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:31,947 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:31,951 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:31,955 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:31,957 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:32,535 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
-2023-08-24 16:34:32,536 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
-2023-08-24 16:34:32,540 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:32,542 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:32,546 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:32,550 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:32,554 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:32,556 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:32,783 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
-2023-08-24 16:34:32,785 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
-2023-08-24 16:34:32,788 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:32,790 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:32,793 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:32,795 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:32,800 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:32,802 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:33,029 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
-2023-08-24 16:34:33,031 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
-2023-08-24 16:34:33,033 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:33,035 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:33,037 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:33,040 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:33,042 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:33,044 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:33,240 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
-2023-08-24 16:34:33,242 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
-2023-08-24 16:34:33,248 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:33,250 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:33,252 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:33,254 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:33,256 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:33,257 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:33,993 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
-2023-08-24 16:34:33,995 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
-2023-08-24 16:34:34,008 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:34,009 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:34,014 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:34,017 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:34,642 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
-2023-08-24 16:34:34,645 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
-2023-08-24 16:34:34,650 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:34,652 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:34,655 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:34,658 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:34,661 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
-2023-08-24 16:34:34,663 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
-2023-08-24 16:34:43,801 ERROR a.DatasetComparisonDao [Thread-4] Cannot add a new dataset comparison=rowId=5a8e7319-0fe8-41a3-b6d2-9f26f5a2edeb.0;version=01;xmlRecord=<analysisY>2017</analysisY><anMethRefId>AT06A.F639A</anMethRefId><paramCode>RF-00004628-PAR</paramCo;amType=NULL;isNullified=null
-org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
+2023-09-02 16:36:37,539 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-09-02 16:36:37,541 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-09-02 16:36:37,553 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:37,555 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:37,576 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:37,579 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:37,583 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:37,586 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:37,590 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:37,594 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:37,828 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-09-02 16:36:37,830 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-09-02 16:36:37,838 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:37,840 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:37,844 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:37,846 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:37,853 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:37,854 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:37,948 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-09-02 16:36:37,950 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-09-02 16:36:37,953 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:37,955 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:37,958 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:37,959 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:37,962 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:37,963 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:38,153 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-09-02 16:36:38,154 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-09-02 16:36:38,156 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:38,157 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:38,159 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:38,161 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:38,244 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-09-02 16:36:38,245 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-09-02 16:36:38,246 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:38,247 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:38,250 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:38,251 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:38,792 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-09-02 16:36:38,793 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-09-02 16:36:38,796 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:38,797 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:38,799 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:38,800 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:38,882 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-09-02 16:36:38,884 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-09-02 16:36:38,887 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:38,888 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:38,891 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:38,893 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:39,082 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-09-02 16:36:39,084 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-09-02 16:36:39,091 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:39,092 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:39,095 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:39,096 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:39,100 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:39,102 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:39,212 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-09-02 16:36:39,213 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-09-02 16:36:39,215 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:39,216 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:39,219 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:39,220 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:39,222 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:39,223 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:39,409 ERROR t.Relation [main] No relation found for Settings 1=>N CasesInformation
+2023-09-02 16:36:39,410 ERROR t.Relation [main] No relation found for Preferences 1=>N CasesInformation
+2023-09-02 16:36:39,416 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:39,417 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:39,419 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:39,420 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:39,422 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:39,423 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:36:39,425 ERROR t.Relation [main] No relation found for Settings 1=>N AnalyticalResults
+2023-09-02 16:36:39,426 ERROR t.Relation [main] No relation found for Preferences 1=>N AnalyticalResults
+2023-09-02 16:42:59,778 ERROR t.Database [main] Error in shutting down the database
+java.sql.SQLNonTransientConnectionException: Database 'database\' shutdown.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
 	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at amend_manager.DatasetComparisonDao.add(DatasetComparisonDao.java:48) [classes/:?]
-	at amend_manager.ReportXmlBuilder.extractSingleVersion(ReportXmlBuilder.java:181) [classes/:?]
-	at amend_manager.ReportXmlBuilder.exportReport(ReportXmlBuilder.java:135) [classes/:?]
-	at providers.ReportService.export(ReportService.java:191) [classes/:?]
-	at providers.ReportService.exportAndSend(ReportService.java:321) [classes/:?]
-	at providers.ReportService.send(ReportService.java:300) [classes/:?]
-	at report.ReportExportAndSendThread.run(ReportExportAndSendThread.java:46) [classes/:?]
-Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_202]
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.AutoloadedDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[?:1.8.0_202]
+	at java.sql.DriverManager.getConnection(DriverManager.java:270) ~[?:1.8.0_202]
+	at table_database.Database.shutdown(Database.java:207) [classes/:?]
+	at tse_main.StartUI.shutdown(StartUI.java:156) [classes/:?]
+	at tse_main.StartUI.main(StartUI.java:198) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: Database 'database\' shutdown.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	... 11 more
-2023-08-24 16:34:43,845 ERROR a.DatasetComparisonDao [Thread-4] Cannot add a new dataset comparison=rowId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.0;version=01;xmlRecord=<analysisY>2017</analysisY><anMethRefId>AT06A.F647A</anMethRefId><paramCode>RF-00004628-PAR</paramCo;amType=NULL;isNullified=null
-org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at amend_manager.DatasetComparisonDao.add(DatasetComparisonDao.java:48) [classes/:?]
-	at amend_manager.ReportXmlBuilder.extractSingleVersion(ReportXmlBuilder.java:181) [classes/:?]
-	at amend_manager.ReportXmlBuilder.exportReport(ReportXmlBuilder.java:135) [classes/:?]
-	at providers.ReportService.export(ReportService.java:191) [classes/:?]
-	at providers.ReportService.exportAndSend(ReportService.java:321) [classes/:?]
-	at providers.ReportService.send(ReportService.java:300) [classes/:?]
-	at report.ReportExportAndSendThread.run(ReportExportAndSendThread.java:46) [classes/:?]
-Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	... 11 more
-2023-08-24 16:34:44,023 ERROR a.DatasetComparisonDao [Thread-4] Cannot add a new dataset comparison=rowId=5a8e7319-0fe8-41a3-b6d2-9f26f5a2edeb.000001;version=01;xmlRecord=<anMethRefId>AT06A.F639A</anMethRefId><anPortSeq>1</anPortSeq><evalInfo>tseNationalCaseId=IT_BSE_001;amType=NULL;isNullified=null
-org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at amend_manager.DatasetComparisonDao.add(DatasetComparisonDao.java:48) [classes/:?]
-	at amend_manager.ReportXmlBuilder.extractSingleVersion(ReportXmlBuilder.java:181) [classes/:?]
-	at amend_manager.ReportXmlBuilder.exportReport(ReportXmlBuilder.java:135) [classes/:?]
-	at providers.ReportService.export(ReportService.java:191) [classes/:?]
-	at providers.ReportService.exportAndSend(ReportService.java:321) [classes/:?]
-	at providers.ReportService.send(ReportService.java:300) [classes/:?]
-	at report.ReportExportAndSendThread.run(ReportExportAndSendThread.java:46) [classes/:?]
-Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	... 11 more
-2023-08-24 16:34:44,049 ERROR a.DatasetComparisonDao [Thread-4] Cannot add a new dataset comparison=rowId=5a8e7319-0fe8-41a3-b6d2-9f26f5a2edeb.000002;version=01;xmlRecord=<anMethRefId>AT08A.F657A</anMethRefId><anPortSeq>1</anPortSeq><evalInfo>tseNationalCaseId=IT_BSE_001;amType=NULL;isNullified=null
-org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at amend_manager.DatasetComparisonDao.add(DatasetComparisonDao.java:48) [classes/:?]
-	at amend_manager.ReportXmlBuilder.extractSingleVersion(ReportXmlBuilder.java:181) [classes/:?]
-	at amend_manager.ReportXmlBuilder.exportReport(ReportXmlBuilder.java:135) [classes/:?]
-	at providers.ReportService.export(ReportService.java:191) [classes/:?]
-	at providers.ReportService.exportAndSend(ReportService.java:321) [classes/:?]
-	at providers.ReportService.send(ReportService.java:300) [classes/:?]
-	at report.ReportExportAndSendThread.run(ReportExportAndSendThread.java:46) [classes/:?]
-Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	... 11 more
-2023-08-24 16:34:44,087 ERROR a.DatasetComparisonDao [Thread-4] Cannot add a new dataset comparison=rowId=5a8e7319-0fe8-41a3-b6d2-9f26f5a2edeb.000003;version=01;xmlRecord=<anMethRefId>AT12A.F661A</anMethRefId><anPortSeq>1</anPortSeq><evalInfo>tseNationalCaseId=IT_BSE_001;amType=NULL;isNullified=null
-org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at amend_manager.DatasetComparisonDao.add(DatasetComparisonDao.java:48) [classes/:?]
-	at amend_manager.ReportXmlBuilder.extractSingleVersion(ReportXmlBuilder.java:181) [classes/:?]
-	at amend_manager.ReportXmlBuilder.exportReport(ReportXmlBuilder.java:135) [classes/:?]
-	at providers.ReportService.export(ReportService.java:191) [classes/:?]
-	at providers.ReportService.exportAndSend(ReportService.java:321) [classes/:?]
-	at providers.ReportService.send(ReportService.java:300) [classes/:?]
-	at report.ReportExportAndSendThread.run(ReportExportAndSendThread.java:46) [classes/:?]
-Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	... 11 more
-2023-08-24 16:34:44,212 ERROR a.DatasetComparisonDao [Thread-4] Cannot add a new dataset comparison=rowId=5a8e7319-0fe8-41a3-b6d2-9f26f5a2edeb.000004;version=01;xmlRecord=<anMethRefId>AT06A.F639A</anMethRefId><anPortSeq>1</anPortSeq><evalInfo>tseNationalCaseId=IT_BSE_inc;amType=NULL;isNullified=null
-org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at amend_manager.DatasetComparisonDao.add(DatasetComparisonDao.java:48) [classes/:?]
-	at amend_manager.ReportXmlBuilder.extractSingleVersion(ReportXmlBuilder.java:181) [classes/:?]
-	at amend_manager.ReportXmlBuilder.exportReport(ReportXmlBuilder.java:135) [classes/:?]
-	at providers.ReportService.export(ReportService.java:191) [classes/:?]
-	at providers.ReportService.exportAndSend(ReportService.java:321) [classes/:?]
-	at providers.ReportService.send(ReportService.java:300) [classes/:?]
-	at report.ReportExportAndSendThread.run(ReportExportAndSendThread.java:46) [classes/:?]
-Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	... 11 more
-2023-08-24 16:34:44,238 ERROR a.DatasetComparisonDao [Thread-4] Cannot add a new dataset comparison=rowId=5a8e7319-0fe8-41a3-b6d2-9f26f5a2edeb.000005;version=01;xmlRecord=<anMethRefId>AT08A.F657A</anMethRefId><anPortSeq>1</anPortSeq><evalInfo>tseNationalCaseId=IT_BSE_inc;amType=NULL;isNullified=null
-org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at amend_manager.DatasetComparisonDao.add(DatasetComparisonDao.java:48) [classes/:?]
-	at amend_manager.ReportXmlBuilder.extractSingleVersion(ReportXmlBuilder.java:181) [classes/:?]
-	at amend_manager.ReportXmlBuilder.exportReport(ReportXmlBuilder.java:135) [classes/:?]
-	at providers.ReportService.export(ReportService.java:191) [classes/:?]
-	at providers.ReportService.exportAndSend(ReportService.java:321) [classes/:?]
-	at providers.ReportService.send(ReportService.java:300) [classes/:?]
-	at report.ReportExportAndSendThread.run(ReportExportAndSendThread.java:46) [classes/:?]
-Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	... 11 more
-2023-08-24 16:34:44,524 ERROR a.DatasetComparisonDao [Thread-4] Cannot add a new dataset comparison=rowId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000013;version=01;xmlRecord=<anMethRefId>AT06A.F647A</anMethRefId><anPortSeq>1</anPortSeq><evalInfo>tseNationalCaseId=IT25783$ts;amType=NULL;isNullified=null
-org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at amend_manager.DatasetComparisonDao.add(DatasetComparisonDao.java:48) [classes/:?]
-	at amend_manager.ReportXmlBuilder.extractSingleVersion(ReportXmlBuilder.java:181) [classes/:?]
-	at amend_manager.ReportXmlBuilder.exportReport(ReportXmlBuilder.java:135) [classes/:?]
-	at providers.ReportService.export(ReportService.java:191) [classes/:?]
-	at providers.ReportService.exportAndSend(ReportService.java:321) [classes/:?]
-	at providers.ReportService.send(ReportService.java:300) [classes/:?]
-	at report.ReportExportAndSendThread.run(ReportExportAndSendThread.java:46) [classes/:?]
-Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	... 11 more
-2023-08-24 16:34:44,551 ERROR a.DatasetComparisonDao [Thread-4] Cannot add a new dataset comparison=rowId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000014;version=01;xmlRecord=<anMethRefId>AT08A.F072A</anMethRefId><anPortSeq>1</anPortSeq><evalInfo>tseNationalCaseId=IT25783$ts;amType=NULL;isNullified=null
-org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at amend_manager.DatasetComparisonDao.add(DatasetComparisonDao.java:48) [classes/:?]
-	at amend_manager.ReportXmlBuilder.extractSingleVersion(ReportXmlBuilder.java:181) [classes/:?]
-	at amend_manager.ReportXmlBuilder.exportReport(ReportXmlBuilder.java:135) [classes/:?]
-	at providers.ReportService.export(ReportService.java:191) [classes/:?]
-	at providers.ReportService.exportAndSend(ReportService.java:321) [classes/:?]
-	at providers.ReportService.send(ReportService.java:300) [classes/:?]
-	at report.ReportExportAndSendThread.run(ReportExportAndSendThread.java:46) [classes/:?]
-Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	... 11 more
-2023-08-24 16:34:44,569 ERROR a.DatasetComparisonDao [Thread-4] Cannot add a new dataset comparison=rowId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000015;version=01;xmlRecord=<anMethRefId>AT08A.F072A</anMethRefId><anPortSeq>1</anPortSeq><evalInfo>tseNationalCaseId=IT25783$ts;amType=NULL;isNullified=null
-org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at amend_manager.DatasetComparisonDao.add(DatasetComparisonDao.java:48) [classes/:?]
-	at amend_manager.ReportXmlBuilder.extractSingleVersion(ReportXmlBuilder.java:181) [classes/:?]
-	at amend_manager.ReportXmlBuilder.exportReport(ReportXmlBuilder.java:135) [classes/:?]
-	at providers.ReportService.export(ReportService.java:191) [classes/:?]
-	at providers.ReportService.exportAndSend(ReportService.java:321) [classes/:?]
-	at providers.ReportService.send(ReportService.java:300) [classes/:?]
-	at report.ReportExportAndSendThread.run(ReportExportAndSendThread.java:46) [classes/:?]
-Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	... 11 more
-2023-08-24 16:34:44,650 ERROR a.DatasetComparisonDao [Thread-4] Cannot add a new dataset comparison=rowId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000016;version=01;xmlRecord=<anMethRefId>AT06A.F647A</anMethRefId><anPortSeq>1</anPortSeq><evalInfo>tseNationalCaseId=IT25783$ts;amType=NULL;isNullified=null
-org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at amend_manager.DatasetComparisonDao.add(DatasetComparisonDao.java:48) [classes/:?]
-	at amend_manager.ReportXmlBuilder.extractSingleVersion(ReportXmlBuilder.java:181) [classes/:?]
-	at amend_manager.ReportXmlBuilder.exportReport(ReportXmlBuilder.java:135) [classes/:?]
-	at providers.ReportService.export(ReportService.java:191) [classes/:?]
-	at providers.ReportService.exportAndSend(ReportService.java:321) [classes/:?]
-	at providers.ReportService.send(ReportService.java:300) [classes/:?]
-	at report.ReportExportAndSendThread.run(ReportExportAndSendThread.java:46) [classes/:?]
-Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	... 11 more
-2023-08-24 16:34:44,668 ERROR a.DatasetComparisonDao [Thread-4] Cannot add a new dataset comparison=rowId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000017;version=01;xmlRecord=<anMethRefId>AT08A.F155A</anMethRefId><anPortSeq>1</anPortSeq><evalInfo>tseNationalCaseId=IT25783$ts;amType=NULL;isNullified=null
-org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at amend_manager.DatasetComparisonDao.add(DatasetComparisonDao.java:48) [classes/:?]
-	at amend_manager.ReportXmlBuilder.extractSingleVersion(ReportXmlBuilder.java:181) [classes/:?]
-	at amend_manager.ReportXmlBuilder.exportReport(ReportXmlBuilder.java:135) [classes/:?]
-	at providers.ReportService.export(ReportService.java:191) [classes/:?]
-	at providers.ReportService.exportAndSend(ReportService.java:321) [classes/:?]
-	at providers.ReportService.send(ReportService.java:300) [classes/:?]
-	at report.ReportExportAndSendThread.run(ReportExportAndSendThread.java:46) [classes/:?]
-Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	... 11 more
-2023-08-24 16:34:44,686 ERROR a.DatasetComparisonDao [Thread-4] Cannot add a new dataset comparison=rowId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000018;version=01;xmlRecord=<anMethRefId>AT08A.F155A</anMethRefId><anPortSeq>1</anPortSeq><evalInfo>tseNationalCaseId=IT25783$ts;amType=NULL;isNullified=null
-org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at amend_manager.DatasetComparisonDao.add(DatasetComparisonDao.java:48) [classes/:?]
-	at amend_manager.ReportXmlBuilder.extractSingleVersion(ReportXmlBuilder.java:181) [classes/:?]
-	at amend_manager.ReportXmlBuilder.exportReport(ReportXmlBuilder.java:135) [classes/:?]
-	at providers.ReportService.export(ReportService.java:191) [classes/:?]
-	at providers.ReportService.exportAndSend(ReportService.java:321) [classes/:?]
-	at providers.ReportService.send(ReportService.java:300) [classes/:?]
-	at report.ReportExportAndSendThread.run(ReportExportAndSendThread.java:46) [classes/:?]
-Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	... 11 more
-2023-08-24 16:34:44,838 ERROR a.DatasetComparisonDao [Thread-4] Cannot add a new dataset comparison=rowId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000019;version=01;xmlRecord=<anMethRefId>AT06A.F647A</anMethRefId><anPortSeq>1</anPortSeq><evalInfo>tseNationalCaseId=IT986425$t;amType=NULL;isNullified=null
-org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at amend_manager.DatasetComparisonDao.add(DatasetComparisonDao.java:48) [classes/:?]
-	at amend_manager.ReportXmlBuilder.extractSingleVersion(ReportXmlBuilder.java:181) [classes/:?]
-	at amend_manager.ReportXmlBuilder.exportReport(ReportXmlBuilder.java:135) [classes/:?]
-	at providers.ReportService.export(ReportService.java:191) [classes/:?]
-	at providers.ReportService.exportAndSend(ReportService.java:321) [classes/:?]
-	at providers.ReportService.send(ReportService.java:300) [classes/:?]
-	at report.ReportExportAndSendThread.run(ReportExportAndSendThread.java:46) [classes/:?]
-Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	... 11 more
-2023-08-24 16:34:44,860 ERROR a.DatasetComparisonDao [Thread-4] Cannot add a new dataset comparison=rowId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000020;version=01;xmlRecord=<anMethRefId>AT08A.F072A</anMethRefId><anPortSeq>1</anPortSeq><evalInfo>tseNationalCaseId=IT986425$t;amType=NULL;isNullified=null
-org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at amend_manager.DatasetComparisonDao.add(DatasetComparisonDao.java:48) [classes/:?]
-	at amend_manager.ReportXmlBuilder.extractSingleVersion(ReportXmlBuilder.java:181) [classes/:?]
-	at amend_manager.ReportXmlBuilder.exportReport(ReportXmlBuilder.java:135) [classes/:?]
-	at providers.ReportService.export(ReportService.java:191) [classes/:?]
-	at providers.ReportService.exportAndSend(ReportService.java:321) [classes/:?]
-	at providers.ReportService.send(ReportService.java:300) [classes/:?]
-	at report.ReportExportAndSendThread.run(ReportExportAndSendThread.java:46) [classes/:?]
-Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	... 11 more
-2023-08-24 16:34:44,878 ERROR a.DatasetComparisonDao [Thread-4] Cannot add a new dataset comparison=rowId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000021;version=01;xmlRecord=<anMethRefId>AT08A.F072A</anMethRefId><anPortSeq>1</anPortSeq><evalInfo>tseNationalCaseId=IT986425$t;amType=NULL;isNullified=null
-org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at amend_manager.DatasetComparisonDao.add(DatasetComparisonDao.java:48) [classes/:?]
-	at amend_manager.ReportXmlBuilder.extractSingleVersion(ReportXmlBuilder.java:181) [classes/:?]
-	at amend_manager.ReportXmlBuilder.exportReport(ReportXmlBuilder.java:135) [classes/:?]
-	at providers.ReportService.export(ReportService.java:191) [classes/:?]
-	at providers.ReportService.exportAndSend(ReportService.java:321) [classes/:?]
-	at providers.ReportService.send(ReportService.java:300) [classes/:?]
-	at report.ReportExportAndSendThread.run(ReportExportAndSendThread.java:46) [classes/:?]
-Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	... 11 more
-2023-08-24 16:34:44,958 ERROR a.DatasetComparisonDao [Thread-4] Cannot add a new dataset comparison=rowId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000022;version=01;xmlRecord=<anMethRefId>AT06A.F647A</anMethRefId><anPortSeq>1</anPortSeq><evalInfo>tseNationalCaseId=IT986425$t;amType=NULL;isNullified=null
-org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at amend_manager.DatasetComparisonDao.add(DatasetComparisonDao.java:48) [classes/:?]
-	at amend_manager.ReportXmlBuilder.extractSingleVersion(ReportXmlBuilder.java:181) [classes/:?]
-	at amend_manager.ReportXmlBuilder.exportReport(ReportXmlBuilder.java:135) [classes/:?]
-	at providers.ReportService.export(ReportService.java:191) [classes/:?]
-	at providers.ReportService.exportAndSend(ReportService.java:321) [classes/:?]
-	at providers.ReportService.send(ReportService.java:300) [classes/:?]
-	at report.ReportExportAndSendThread.run(ReportExportAndSendThread.java:46) [classes/:?]
-Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	... 11 more
-2023-08-24 16:34:44,976 ERROR a.DatasetComparisonDao [Thread-4] Cannot add a new dataset comparison=rowId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000023;version=01;xmlRecord=<anMethRefId>AT08A.F072A</anMethRefId><anPortSeq>1</anPortSeq><evalInfo>tseNationalCaseId=IT986425$t;amType=NULL;isNullified=null
-org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at amend_manager.DatasetComparisonDao.add(DatasetComparisonDao.java:48) [classes/:?]
-	at amend_manager.ReportXmlBuilder.extractSingleVersion(ReportXmlBuilder.java:181) [classes/:?]
-	at amend_manager.ReportXmlBuilder.exportReport(ReportXmlBuilder.java:135) [classes/:?]
-	at providers.ReportService.export(ReportService.java:191) [classes/:?]
-	at providers.ReportService.exportAndSend(ReportService.java:321) [classes/:?]
-	at providers.ReportService.send(ReportService.java:300) [classes/:?]
-	at report.ReportExportAndSendThread.run(ReportExportAndSendThread.java:46) [classes/:?]
-Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	... 11 more
-2023-08-24 16:34:45,000 ERROR a.DatasetComparisonDao [Thread-4] Cannot add a new dataset comparison=rowId=8e3b71df-209b-4d74-ad6f-d3bdfd035ee5.000024;version=01;xmlRecord=<anMethRefId>AT08A.F072A</anMethRefId><anPortSeq>1</anPortSeq><evalInfo>tseNationalCaseId=IT986425$t;amType=NULL;isNullified=null
-org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at amend_manager.DatasetComparisonDao.add(DatasetComparisonDao.java:48) [classes/:?]
-	at amend_manager.ReportXmlBuilder.extractSingleVersion(ReportXmlBuilder.java:181) [classes/:?]
-	at amend_manager.ReportXmlBuilder.exportReport(ReportXmlBuilder.java:135) [classes/:?]
-	at providers.ReportService.export(ReportService.java:191) [classes/:?]
-	at providers.ReportService.exportAndSend(ReportService.java:321) [classes/:?]
-	at providers.ReportService.send(ReportService.java:300) [classes/:?]
-	at report.ReportExportAndSendThread.run(ReportExportAndSendThread.java:46) [classes/:?]
-Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL230824160848470' defined on 'DATASET_COMPARISON'.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:?]
-	... 11 more
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.shutdownDatabaseException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 13 more

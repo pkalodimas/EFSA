@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Thu Aug 24 20:16:08 EEST 2023:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-018a-288b-da47-00000cda5588 
+Sat Sep 02 16:35:26 EEST 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-018a-561b-0522-00000cbc7d28 
 on database directory C:\Users\panos\Documents\Git\CRI\EFSA\tse-app\database with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
 Loaded from file:/C:/Users/panos/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
 java.vendor=Oracle Corporation
@@ -11,3 +11,6 @@ os.arch=amd64
 os.version=10.0
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sat Sep 02 16:42:59 EEST 2023:
+Shutting down instance a816c00e-018a-561b-0522-00000cbc7d28 on database directory C:\Users\panos\Documents\Git\CRI\EFSA\tse-app\database with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 

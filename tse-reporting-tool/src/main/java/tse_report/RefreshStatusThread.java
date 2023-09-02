@@ -38,9 +38,6 @@ public class RefreshStatusThread extends Thread {
             result = this.refreshAggregatedReport(report);
         } else {
             result = reportService.refreshStatus(report);
-            // MOCK
-//            report.setRCLStatus(RCLDatasetStatus.ACCEPTED_DWH);
-//            this.daoService.update(report);
         }
 
         if (listener != null) {

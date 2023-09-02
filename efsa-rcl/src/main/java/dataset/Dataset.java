@@ -54,8 +54,6 @@ public class Dataset extends DcfDataset implements IDataset, Checkable {
 		
 		return split[0];
 	}
-
-
 	
 	/**
 	 * Get the version of the dataset if possible.

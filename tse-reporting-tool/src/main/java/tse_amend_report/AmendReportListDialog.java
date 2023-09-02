@@ -57,6 +57,7 @@ public class AmendReportListDialog extends Dialog {
     private RestoreableWindow window;
     private final String dcCode;
     private List<TseReport> reports;
+    private TseReport aggrReport;
     private DialogBuilder viewer;
 
     private TseReportService reportService;
@@ -76,7 +77,7 @@ public class AmendReportListDialog extends Dialog {
     }
 
     private void loadAmendedMonthlyReports() {
-        TseReport aggrReport = this.reportService.getAllReports()
+        this.aggrReport = this.reportService.getAllReports()
                 .stream()
                 .map(TseReport::new)
                 .filter(r-> ReportType.COLLECTION_AGGREGATION.equals(r.getType()))
@@ -86,11 +87,12 @@ public class AmendReportListDialog extends Dialog {
                 .findAny()
                 .orElse(null);
 
-        if( Objects.nonNull(aggrReport) ){
+        if( Objects.nonNull(this.aggrReport) ){
             this.reports = this.reportService.getAllReports()
                     .stream()
                     .map(TseReport::new)
                     .filter(r->Objects.nonNull(r.getAggregatorId()))
+                    .filter(TseReport::isVisible)
                     .filter(r-> aggrReport.getDatabaseId() == r.getAggregatorId())
                     // The below are a little bit redundant as according to business logic, they will always pass if the above filters pass.
                     // The aggregator report is deleted after it is finalized.
@@ -206,11 +208,6 @@ public class AmendReportListDialog extends Dialog {
         viewer.addButtonImage("refreshBtn", refreshImage);
 
         refreshLabels();
-
-        // add image to display button
-//		Image displayImage = new Image(Display.getCurrent(),
-//				this.getClass().getClassLoader().getResourceAsStream("displayAck-icon.png"));
-//		viewer.addButtonImage("displayReportBtn", displayImage);
     }
 
     /**
@@ -250,16 +247,19 @@ public class AmendReportListDialog extends Dialog {
     public void refreshLabels() {
         viewer.setLabelText("datasetLabel", TSEMessages.get("si.dataset.id", TSEMessages.get("si.no.data")));
         viewer.setLabelText("statusLabel", TSEMessages.get("si.dataset.status", TSEMessages.get("si.no.data")));
-
-        reports.stream()
-                .filter(Report::isAggregated)
-                .findAny()
-                .map(r->daoService.getById(TableSchemaList.getByName(AppPaths.REPORT_SHEET), r.getAggregatorId()))
-                .map(TseReport::new)
-                .ifPresent(report->{
-                    viewer.setLabelText("datasetLabel", TSEMessages.get("si.dataset.id", report.getId()));
-                    viewer.setLabelText("statusLabel", TSEMessages.get("si.dataset.status", report.getRCLStatus().toString()));
-                });
+        if(this.reports.isEmpty()){
+            return;
+        }
+        if( Objects.isNull(this.aggrReport) ){
+            viewer.setLabelText("statusLabel", TSEMessages.get("si.dataset.status", this.reports.get(0).getRCLStatus().toString()));
+            if( this.reports.size() == 1 ){
+                viewer.setLabelText("datasetLabel", TSEMessages.get("si.dataset.id", this.reports.get(0).getId()));
+            }
+        }
+        else{
+            viewer.setLabelText("datasetLabel", TSEMessages.get("si.dataset.id", this.aggrReport.getId()));
+            viewer.setLabelText("statusLabel", TSEMessages.get("si.dataset.status", this.aggrReport.getRCLStatus().toString()));
+        }
     }
 
     private boolean canAllBeSent() {
@@ -282,9 +282,11 @@ public class AmendReportListDialog extends Dialog {
     }
 
     private void sendReports() {
-        TseReport report = this.reports.size() == 1
-                ? this.reports.get(0)
-                : this.reportService.createAggregatedReport(reports);
+        viewer.setEnabled("sendBtn", false);
+        if( this.reports.size() > 1 ){
+            this.aggrReport = this.reportService.createAggregatedReport(reports);
+        }
+        TseReport report = Objects.isNull(this.aggrReport) ? this.reports.get(0) : this.aggrReport;
 
         ReportActions actions = new TseReportActions(this.getParent(), report, reportService);
 
@@ -292,11 +294,6 @@ public class AmendReportListDialog extends Dialog {
                 reportService.getSendMessageConfiguration(report),
                 arg01 -> { this.onSendReportComplete(report); }
         );
-        // MOCK
-//        report.setRCLStatus(RCLDatasetStatus.UPLOADED);
-//        report.setId(String.valueOf(System.currentTimeMillis()));
-//        this.daoService.update(report);
-
     }
 
     private void onSendReportComplete(TseReport report){
@@ -376,6 +373,8 @@ public class AmendReportListDialog extends Dialog {
         if (this.reports.isEmpty()) {
             return;
         }
+        this.getParent().setCursor(this.getParent().getDisplay().getSystemCursor(SWT.CURSOR_WAIT));
+
         TseReport report = Optional.of(this.reports.get(0))
                 .filter(TseReport::isAggregated)
                 .map(r->this.daoService.getById(TableSchemaList.getByName(AppPaths.REPORT_SHEET),r.getAggregatorId()))
@@ -393,6 +392,7 @@ public class AmendReportListDialog extends Dialog {
             });
             this.loadAmendedMonthlyReports();
             updateUI();
+            this.getParent().setCursor(this.getParent().getDisplay().getSystemCursor(SWT.CURSOR_ARROW));
         });
     }
 }

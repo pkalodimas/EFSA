@@ -92,7 +92,8 @@ public abstract class Report extends TableRow implements EFSAReport {
 	}
 
 	public String getSenderId() {
-		return this.getCode(AppPaths.REPORT_SENDER_ID);
+		String str = this.getCode(AppPaths.REPORT_SENDER_ID);
+		return Objects.isNull(str) ? str : str.trim();
 	}
 
 	public void setSenderId(String id) {
