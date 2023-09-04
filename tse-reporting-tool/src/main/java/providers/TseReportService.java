@@ -2,6 +2,7 @@ package providers;
 
 import app_config.AppPaths;
 import dataset.Dataset;
+import dataset.DatasetList;
 import dataset.DcfDatasetStatus;
 import dataset.IDataset;
 import dataset.RCLDatasetStatus;
@@ -15,6 +16,7 @@ import org.apache.logging.log4j.Logger;
 import report.Report;
 import report.ReportType;
 import report_downloader.TSEFormulaDecomposer;
+import soap.DetailedSOAPException;
 import soap_interface.IGetAck;
 import soap_interface.IGetDataset;
 import soap_interface.IGetDatasetsList;
@@ -43,6 +45,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Optional;
 import java.util.Stack;
 import java.util.stream.Collectors;
 
@@ -279,8 +282,23 @@ public class TseReportService extends ReportService {
 	 * @return the newly created report
 	 */
 	public TseReport createAggregatedReport(List<TseReport> reportList) {
-		String senderId = String.format("%s00",reportList.get(0).getYear().substring(2));
+		TseReport template = reportList.get(0);
+		String senderId = String.format("%s00",template.getYear().substring(2));
 		// Clean previous existing aggregator reports
+		String newVersion = null;
+		try {
+			newVersion = Optional.ofNullable(this.getDatasetsOf(senderId, template.getYear()))
+					.map(list->list.getLastVersion(senderId))
+					.map(dataset->dataset.getVersion())
+					.map(ver->Integer.parseInt(ver))
+					.map(ver->ver + 1)
+					.map(ver->ver > 9 ? String.valueOf(ver) : "0"+String.valueOf(ver))
+					.orElse("01");
+		}
+		catch (DetailedSOAPException e) {
+			throw new RuntimeException(e);
+		}
+
 		this.getBySenderId(senderId).forEach(existingAggrReport->this.daoService.delete(existingAggrReport));
 
 		TseReport aggrRepV1 = this.createAggregatedReport(
@@ -289,7 +307,7 @@ public class TseReportService extends ReportService {
 				reportList.stream().map(r ->(TseReport) r.getPreviousVersion(daoService)).collect(Collectors.toList())
 		);
 
-		TseReport aggrRepV2 = this.createAggregatedReport(senderId, "01", reportList);
+		TseReport aggrRepV2 = this.createAggregatedReport(senderId, newVersion, reportList);
 
 		reportList.forEach(report->{
 			report.setAggregatorId(aggrRepV2.getDatabaseId());
