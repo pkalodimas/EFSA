@@ -260,7 +260,8 @@ public class TseReport extends Report {
 	}
 
 	public boolean notAmended() {
-		return !this.getRCLStatus().equals(RCLDatasetStatus.LOCALLY_VALIDATED)
-				|| Integer.parseInt(this.getVersion()) <= 0;
+		return (!this.getRCLStatus().equals(RCLDatasetStatus.LOCALLY_VALIDATED)
+				&& !this.getRCLStatus().equals(RCLDatasetStatus.UPLOAD_FAILED))
+				|| Integer.parseInt(this.getVersion()) == 0;
 	}
 }

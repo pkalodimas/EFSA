@@ -245,7 +245,7 @@ public abstract class TableDialog {
 			this.saveButton = new Button(dialog, SWT.PUSH);
 			this.saveButton.setText(Messages.get("save.button"));
 			this.saveButton.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, true, false));
-			this.saveButton.setEnabled(panel.areMandatoryFilled());
+			this.saveButton.setEnabled(title.equals(Messages.get("open.report.title")) || panel.areMandatoryFilled());
 
 			// save options
 			this.saveButton.addSelectionListener(new SelectionListener() {
